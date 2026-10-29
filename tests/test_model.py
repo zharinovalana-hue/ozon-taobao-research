@@ -41,12 +41,9 @@ class ModelTests(unittest.TestCase):
         case=dict(self.cases[1],shares=[.5,.5,.5,.5])
         with self.assertRaises(ValueError): evaluate(self.inputs,case)
 
-    def test_external_case_not_mislabeled_ozon_calibrated(self):
-        external=next(c for c in self.cases if c['id']=='taobao_external')
-        self.assertFalse(external['enforce_ozon'])
-        calibrated=next(c for c in self.cases if c['id']=='taobao_calibrated')
-        self.assertTrue(calibrated['enforce_ozon'])
-        self.assertNotEqual(calibrated['global_cr'],.201)
+    def test_taobao_not_used_for_ozon_cohorts(self):
+        self.assertFalse(any('taobao' in c['id'] for c in self.cases))
+        self.assertTrue(all(c['enforce_ozon'] for c in self.cases))
 
     def test_h6_alternatives_never_summed(self):
         r=evaluate(self.inputs,self.cases[1])
@@ -54,7 +51,7 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(len(r),8)
 
     def test_order_intensity_is_not_forced_cr(self):
-        case=next(c for c in self.cases if c['id']=='taobao_calibrated')
+        case=next(c for c in self.cases if c['id']=='ozon_stock_base')
         self.assertEqual(case['dau'],44_000_000)
         self.assertEqual(case['mau'],84_000_000)
         self.assertEqual(case['global_cr'],.15)
@@ -68,7 +65,7 @@ class ModelTests(unittest.TestCase):
         changed=copy.deepcopy(self.inputs)
         changed['public_ozon'].update(dau_march_2026=40_000_000,mau_march_2026=80_000_000,q1_days=90)
         cases=scenarios(changed,ROOT/'data/taobao_summary.json')
-        base=next(c for c in cases if c['id']=='taobao_calibrated')
+        base=next(c for c in cases if c['id']=='ozon_stock_base')
         self.assertEqual(base['dau'],40_000_000)
         self.assertEqual(base['mau'],80_000_000)
         scale=public_scale(changed,cases)

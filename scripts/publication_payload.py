@@ -6,7 +6,7 @@ project directories and excludes temporary files, user aggregates and caches.
 import base64,hashlib,json,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DIRECTORIES=['data','docs','models','notebooks','results','scripts','src','tests','.github']
+DIRECTORIES=['data','docs','models','notebooks','results','scripts','src','tests','.github','archive']
 ROOT_FILES=['README.md','requirements.txt','.gitignore']
 def files():
     result=[ROOT/x for x in ROOT_FILES]

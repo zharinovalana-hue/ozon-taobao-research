@@ -13,96 +13,132 @@
       "row": 8
     },
     {
-      "id": "taobao_external",
+      "id": "stock_11",
       "row": 9
     },
     {
-      "id": "taobao_control_201",
+      "id": "stock_20",
       "row": 10
     },
     {
-      "id": "taobao_calibrated",
+      "id": "ozon_stock_base",
       "row": 11
     },
     {
-      "id": "cautious",
+      "id": "stock_40",
       "row": 12
     },
     {
-      "id": "favorable",
+      "id": "stock_49",
       "row": 13
     },
     {
-      "id": "zero",
+      "id": "cautious",
       "row": 14
     },
     {
-      "id": "negative_cart",
+      "id": "favorable",
       "row": 15
     },
     {
-      "id": "negative_fav",
+      "id": "zero",
       "row": 16
     },
     {
-      "id": "negative_revenue",
+      "id": "negative_cart",
       "row": 17
     },
     {
-      "id": "negative_combined",
+      "id": "negative_fav",
       "row": 18
     },
     {
-      "id": "threshold_p75",
+      "id": "negative_revenue",
       "row": 19
     },
     {
-      "id": "threshold_p95",
+      "id": "negative_combined",
       "row": 20
     },
     {
-      "id": "threshold_p99",
+      "id": "cr_100",
       "row": 21
     },
     {
-      "id": "cr_100",
+      "id": "cr_120",
       "row": 22
     },
     {
-      "id": "cr_120",
+      "id": "cr_180",
       "row": 23
     },
     {
-      "id": "cr_180",
+      "id": "cr_201",
       "row": 24
     },
     {
-      "id": "cr_201",
+      "id": "overlap_0",
       "row": 25
     },
     {
-      "id": "overlap_0",
+      "id": "overlap_50",
       "row": 26
     },
     {
-      "id": "overlap_50",
+      "id": "overlap_100",
       "row": 27
     },
     {
-      "id": "overlap_100",
+      "id": "reach_0.5",
       "row": 28
     },
     {
-      "id": "reach_0.5",
+      "id": "reach_1.5",
       "row": 29
     },
     {
-      "id": "reach_1.5",
+      "id": "platform_mix_stress",
       "row": 30
     },
     {
-      "id": "platform_mix_stress",
+      "id": "h1_need_0.25",
       "row": 31
+    },
+    {
+      "id": "h1_need_0.6",
+      "row": 32
+    },
+    {
+      "id": "h1_need_0.8",
+      "row": 33
+    },
+    {
+      "id": "h1_need_1.0",
+      "row": 34
+    },
+    {
+      "id": "fav_0.2",
+      "row": 35
+    },
+    {
+      "id": "fav_0.6",
+      "row": 36
+    },
+    {
+      "id": "selection_0.5",
+      "row": 37
+    },
+    {
+      "id": "selection_1.4",
+      "row": 38
+    },
+    {
+      "id": "h4_reach_0.75",
+      "row": 39
+    },
+    {
+      "id": "h4_reach_1.25",
+      "row": 40
     }
   ],
   "scenarioFields": [
@@ -132,7 +168,9 @@
     "wC",
     "wF",
     "wBoth",
-    "wOutside"
+    "wOutside",
+    "h1_need",
+    "h4_reach_multiplier"
   ],
   "comparisonFields": [
     "scenario_name",
@@ -158,9 +196,9 @@
   "comparisonFirstRow": 19,
   "topCases": [
     "original",
-    "taobao_external",
-    "taobao_control_201",
-    "taobao_calibrated",
+    "stock_11",
+    "ozon_stock_base",
+    "stock_49",
     "cautious",
     "favorable",
     "zero",
@@ -3758,13 +3796,13 @@
     {
       "sheet": "Входы H",
       "address": "N101",
-      "value": 1.5,
+      "value": 1.2,
       "row": 604
     },
     {
       "sheet": "Входы H",
       "address": "O101",
-      "value": 0.2,
+      "value": 0.4,
       "row": 605
     },
     {
@@ -3776,19 +3814,19 @@
     {
       "sheet": "Входы H",
       "address": "Q101",
-      "value": 0.3,
+      "value": 0.5,
       "row": 607
     },
     {
       "sheet": "Входы H",
       "address": "N102",
-      "value": 1.5,
+      "value": 1.2,
       "row": 608
     },
     {
       "sheet": "Входы H",
       "address": "O102",
-      "value": 0.2,
+      "value": 0.4,
       "row": 609
     },
     {
@@ -3800,19 +3838,19 @@
     {
       "sheet": "Входы H",
       "address": "Q102",
-      "value": 0.3,
+      "value": 0.5,
       "row": 611
     },
     {
       "sheet": "Входы H",
       "address": "N103",
-      "value": 1.5,
+      "value": 1.2,
       "row": 612
     },
     {
       "sheet": "Входы H",
       "address": "O103",
-      "value": 0.2,
+      "value": 0.4,
       "row": 613
     },
     {
@@ -3824,19 +3862,19 @@
     {
       "sheet": "Входы H",
       "address": "Q103",
-      "value": 0.3,
+      "value": 0.5,
       "row": 615
     },
     {
       "sheet": "Входы H",
       "address": "N104",
-      "value": 1.5,
+      "value": 1.2,
       "row": 616
     },
     {
       "sheet": "Входы H",
       "address": "O104",
-      "value": 0.2,
+      "value": 0.4,
       "row": 617
     },
     {
@@ -3848,19 +3886,19 @@
     {
       "sheet": "Входы H",
       "address": "Q104",
-      "value": 0.3,
+      "value": 0.5,
       "row": 619
     },
     {
       "sheet": "Входы H",
       "address": "N105",
-      "value": 1.2,
+      "value": 1.5,
       "row": 620
     },
     {
       "sheet": "Входы H",
       "address": "O105",
-      "value": 0.4,
+      "value": 0.2,
       "row": 621
     },
     {
@@ -3872,19 +3910,19 @@
     {
       "sheet": "Входы H",
       "address": "Q105",
-      "value": 0.5,
+      "value": 0.3,
       "row": 623
     },
     {
       "sheet": "Входы H",
       "address": "N106",
-      "value": 1.2,
+      "value": 1.5,
       "row": 624
     },
     {
       "sheet": "Входы H",
       "address": "O106",
-      "value": 0.4,
+      "value": 0.2,
       "row": 625
     },
     {
@@ -3896,19 +3934,19 @@
     {
       "sheet": "Входы H",
       "address": "Q106",
-      "value": 0.5,
+      "value": 0.3,
       "row": 627
     },
     {
       "sheet": "Входы H",
       "address": "N107",
-      "value": 1.2,
+      "value": 1.5,
       "row": 628
     },
     {
       "sheet": "Входы H",
       "address": "O107",
-      "value": 0.4,
+      "value": 0.2,
       "row": 629
     },
     {
@@ -3920,19 +3958,19 @@
     {
       "sheet": "Входы H",
       "address": "Q107",
-      "value": 0.5,
+      "value": 0.3,
       "row": 631
     },
     {
       "sheet": "Входы H",
       "address": "N108",
-      "value": 1.2,
+      "value": 1.5,
       "row": 632
     },
     {
       "sheet": "Входы H",
       "address": "O108",
-      "value": 0.4,
+      "value": 0.2,
       "row": 633
     },
     {
@@ -3944,3815 +3982,7973 @@
     {
       "sheet": "Входы H",
       "address": "Q108",
-      "value": 0.5,
+      "value": 0.3,
       "row": 635
     },
     {
-      "sheet": "Когорты",
-      "address": "H5",
-      "value": 0.65,
+      "sheet": "Входы H",
+      "address": "N109",
+      "value": 1.5,
       "row": 636
     },
     {
-      "sheet": "Когорты",
-      "address": "I5",
-      "value": 0.13,
+      "sheet": "Входы H",
+      "address": "O109",
+      "value": 0.2,
       "row": 637
     },
     {
-      "sheet": "Когорты",
-      "address": "H6",
-      "value": 0.65,
+      "sheet": "Входы H",
+      "address": "P109",
+      "value": 1,
       "row": 638
     },
     {
-      "sheet": "Когорты",
-      "address": "I6",
-      "value": 0.13,
+      "sheet": "Входы H",
+      "address": "Q109",
+      "value": 0.3,
       "row": 639
     },
     {
-      "sheet": "Когорты",
-      "address": "H7",
-      "value": 0.65,
+      "sheet": "Входы H",
+      "address": "N110",
+      "value": 1.5,
       "row": 640
     },
     {
-      "sheet": "Когорты",
-      "address": "I7",
-      "value": 0.13,
+      "sheet": "Входы H",
+      "address": "O110",
+      "value": 0.2,
       "row": 641
     },
     {
-      "sheet": "Когорты",
-      "address": "H8",
-      "value": 0.65,
+      "sheet": "Входы H",
+      "address": "P110",
+      "value": 1,
       "row": 642
     },
     {
-      "sheet": "Когорты",
-      "address": "I8",
-      "value": 0.13,
+      "sheet": "Входы H",
+      "address": "Q110",
+      "value": 0.3,
       "row": 643
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N111",
+      "value": 1.5,
+      "row": 644
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O111",
+      "value": 0.2,
+      "row": 645
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P111",
+      "value": 1,
+      "row": 646
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q111",
+      "value": 0.3,
+      "row": 647
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N112",
+      "value": 1.5,
+      "row": 648
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O112",
+      "value": 0.2,
+      "row": 649
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P112",
+      "value": 1,
+      "row": 650
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q112",
+      "value": 0.3,
+      "row": 651
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N113",
+      "value": 1.5,
+      "row": 652
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O113",
+      "value": 0.2,
+      "row": 653
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P113",
+      "value": 1,
+      "row": 654
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q113",
+      "value": 0.3,
+      "row": 655
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N114",
+      "value": 1.5,
+      "row": 656
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O114",
+      "value": 0.2,
+      "row": 657
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P114",
+      "value": 1,
+      "row": 658
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q114",
+      "value": 0.3,
+      "row": 659
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N115",
+      "value": 1.5,
+      "row": 660
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O115",
+      "value": 0.2,
+      "row": 661
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P115",
+      "value": 1,
+      "row": 662
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q115",
+      "value": 0.3,
+      "row": 663
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N116",
+      "value": 1.5,
+      "row": 664
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O116",
+      "value": 0.2,
+      "row": 665
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P116",
+      "value": 1,
+      "row": 666
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q116",
+      "value": 0.3,
+      "row": 667
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N117",
+      "value": 1.5,
+      "row": 668
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O117",
+      "value": 0.2,
+      "row": 669
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P117",
+      "value": 1,
+      "row": 670
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q117",
+      "value": 0.3,
+      "row": 671
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N118",
+      "value": 1.5,
+      "row": 672
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O118",
+      "value": 0.2,
+      "row": 673
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P118",
+      "value": 1,
+      "row": 674
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q118",
+      "value": 0.3,
+      "row": 675
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N119",
+      "value": 1.5,
+      "row": 676
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O119",
+      "value": 0.2,
+      "row": 677
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P119",
+      "value": 1,
+      "row": 678
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q119",
+      "value": 0.3,
+      "row": 679
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N120",
+      "value": 1.5,
+      "row": 680
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O120",
+      "value": 0.2,
+      "row": 681
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P120",
+      "value": 1,
+      "row": 682
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q120",
+      "value": 0.3,
+      "row": 683
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N121",
+      "value": 1.5,
+      "row": 684
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O121",
+      "value": 0.2,
+      "row": 685
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P121",
+      "value": 1,
+      "row": 686
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q121",
+      "value": 0.3,
+      "row": 687
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N122",
+      "value": 1.5,
+      "row": 688
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O122",
+      "value": 0.2,
+      "row": 689
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P122",
+      "value": 1,
+      "row": 690
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q122",
+      "value": 0.3,
+      "row": 691
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N123",
+      "value": 1.5,
+      "row": 692
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O123",
+      "value": 0.2,
+      "row": 693
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P123",
+      "value": 1,
+      "row": 694
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q123",
+      "value": 0.3,
+      "row": 695
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N124",
+      "value": 1.5,
+      "row": 696
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O124",
+      "value": 0.2,
+      "row": 697
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P124",
+      "value": 1,
+      "row": 698
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q124",
+      "value": 0.3,
+      "row": 699
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N125",
+      "value": 1.5,
+      "row": 700
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O125",
+      "value": 0.2,
+      "row": 701
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P125",
+      "value": 1,
+      "row": 702
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q125",
+      "value": 0.3,
+      "row": 703
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N126",
+      "value": 1.5,
+      "row": 704
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O126",
+      "value": 0.2,
+      "row": 705
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P126",
+      "value": 1,
+      "row": 706
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q126",
+      "value": 0.3,
+      "row": 707
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N127",
+      "value": 1.5,
+      "row": 708
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O127",
+      "value": 0.2,
+      "row": 709
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P127",
+      "value": 1,
+      "row": 710
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q127",
+      "value": 0.3,
+      "row": 711
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N128",
+      "value": 1.5,
+      "row": 712
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O128",
+      "value": 0.2,
+      "row": 713
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P128",
+      "value": 1,
+      "row": 714
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q128",
+      "value": 0.3,
+      "row": 715
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N129",
+      "value": 1.5,
+      "row": 716
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O129",
+      "value": 0.2,
+      "row": 717
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P129",
+      "value": 1,
+      "row": 718
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q129",
+      "value": 0.3,
+      "row": 719
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N130",
+      "value": 1.5,
+      "row": 720
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O130",
+      "value": 0.2,
+      "row": 721
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P130",
+      "value": 1,
+      "row": 722
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q130",
+      "value": 0.3,
+      "row": 723
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N131",
+      "value": 1.5,
+      "row": 724
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O131",
+      "value": 0.2,
+      "row": 725
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P131",
+      "value": 1,
+      "row": 726
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q131",
+      "value": 0.3,
+      "row": 727
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N132",
+      "value": 1.5,
+      "row": 728
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O132",
+      "value": 0.2,
+      "row": 729
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P132",
+      "value": 1,
+      "row": 730
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q132",
+      "value": 0.3,
+      "row": 731
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N133",
+      "value": 1.5,
+      "row": 732
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O133",
+      "value": 0.2,
+      "row": 733
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P133",
+      "value": 1,
+      "row": 734
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q133",
+      "value": 0.3,
+      "row": 735
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N134",
+      "value": 1.5,
+      "row": 736
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O134",
+      "value": 0.2,
+      "row": 737
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P134",
+      "value": 1,
+      "row": 738
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q134",
+      "value": 0.3,
+      "row": 739
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N135",
+      "value": 1.5,
+      "row": 740
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O135",
+      "value": 0.2,
+      "row": 741
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P135",
+      "value": 1,
+      "row": 742
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q135",
+      "value": 0.3,
+      "row": 743
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N136",
+      "value": 1.5,
+      "row": 744
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O136",
+      "value": 0.2,
+      "row": 745
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P136",
+      "value": 1,
+      "row": 746
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q136",
+      "value": 0.3,
+      "row": 747
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N137",
+      "value": 1.5,
+      "row": 748
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O137",
+      "value": 0.2,
+      "row": 749
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P137",
+      "value": 1,
+      "row": 750
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q137",
+      "value": 0.3,
+      "row": 751
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N138",
+      "value": 1.5,
+      "row": 752
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O138",
+      "value": 0.2,
+      "row": 753
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P138",
+      "value": 1,
+      "row": 754
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q138",
+      "value": 0.3,
+      "row": 755
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N139",
+      "value": 1.5,
+      "row": 756
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O139",
+      "value": 0.2,
+      "row": 757
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P139",
+      "value": 1,
+      "row": 758
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q139",
+      "value": 0.3,
+      "row": 759
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N140",
+      "value": 1.5,
+      "row": 760
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O140",
+      "value": 0.2,
+      "row": 761
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P140",
+      "value": 1,
+      "row": 762
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q140",
+      "value": 0.3,
+      "row": 763
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N141",
+      "value": 1.5,
+      "row": 764
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O141",
+      "value": 0.2,
+      "row": 765
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P141",
+      "value": 1,
+      "row": 766
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q141",
+      "value": 0.3,
+      "row": 767
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N142",
+      "value": 1.5,
+      "row": 768
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O142",
+      "value": 0.2,
+      "row": 769
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P142",
+      "value": 1,
+      "row": 770
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q142",
+      "value": 0.3,
+      "row": 771
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N143",
+      "value": 1.5,
+      "row": 772
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O143",
+      "value": 0.2,
+      "row": 773
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P143",
+      "value": 1,
+      "row": 774
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q143",
+      "value": 0.3,
+      "row": 775
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N144",
+      "value": 1.5,
+      "row": 776
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O144",
+      "value": 0.2,
+      "row": 777
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P144",
+      "value": 1,
+      "row": 778
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q144",
+      "value": 0.3,
+      "row": 779
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R5",
+      "value": 0.65,
+      "row": 780
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S5",
+      "value": 0.13,
+      "row": 781
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R6",
+      "value": 0.65,
+      "row": 782
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S6",
+      "value": 0.13,
+      "row": 783
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R7",
+      "value": 0.65,
+      "row": 784
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S7",
+      "value": 0.13,
+      "row": 785
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R8",
+      "value": 0.65,
+      "row": 786
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S8",
+      "value": 0.13,
+      "row": 787
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R9",
+      "value": 0.65,
+      "row": 788
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S9",
+      "value": 0.13,
+      "row": 789
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R10",
+      "value": 0.65,
+      "row": 790
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S10",
+      "value": 0.13,
+      "row": 791
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R11",
+      "value": 0.65,
+      "row": 792
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S11",
+      "value": 0.13,
+      "row": 793
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R12",
+      "value": 0.65,
+      "row": 794
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S12",
+      "value": 0.13,
+      "row": 795
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R13",
+      "value": 0.65,
+      "row": 796
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S13",
+      "value": 0.13,
+      "row": 797
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R14",
+      "value": 0.65,
+      "row": 798
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S14",
+      "value": 0.13,
+      "row": 799
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R15",
+      "value": 0.65,
+      "row": 800
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S15",
+      "value": 0.13,
+      "row": 801
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R16",
+      "value": 0.65,
+      "row": 802
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S16",
+      "value": 0.13,
+      "row": 803
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R17",
+      "value": 0.65,
+      "row": 804
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S17",
+      "value": 0.13,
+      "row": 805
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R18",
+      "value": 0.65,
+      "row": 806
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S18",
+      "value": 0.13,
+      "row": 807
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R19",
+      "value": 0.65,
+      "row": 808
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S19",
+      "value": 0.13,
+      "row": 809
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R20",
+      "value": 0.65,
+      "row": 810
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S20",
+      "value": 0.13,
+      "row": 811
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R21",
+      "value": 0.65,
+      "row": 812
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S21",
+      "value": 0.13,
+      "row": 813
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R22",
+      "value": 0.65,
+      "row": 814
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S22",
+      "value": 0.13,
+      "row": 815
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R23",
+      "value": 0.65,
+      "row": 816
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S23",
+      "value": 0.13,
+      "row": 817
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R24",
+      "value": 0.65,
+      "row": 818
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S24",
+      "value": 0.13,
+      "row": 819
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R25",
+      "value": 0.65,
+      "row": 820
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S25",
+      "value": 0.13,
+      "row": 821
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R26",
+      "value": 0.65,
+      "row": 822
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S26",
+      "value": 0.13,
+      "row": 823
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R27",
+      "value": 0.65,
+      "row": 824
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S27",
+      "value": 0.13,
+      "row": 825
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R28",
+      "value": 0.65,
+      "row": 826
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S28",
+      "value": 0.13,
+      "row": 827
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R29",
+      "value": 0.65,
+      "row": 828
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S29",
+      "value": 0.13,
+      "row": 829
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R30",
+      "value": 0.65,
+      "row": 830
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S30",
+      "value": 0.13,
+      "row": 831
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R31",
+      "value": 0.65,
+      "row": 832
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S31",
+      "value": 0.13,
+      "row": 833
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R32",
+      "value": 0.65,
+      "row": 834
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S32",
+      "value": 0.13,
+      "row": 835
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R33",
+      "value": 0.65,
+      "row": 836
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S33",
+      "value": 0.13,
+      "row": 837
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R34",
+      "value": 0.65,
+      "row": 838
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S34",
+      "value": 0.13,
+      "row": 839
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R35",
+      "value": 0.65,
+      "row": 840
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S35",
+      "value": 0.13,
+      "row": 841
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R36",
+      "value": 0.65,
+      "row": 842
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S36",
+      "value": 0.13,
+      "row": 843
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R37",
+      "value": 0.65,
+      "row": 844
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S37",
+      "value": 0.13,
+      "row": 845
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R38",
+      "value": 0.65,
+      "row": 846
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S38",
+      "value": 0.13,
+      "row": 847
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R39",
+      "value": 0.65,
+      "row": 848
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S39",
+      "value": 0.13,
+      "row": 849
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R40",
+      "value": 0.65,
+      "row": 850
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S40",
+      "value": 0.13,
+      "row": 851
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R41",
+      "value": 0.65,
+      "row": 852
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S41",
+      "value": 0.13,
+      "row": 853
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R42",
+      "value": 0.65,
+      "row": 854
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S42",
+      "value": 0.13,
+      "row": 855
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R43",
+      "value": 0.65,
+      "row": 856
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S43",
+      "value": 0.13,
+      "row": 857
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R44",
+      "value": 0.65,
+      "row": 858
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S44",
+      "value": 0.13,
+      "row": 859
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R45",
+      "value": 0.65,
+      "row": 860
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S45",
+      "value": 0.13,
+      "row": 861
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R46",
+      "value": 0.65,
+      "row": 862
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S46",
+      "value": 0.13,
+      "row": 863
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R47",
+      "value": 0.65,
+      "row": 864
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S47",
+      "value": 0.13,
+      "row": 865
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R48",
+      "value": 0.65,
+      "row": 866
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S48",
+      "value": 0.13,
+      "row": 867
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R49",
+      "value": 0.65,
+      "row": 868
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S49",
+      "value": 0.13,
+      "row": 869
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R50",
+      "value": 0.65,
+      "row": 870
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S50",
+      "value": 0.13,
+      "row": 871
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R51",
+      "value": 0.65,
+      "row": 872
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S51",
+      "value": 0.13,
+      "row": 873
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R52",
+      "value": 0.65,
+      "row": 874
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S52",
+      "value": 0.13,
+      "row": 875
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R53",
+      "value": 0.65,
+      "row": 876
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S53",
+      "value": 0.13,
+      "row": 877
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R54",
+      "value": 0.65,
+      "row": 878
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S54",
+      "value": 0.13,
+      "row": 879
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R55",
+      "value": 0.65,
+      "row": 880
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S55",
+      "value": 0.13,
+      "row": 881
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R56",
+      "value": 0.65,
+      "row": 882
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S56",
+      "value": 0.13,
+      "row": 883
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R57",
+      "value": 0.65,
+      "row": 884
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S57",
+      "value": 0.13,
+      "row": 885
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R58",
+      "value": 0.65,
+      "row": 886
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S58",
+      "value": 0.13,
+      "row": 887
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R59",
+      "value": 0.65,
+      "row": 888
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S59",
+      "value": 0.13,
+      "row": 889
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R60",
+      "value": 0.65,
+      "row": 890
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S60",
+      "value": 0.13,
+      "row": 891
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R61",
+      "value": 0.65,
+      "row": 892
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S61",
+      "value": 0.13,
+      "row": 893
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R62",
+      "value": 0.65,
+      "row": 894
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S62",
+      "value": 0.13,
+      "row": 895
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R63",
+      "value": 0.65,
+      "row": 896
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S63",
+      "value": 0.13,
+      "row": 897
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R64",
+      "value": 0.65,
+      "row": 898
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S64",
+      "value": 0.13,
+      "row": 899
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R65",
+      "value": 0.65,
+      "row": 900
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S65",
+      "value": 0.13,
+      "row": 901
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R66",
+      "value": 0.65,
+      "row": 902
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S66",
+      "value": 0.13,
+      "row": 903
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R67",
+      "value": 0.65,
+      "row": 904
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S67",
+      "value": 0.13,
+      "row": 905
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R68",
+      "value": 0.65,
+      "row": 906
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S68",
+      "value": 0.13,
+      "row": 907
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R69",
+      "value": 0.65,
+      "row": 908
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S69",
+      "value": 0.13,
+      "row": 909
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R70",
+      "value": 0.65,
+      "row": 910
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S70",
+      "value": 0.13,
+      "row": 911
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R71",
+      "value": 0.65,
+      "row": 912
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S71",
+      "value": 0.13,
+      "row": 913
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R72",
+      "value": 0.65,
+      "row": 914
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S72",
+      "value": 0.13,
+      "row": 915
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R73",
+      "value": 0.65,
+      "row": 916
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S73",
+      "value": 0.13,
+      "row": 917
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R74",
+      "value": 0.65,
+      "row": 918
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S74",
+      "value": 0.13,
+      "row": 919
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R75",
+      "value": 0.65,
+      "row": 920
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S75",
+      "value": 0.13,
+      "row": 921
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R76",
+      "value": 0.65,
+      "row": 922
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S76",
+      "value": 0.13,
+      "row": 923
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R77",
+      "value": 0.65,
+      "row": 924
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S77",
+      "value": 0.13,
+      "row": 925
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R78",
+      "value": 0.65,
+      "row": 926
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S78",
+      "value": 0.13,
+      "row": 927
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R79",
+      "value": 0.65,
+      "row": 928
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S79",
+      "value": 0.13,
+      "row": 929
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R80",
+      "value": 0.65,
+      "row": 930
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S80",
+      "value": 0.13,
+      "row": 931
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R81",
+      "value": 0.65,
+      "row": 932
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S81",
+      "value": 0.13,
+      "row": 933
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R82",
+      "value": 0.65,
+      "row": 934
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S82",
+      "value": 0.13,
+      "row": 935
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R83",
+      "value": 0.65,
+      "row": 936
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S83",
+      "value": 0.13,
+      "row": 937
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R84",
+      "value": 0.65,
+      "row": 938
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S84",
+      "value": 0.13,
+      "row": 939
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R85",
+      "value": 0.65,
+      "row": 940
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S85",
+      "value": 0.13,
+      "row": 941
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R86",
+      "value": 0.65,
+      "row": 942
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S86",
+      "value": 0.13,
+      "row": 943
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R87",
+      "value": 0.65,
+      "row": 944
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S87",
+      "value": 0.13,
+      "row": 945
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R88",
+      "value": 0.65,
+      "row": 946
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S88",
+      "value": 0.13,
+      "row": 947
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R89",
+      "value": 0.65,
+      "row": 948
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S89",
+      "value": 0.13,
+      "row": 949
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R90",
+      "value": 0.65,
+      "row": 950
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S90",
+      "value": 0.13,
+      "row": 951
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R91",
+      "value": 0.65,
+      "row": 952
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S91",
+      "value": 0.13,
+      "row": 953
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R92",
+      "value": 0.65,
+      "row": 954
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S92",
+      "value": 0.13,
+      "row": 955
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R93",
+      "value": 0.65,
+      "row": 956
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S93",
+      "value": 0.13,
+      "row": 957
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R94",
+      "value": 0.65,
+      "row": 958
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S94",
+      "value": 0.13,
+      "row": 959
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R95",
+      "value": 0.65,
+      "row": 960
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S95",
+      "value": 0.13,
+      "row": 961
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R96",
+      "value": 0.65,
+      "row": 962
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S96",
+      "value": 0.13,
+      "row": 963
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R97",
+      "value": 0.65,
+      "row": 964
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S97",
+      "value": 0.13,
+      "row": 965
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R98",
+      "value": 0.65,
+      "row": 966
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S98",
+      "value": 0.13,
+      "row": 967
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R99",
+      "value": 0.65,
+      "row": 968
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S99",
+      "value": 0.13,
+      "row": 969
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R100",
+      "value": 0.65,
+      "row": 970
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S100",
+      "value": 0.13,
+      "row": 971
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R101",
+      "value": 0.65,
+      "row": 972
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S101",
+      "value": 0.13,
+      "row": 973
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R102",
+      "value": 0.65,
+      "row": 974
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S102",
+      "value": 0.13,
+      "row": 975
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R103",
+      "value": 0.65,
+      "row": 976
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S103",
+      "value": 0.13,
+      "row": 977
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R104",
+      "value": 0.65,
+      "row": 978
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S104",
+      "value": 0.13,
+      "row": 979
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R105",
+      "value": 0.65,
+      "row": 980
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S105",
+      "value": 0.13,
+      "row": 981
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R106",
+      "value": 0.65,
+      "row": 982
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S106",
+      "value": 0.13,
+      "row": 983
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R107",
+      "value": 0.65,
+      "row": 984
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S107",
+      "value": 0.13,
+      "row": 985
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R108",
+      "value": 0.65,
+      "row": 986
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S108",
+      "value": 0.13,
+      "row": 987
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R109",
+      "value": 0.65,
+      "row": 988
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S109",
+      "value": 0.13,
+      "row": 989
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R110",
+      "value": 0.65,
+      "row": 990
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S110",
+      "value": 0.13,
+      "row": 991
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R111",
+      "value": 0.65,
+      "row": 992
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S111",
+      "value": 0.13,
+      "row": 993
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R112",
+      "value": 0.65,
+      "row": 994
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S112",
+      "value": 0.13,
+      "row": 995
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R113",
+      "value": 0.65,
+      "row": 996
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S113",
+      "value": 0.13,
+      "row": 997
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R114",
+      "value": 0.65,
+      "row": 998
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S114",
+      "value": 0.13,
+      "row": 999
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R115",
+      "value": 0.65,
+      "row": 1000
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S115",
+      "value": 0.13,
+      "row": 1001
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R116",
+      "value": 0.65,
+      "row": 1002
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S116",
+      "value": 0.13,
+      "row": 1003
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R117",
+      "value": 0.65,
+      "row": 1004
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S117",
+      "value": 0.13,
+      "row": 1005
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R118",
+      "value": 0.65,
+      "row": 1006
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S118",
+      "value": 0.13,
+      "row": 1007
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R119",
+      "value": 0.65,
+      "row": 1008
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S119",
+      "value": 0.13,
+      "row": 1009
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R120",
+      "value": 0.65,
+      "row": 1010
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S120",
+      "value": 0.13,
+      "row": 1011
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R121",
+      "value": 0.65,
+      "row": 1012
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S121",
+      "value": 0.13,
+      "row": 1013
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R122",
+      "value": 0.65,
+      "row": 1014
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S122",
+      "value": 0.13,
+      "row": 1015
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R123",
+      "value": 0.65,
+      "row": 1016
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S123",
+      "value": 0.13,
+      "row": 1017
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R124",
+      "value": 0.65,
+      "row": 1018
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S124",
+      "value": 0.13,
+      "row": 1019
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R125",
+      "value": 0.65,
+      "row": 1020
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S125",
+      "value": 0.13,
+      "row": 1021
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R126",
+      "value": 0.65,
+      "row": 1022
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S126",
+      "value": 0.13,
+      "row": 1023
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R127",
+      "value": 0.65,
+      "row": 1024
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S127",
+      "value": 0.13,
+      "row": 1025
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R128",
+      "value": 0.65,
+      "row": 1026
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S128",
+      "value": 0.13,
+      "row": 1027
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R129",
+      "value": 0.7892857142857144,
+      "row": 1028
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S129",
+      "value": 0.13,
+      "row": 1029
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R130",
+      "value": 0.325,
+      "row": 1030
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S130",
+      "value": 0.13,
+      "row": 1031
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R131",
+      "value": 0.325,
+      "row": 1032
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S131",
+      "value": 0.13,
+      "row": 1033
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R132",
+      "value": 0.7892857142857144,
+      "row": 1034
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S132",
+      "value": 0.13,
+      "row": 1035
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R133",
+      "value": 0.5385714285714287,
+      "row": 1036
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S133",
+      "value": 0.13,
+      "row": 1037
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R134",
+      "value": 0.9099999999999999,
+      "row": 1038
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S134",
+      "value": 0.13,
+      "row": 1039
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R135",
+      "value": 0.9099999999999999,
+      "row": 1040
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S135",
+      "value": 0.13,
+      "row": 1041
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R136",
+      "value": 0.5385714285714287,
+      "row": 1042
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S136",
+      "value": 0.13,
+      "row": 1043
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R137",
+      "value": 0.65,
+      "row": 1044
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S137",
+      "value": 0.13,
+      "row": 1045
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R138",
+      "value": 0.65,
+      "row": 1046
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S138",
+      "value": 0.13,
+      "row": 1047
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R139",
+      "value": 0.65,
+      "row": 1048
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S139",
+      "value": 0.13,
+      "row": 1049
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R140",
+      "value": 0.65,
+      "row": 1050
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S140",
+      "value": 0.13,
+      "row": 1051
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R141",
+      "value": 0.65,
+      "row": 1052
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S141",
+      "value": 0.13,
+      "row": 1053
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R142",
+      "value": 0.65,
+      "row": 1054
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S142",
+      "value": 0.13,
+      "row": 1055
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R143",
+      "value": 0.65,
+      "row": 1056
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S143",
+      "value": 0.13,
+      "row": 1057
+    },
+    {
+      "sheet": "Входы H",
+      "address": "R144",
+      "value": 0.65,
+      "row": 1058
+    },
+    {
+      "sheet": "Входы H",
+      "address": "S144",
+      "value": 0.13,
+      "row": 1059
     },
     {
       "sheet": "Исходные",
       "address": "B5",
       "value": 0.65,
-      "row": 644
+      "row": 1060
     },
     {
       "sheet": "Исходные",
       "address": "B6",
       "value": 0.13,
-      "row": 645
+      "row": 1061
     },
     {
       "sheet": "Исходные",
       "address": "B7",
       "value": 0.91,
-      "row": 646
+      "row": 1062
     },
     {
       "sheet": "Исходные",
       "address": "B8",
       "value": 0.2,
-      "row": 647
+      "row": 1063
     },
     {
       "sheet": "Исходные",
       "address": "B9",
       "value": 0.6,
-      "row": 648
+      "row": 1064
     },
     {
       "sheet": "Исходные",
       "address": "B10",
       "value": 0.8,
-      "row": 649
+      "row": 1065
     },
     {
       "sheet": "Исходные",
       "address": "B11",
       "value": 60,
-      "row": 650
+      "row": 1066
     },
     {
       "sheet": "Исходные",
       "address": "B12",
       "value": 24,
-      "row": 651
+      "row": 1067
     },
     {
       "sheet": "Исходные",
       "address": "B13",
       "value": 300,
-      "row": 652
+      "row": 1068
     },
     {
       "sheet": "Исходные",
       "address": "B14",
       "value": 420,
-      "row": 653
+      "row": 1069
     },
     {
       "sheet": "Исходные",
       "address": "B15",
       "value": 32,
-      "row": 654
+      "row": 1070
     },
     {
       "sheet": "Исходные",
       "address": "B16",
       "value": 40,
-      "row": 655
+      "row": 1071
     },
     {
       "sheet": "Исходные",
       "address": "B17",
       "value": -9,
-      "row": 656
+      "row": 1072
     },
     {
       "sheet": "Исходные",
       "address": "B18",
       "value": -18,
-      "row": 657
+      "row": 1073
     },
     {
       "sheet": "Исходные",
       "address": "B19",
       "value": -9,
-      "row": 658
+      "row": 1074
     },
     {
       "sheet": "Исходные",
       "address": "B20",
       "value": 6,
-      "row": 659
+      "row": 1075
     },
     {
       "sheet": "Исходные",
       "address": "B21",
       "value": 30,
-      "row": 660
+      "row": 1076
     },
     {
       "sheet": "Исходные",
       "address": "B22",
       "value": 0,
-      "row": 661
+      "row": 1077
     },
     {
       "sheet": "Исходные",
       "address": "B23",
       "value": 0,
-      "row": 662
+      "row": 1078
     },
     {
       "sheet": "Исходные",
       "address": "B24",
       "value": 0,
-      "row": 663
+      "row": 1079
     },
     {
       "sheet": "Масштаб",
       "address": "B6",
       "value": 44000000,
-      "row": 664
+      "row": 1080
     },
     {
       "sheet": "Масштаб",
       "address": "B7",
       "value": 84000000,
-      "row": 665
+      "row": 1081
     },
     {
       "sheet": "Масштаб",
       "address": "B8",
       "value": 807700000,
-      "row": 666
+      "row": 1082
     },
     {
       "sheet": "Масштаб",
       "address": "B9",
       "value": 90,
-      "row": 667
+      "row": 1083
     },
     {
       "sheet": "Масштаб",
       "address": "B10",
       "value": 67300000,
-      "row": 668
+      "row": 1084
     },
     {
       "sheet": "Масштаб",
       "address": "B11",
       "value": 42,
-      "row": 669
+      "row": 1085
     },
     {
       "sheet": "Масштаб",
       "address": "B12",
       "value": 1200000000,
-      "row": 670
+      "row": 1086
     },
     {
       "sheet": "Масштаб",
       "address": "B13",
       "value": 51,
-      "row": 671
+      "row": 1087
     },
     {
       "sheet": "Сценарии",
       "address": "D6",
       "value": 100000,
-      "row": 672
+      "row": 1088
     },
     {
       "sheet": "Сценарии",
       "address": "E6",
       "value": 400000,
-      "row": 673
+      "row": 1089
     },
     {
       "sheet": "Сценарии",
       "address": "F6",
       "value": 0.1,
-      "row": 674
+      "row": 1090
     },
     {
       "sheet": "Сценарии",
       "address": "G6",
       "value": 0.15,
-      "row": 675
+      "row": 1091
     },
     {
       "sheet": "Сценарии",
       "address": "H6",
       "value": 0.35,
-      "row": 676
+      "row": 1092
     },
     {
       "sheet": "Сценарии",
       "address": "I6",
       "value": 0.4,
-      "row": 677
+      "row": 1093
     },
     {
       "sheet": "Сценарии",
       "address": "J6",
       "value": 0.12,
-      "row": 678
+      "row": 1094
     },
     {
       "sheet": "Сценарии",
       "address": "K6",
       "value": 0.25,
-      "row": 679
+      "row": 1095
     },
     {
       "sheet": "Сценарии",
       "address": "L6",
       "value": 1,
-      "row": 680
+      "row": 1096
     },
     {
       "sheet": "Сценарии",
       "address": "M6",
       "value": 0.6,
-      "row": 681
+      "row": 1097
     },
     {
       "sheet": "Сценарии",
       "address": "N6",
       "value": 0.8,
-      "row": 682
+      "row": 1098
     },
     {
       "sheet": "Сценарии",
       "address": "O6",
       "value": 1,
-      "row": 683
+      "row": 1099
     },
     {
       "sheet": "Сценарии",
       "address": "P6",
       "value": 0.25,
-      "row": 684
+      "row": 1100
     },
     {
       "sheet": "Сценарии",
       "address": "Q6",
       "value": 0.25,
-      "row": 685
+      "row": 1101
     },
     {
       "sheet": "Сценарии",
       "address": "R6",
       "value": 0,
-      "row": 686
+      "row": 1102
     },
     {
       "sheet": "Сценарии",
       "address": "S6",
       "value": 0,
-      "row": 687
+      "row": 1103
     },
     {
       "sheet": "Сценарии",
       "address": "T6",
       "value": 0,
-      "row": 688
+      "row": 1104
     },
     {
       "sheet": "Сценарии",
       "address": "U6",
       "value": 1000,
-      "row": 689
+      "row": 1105
     },
     {
       "sheet": "Сценарии",
       "address": "V6",
       "value": 1,
-      "row": 690
+      "row": 1106
     },
     {
       "sheet": "Сценарии",
       "address": "X6",
       "value": 1.5,
-      "row": 691
+      "row": 1107
     },
     {
       "sheet": "Сценарии",
       "address": "Y6",
       "value": 0.2,
-      "row": 692
+      "row": 1108
     },
     {
       "sheet": "Сценарии",
       "address": "Z6",
       "value": 1,
-      "row": 693
+      "row": 1109
     },
     {
       "sheet": "Сценарии",
       "address": "AA6",
       "value": 0.3,
-      "row": 694
+      "row": 1110
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB6",
+      "value": 0.4,
+      "row": 1111
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC6",
+      "value": 1,
+      "row": 1112
     },
     {
       "sheet": "Сценарии",
       "address": "D7",
       "value": 100000,
-      "row": 695
+      "row": 1113
     },
     {
       "sheet": "Сценарии",
       "address": "E7",
       "value": 400000,
-      "row": 696
+      "row": 1114
     },
     {
       "sheet": "Сценарии",
       "address": "F7",
       "value": 0.2,
-      "row": 697
+      "row": 1115
     },
     {
       "sheet": "Сценарии",
       "address": "G7",
       "value": 0.2,
-      "row": 698
+      "row": 1116
     },
     {
       "sheet": "Сценарии",
       "address": "H7",
       "value": 0.3,
-      "row": 699
+      "row": 1117
     },
     {
       "sheet": "Сценарии",
       "address": "I7",
       "value": 0.3,
-      "row": 700
+      "row": 1118
     },
     {
       "sheet": "Сценарии",
       "address": "J7",
       "value": 0.18,
-      "row": 701
+      "row": 1119
     },
     {
       "sheet": "Сценарии",
       "address": "K7",
       "value": 0.3,
-      "row": 702
+      "row": 1120
     },
     {
       "sheet": "Сценарии",
       "address": "L7",
       "value": 1,
-      "row": 703
+      "row": 1121
     },
     {
       "sheet": "Сценарии",
       "address": "M7",
       "value": 0.5,
-      "row": 704
+      "row": 1122
     },
     {
       "sheet": "Сценарии",
       "address": "N7",
       "value": 0.8,
-      "row": 705
+      "row": 1123
     },
     {
       "sheet": "Сценарии",
       "address": "O7",
       "value": 1,
-      "row": 706
+      "row": 1124
     },
     {
       "sheet": "Сценарии",
       "address": "P7",
       "value": 0.25,
-      "row": 707
+      "row": 1125
     },
     {
       "sheet": "Сценарии",
       "address": "Q7",
       "value": 0.25,
-      "row": 708
+      "row": 1126
     },
     {
       "sheet": "Сценарии",
       "address": "R7",
       "value": 0,
-      "row": 709
+      "row": 1127
     },
     {
       "sheet": "Сценарии",
       "address": "S7",
       "value": 0,
-      "row": 710
+      "row": 1128
     },
     {
       "sheet": "Сценарии",
       "address": "T7",
       "value": 0,
-      "row": 711
+      "row": 1129
     },
     {
       "sheet": "Сценарии",
       "address": "U7",
       "value": 1000,
-      "row": 712
+      "row": 1130
     },
     {
       "sheet": "Сценарии",
       "address": "V7",
       "value": 1,
-      "row": 713
+      "row": 1131
     },
     {
       "sheet": "Сценарии",
       "address": "X7",
       "value": 1.5,
-      "row": 714
+      "row": 1132
     },
     {
       "sheet": "Сценарии",
       "address": "Y7",
       "value": 0.2,
-      "row": 715
+      "row": 1133
     },
     {
       "sheet": "Сценарии",
       "address": "Z7",
       "value": 1,
-      "row": 716
+      "row": 1134
     },
     {
       "sheet": "Сценарии",
       "address": "AA7",
       "value": 0.3,
-      "row": 717
+      "row": 1135
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB7",
+      "value": 0.4,
+      "row": 1136
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC7",
+      "value": 1,
+      "row": 1137
     },
     {
       "sheet": "Сценарии",
       "address": "D8",
       "value": 100000,
-      "row": 718
+      "row": 1138
     },
     {
       "sheet": "Сценарии",
       "address": "E8",
       "value": 400000,
-      "row": 719
+      "row": 1139
     },
     {
       "sheet": "Сценарии",
       "address": "F8",
       "value": 0.3,
-      "row": 720
+      "row": 1140
     },
     {
       "sheet": "Сценарии",
       "address": "G8",
       "value": 0.25,
-      "row": 721
+      "row": 1141
     },
     {
       "sheet": "Сценарии",
       "address": "H8",
       "value": 0.25,
-      "row": 722
+      "row": 1142
     },
     {
       "sheet": "Сценарии",
       "address": "I8",
       "value": 0.2,
-      "row": 723
+      "row": 1143
     },
     {
       "sheet": "Сценарии",
       "address": "J8",
       "value": 0.25,
-      "row": 724
+      "row": 1144
     },
     {
       "sheet": "Сценарии",
       "address": "K8",
       "value": 0.4,
-      "row": 725
+      "row": 1145
     },
     {
       "sheet": "Сценарии",
       "address": "L8",
       "value": 1,
-      "row": 726
+      "row": 1146
     },
     {
       "sheet": "Сценарии",
       "address": "M8",
       "value": 0.4,
-      "row": 727
+      "row": 1147
     },
     {
       "sheet": "Сценарии",
       "address": "N8",
       "value": 0.8,
-      "row": 728
+      "row": 1148
     },
     {
       "sheet": "Сценарии",
       "address": "O8",
       "value": 1,
-      "row": 729
+      "row": 1149
     },
     {
       "sheet": "Сценарии",
       "address": "P8",
       "value": 0.25,
-      "row": 730
+      "row": 1150
     },
     {
       "sheet": "Сценарии",
       "address": "Q8",
       "value": 0.25,
-      "row": 731
+      "row": 1151
     },
     {
       "sheet": "Сценарии",
       "address": "R8",
       "value": 0,
-      "row": 732
+      "row": 1152
     },
     {
       "sheet": "Сценарии",
       "address": "S8",
       "value": 0,
-      "row": 733
+      "row": 1153
     },
     {
       "sheet": "Сценарии",
       "address": "T8",
       "value": 0,
-      "row": 734
+      "row": 1154
     },
     {
       "sheet": "Сценарии",
       "address": "U8",
       "value": 1000,
-      "row": 735
+      "row": 1155
     },
     {
       "sheet": "Сценарии",
       "address": "V8",
       "value": 1,
-      "row": 736
+      "row": 1156
     },
     {
       "sheet": "Сценарии",
       "address": "X8",
       "value": 1.5,
-      "row": 737
+      "row": 1157
     },
     {
       "sheet": "Сценарии",
       "address": "Y8",
       "value": 0.2,
-      "row": 738
+      "row": 1158
     },
     {
       "sheet": "Сценарии",
       "address": "Z8",
       "value": 1,
-      "row": 739
+      "row": 1159
     },
     {
       "sheet": "Сценарии",
       "address": "AA8",
       "value": 0.3,
-      "row": 740
+      "row": 1160
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB8",
+      "value": 0.4,
+      "row": 1161
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC8",
+      "value": 1,
+      "row": 1162
     },
     {
       "sheet": "Сценарии",
       "address": "D9",
-      "value": 100000,
-      "row": 741
+      "value": 44000000,
+      "row": 1163
     },
     {
       "sheet": "Сценарии",
       "address": "E9",
-      "value": 400000,
-      "row": 742
+      "value": 84000000,
+      "row": 1164
     },
     {
       "sheet": "Сценарии",
       "address": "F9",
-      "value": 0.09195501187254174,
-      "row": 743
+      "value": 0.35600000000000004,
+      "row": 1165
     },
     {
       "sheet": "Сценарии",
       "address": "G9",
-      "value": 0.011889748318309626,
-      "row": 744
+      "value": 0.044000000000000004,
+      "row": 1166
     },
     {
       "sheet": "Сценарии",
       "address": "H9",
-      "value": 0.09983360222835361,
-      "row": 745
+      "value": 0.066,
+      "row": 1167
     },
     {
       "sheet": "Сценарии",
       "address": "I9",
-      "value": 0.796321637580795,
-      "row": 746
+      "value": 0.534,
+      "row": 1168
     },
     {
       "sheet": "Сценарии",
       "address": "J9",
-      "value": 0.20929092686797693,
-      "row": 747
+      "value": 0.15,
+      "row": 1169
     },
     {
       "sheet": "Сценарии",
       "address": "K9",
-      "value": 0.3,
-      "row": 748
+      "value": 0.21389999999999998,
+      "row": 1170
     },
     {
       "sheet": "Сценарии",
       "address": "L9",
-      "value": 1,
-      "row": 749
+      "value": 2,
+      "row": 1171
     },
     {
       "sheet": "Сценарии",
       "address": "M9",
-      "value": 0.32440286606219143,
-      "row": 750
+      "value": 0.49999999999999983,
+      "row": 1172
     },
     {
       "sheet": "Сценарии",
       "address": "N9",
       "value": 0.8,
-      "row": 751
+      "row": 1173
     },
     {
       "sheet": "Сценарии",
       "address": "O9",
       "value": 1,
-      "row": 752
+      "row": 1174
     },
     {
       "sheet": "Сценарии",
       "address": "P9",
       "value": 0.25,
-      "row": 753
+      "row": 1175
     },
     {
       "sheet": "Сценарии",
       "address": "Q9",
       "value": 0.25,
-      "row": 754
+      "row": 1176
     },
     {
       "sheet": "Сценарии",
       "address": "R9",
       "value": 0,
-      "row": 755
+      "row": 1177
     },
     {
       "sheet": "Сценарии",
       "address": "S9",
       "value": 0,
-      "row": 756
+      "row": 1178
     },
     {
       "sheet": "Сценарии",
       "address": "T9",
       "value": 0,
-      "row": 757
+      "row": 1179
     },
     {
       "sheet": "Сценарии",
       "address": "U9",
       "value": 1,
-      "row": 758
+      "row": 1180
     },
     {
       "sheet": "Сценарии",
       "address": "V9",
-      "value": 0,
-      "row": 759
+      "value": 1,
+      "row": 1181
     },
     {
       "sheet": "Сценарии",
       "address": "X9",
       "value": 1.5,
-      "row": 760
+      "row": 1182
     },
     {
       "sheet": "Сценарии",
       "address": "Y9",
       "value": 0.2,
-      "row": 761
+      "row": 1183
     },
     {
       "sheet": "Сценарии",
       "address": "Z9",
       "value": 1,
-      "row": 762
+      "row": 1184
     },
     {
       "sheet": "Сценарии",
       "address": "AA9",
       "value": 0.3,
-      "row": 763
+      "row": 1185
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB9",
+      "value": 0.4,
+      "row": 1186
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC9",
+      "value": 1,
+      "row": 1187
     },
     {
       "sheet": "Сценарии",
       "address": "D10",
-      "value": 100000,
-      "row": 764
+      "value": 44000000,
+      "row": 1188
     },
     {
       "sheet": "Сценарии",
       "address": "E10",
-      "value": 400000,
-      "row": 765
+      "value": 84000000,
+      "row": 1189
     },
     {
       "sheet": "Сценарии",
       "address": "F10",
-      "value": 0.09195501187254174,
-      "row": 766
+      "value": 0.32000000000000006,
+      "row": 1190
     },
     {
       "sheet": "Сценарии",
       "address": "G10",
-      "value": 0.011889748318309626,
-      "row": 767
+      "value": 0.08000000000000002,
+      "row": 1191
     },
     {
       "sheet": "Сценарии",
       "address": "H10",
-      "value": 0.09983360222835361,
-      "row": 768
+      "value": 0.12,
+      "row": 1192
     },
     {
       "sheet": "Сценарии",
       "address": "I10",
-      "value": 0.796321637580795,
-      "row": 769
+      "value": 0.48,
+      "row": 1193
     },
     {
       "sheet": "Сценарии",
       "address": "J10",
-      "value": 0.201,
-      "row": 770
+      "value": 0.15,
+      "row": 1194
     },
     {
       "sheet": "Сценарии",
       "address": "K10",
-      "value": 0.2917090731320231,
-      "row": 771
+      "value": 0.22199999999999998,
+      "row": 1195
     },
     {
       "sheet": "Сценарии",
       "address": "L10",
       "value": 2,
-      "row": 772
+      "row": 1196
     },
     {
       "sheet": "Сценарии",
       "address": "M10",
-      "value": 0.6652365721101067,
-      "row": 773
+      "value": 0.49999999999999983,
+      "row": 1197
     },
     {
       "sheet": "Сценарии",
       "address": "N10",
       "value": 0.8,
-      "row": 774
+      "row": 1198
     },
     {
       "sheet": "Сценарии",
       "address": "O10",
       "value": 1,
-      "row": 775
+      "row": 1199
     },
     {
       "sheet": "Сценарии",
       "address": "P10",
       "value": 0.25,
-      "row": 776
+      "row": 1200
     },
     {
       "sheet": "Сценарии",
       "address": "Q10",
       "value": 0.25,
-      "row": 777
+      "row": 1201
     },
     {
       "sheet": "Сценарии",
       "address": "R10",
       "value": 0,
-      "row": 778
+      "row": 1202
     },
     {
       "sheet": "Сценарии",
       "address": "S10",
       "value": 0,
-      "row": 779
+      "row": 1203
     },
     {
       "sheet": "Сценарии",
       "address": "T10",
       "value": 0,
-      "row": 780
+      "row": 1204
     },
     {
       "sheet": "Сценарии",
       "address": "U10",
       "value": 1,
-      "row": 781
+      "row": 1205
     },
     {
       "sheet": "Сценарии",
       "address": "V10",
       "value": 1,
-      "row": 782
+      "row": 1206
     },
     {
       "sheet": "Сценарии",
       "address": "X10",
       "value": 1.5,
-      "row": 783
+      "row": 1207
     },
     {
       "sheet": "Сценарии",
       "address": "Y10",
       "value": 0.2,
-      "row": 784
+      "row": 1208
     },
     {
       "sheet": "Сценарии",
       "address": "Z10",
       "value": 1,
-      "row": 785
+      "row": 1209
     },
     {
       "sheet": "Сценарии",
       "address": "AA10",
       "value": 0.3,
-      "row": 786
+      "row": 1210
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB10",
+      "value": 0.4,
+      "row": 1211
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC10",
+      "value": 1,
+      "row": 1212
     },
     {
       "sheet": "Сценарии",
       "address": "D11",
       "value": 44000000,
-      "row": 787
+      "row": 1213
     },
     {
       "sheet": "Сценарии",
       "address": "E11",
       "value": 84000000,
-      "row": 788
+      "row": 1214
     },
     {
       "sheet": "Сценарии",
       "address": "F11",
-      "value": 0.09195501187254174,
-      "row": 789
+      "value": 0.27999999999999997,
+      "row": 1215
     },
     {
       "sheet": "Сценарии",
       "address": "G11",
-      "value": 0.011889748318309626,
-      "row": 790
+      "value": 0.12,
+      "row": 1216
     },
     {
       "sheet": "Сценарии",
       "address": "H11",
-      "value": 0.09983360222835361,
-      "row": 791
+      "value": 0.18,
+      "row": 1217
     },
     {
       "sheet": "Сценарии",
       "address": "I11",
-      "value": 0.796321637580795,
-      "row": 792
+      "value": 0.42,
+      "row": 1218
     },
     {
       "sheet": "Сценарии",
       "address": "J11",
       "value": 0.15,
-      "row": 793
+      "row": 1219
     },
     {
       "sheet": "Сценарии",
       "address": "K11",
-      "value": 0.24070907313202305,
-      "row": 794
+      "value": 0.23099999999999998,
+      "row": 1220
     },
     {
       "sheet": "Сценарии",
       "address": "L11",
       "value": 2,
-      "row": 795
+      "row": 1221
     },
     {
       "sheet": "Сценарии",
       "address": "M11",
-      "value": 0.6652365721101067,
-      "row": 796
+      "value": 0.5,
+      "row": 1222
     },
     {
       "sheet": "Сценарии",
       "address": "N11",
       "value": 0.8,
-      "row": 797
+      "row": 1223
     },
     {
       "sheet": "Сценарии",
       "address": "O11",
       "value": 1,
-      "row": 798
+      "row": 1224
     },
     {
       "sheet": "Сценарии",
       "address": "P11",
       "value": 0.25,
-      "row": 799
+      "row": 1225
     },
     {
       "sheet": "Сценарии",
       "address": "Q11",
       "value": 0.25,
-      "row": 800
+      "row": 1226
     },
     {
       "sheet": "Сценарии",
       "address": "R11",
       "value": 0,
-      "row": 801
+      "row": 1227
     },
     {
       "sheet": "Сценарии",
       "address": "S11",
       "value": 0,
-      "row": 802
+      "row": 1228
     },
     {
       "sheet": "Сценарии",
       "address": "T11",
       "value": 0,
-      "row": 803
+      "row": 1229
     },
     {
       "sheet": "Сценарии",
       "address": "U11",
       "value": 1,
-      "row": 804
+      "row": 1230
     },
     {
       "sheet": "Сценарии",
       "address": "V11",
       "value": 1,
-      "row": 805
+      "row": 1231
     },
     {
       "sheet": "Сценарии",
       "address": "X11",
       "value": 1.5,
-      "row": 806
+      "row": 1232
     },
     {
       "sheet": "Сценарии",
       "address": "Y11",
       "value": 0.2,
-      "row": 807
+      "row": 1233
     },
     {
       "sheet": "Сценарии",
       "address": "Z11",
       "value": 1,
-      "row": 808
+      "row": 1234
     },
     {
       "sheet": "Сценарии",
       "address": "AA11",
       "value": 0.3,
-      "row": 809
+      "row": 1235
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB11",
+      "value": 0.4,
+      "row": 1236
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC11",
+      "value": 1,
+      "row": 1237
     },
     {
       "sheet": "Сценарии",
       "address": "D12",
       "value": 44000000,
-      "row": 810
+      "row": 1238
     },
     {
       "sheet": "Сценарии",
       "address": "E12",
       "value": 84000000,
-      "row": 811
+      "row": 1239
     },
     {
       "sheet": "Сценарии",
       "address": "F12",
-      "value": 0.09195501187254174,
-      "row": 812
+      "value": 0.24,
+      "row": 1240
     },
     {
       "sheet": "Сценарии",
       "address": "G12",
-      "value": 0.011889748318309626,
-      "row": 813
+      "value": 0.16000000000000003,
+      "row": 1241
     },
     {
       "sheet": "Сценарии",
       "address": "H12",
-      "value": 0.09983360222835361,
-      "row": 814
+      "value": 0.24,
+      "row": 1242
     },
     {
       "sheet": "Сценарии",
       "address": "I12",
-      "value": 0.796321637580795,
-      "row": 815
+      "value": 0.36,
+      "row": 1243
     },
     {
       "sheet": "Сценарии",
       "address": "J12",
-      "value": 0.12,
-      "row": 816
+      "value": 0.15,
+      "row": 1244
     },
     {
       "sheet": "Сценарии",
       "address": "K12",
-      "value": 0.21070907313202306,
-      "row": 817
+      "value": 0.24,
+      "row": 1245
     },
     {
       "sheet": "Сценарии",
       "address": "L12",
       "value": 2,
-      "row": 818
+      "row": 1246
     },
     {
       "sheet": "Сценарии",
       "address": "M12",
-      "value": 0.6652365721101067,
-      "row": 819
+      "value": 0.4999999999999999,
+      "row": 1247
     },
     {
       "sheet": "Сценарии",
       "address": "N12",
       "value": 0.8,
-      "row": 820
+      "row": 1248
     },
     {
       "sheet": "Сценарии",
       "address": "O12",
-      "value": 0.6,
-      "row": 821
+      "value": 1,
+      "row": 1249
     },
     {
       "sheet": "Сценарии",
       "address": "P12",
-      "value": 0.5,
-      "row": 822
+      "value": 0.25,
+      "row": 1250
     },
     {
       "sheet": "Сценарии",
       "address": "Q12",
-      "value": 0.5,
-      "row": 823
+      "value": 0.25,
+      "row": 1251
     },
     {
       "sheet": "Сценарии",
       "address": "R12",
-      "value": 0.001,
-      "row": 824
+      "value": 0,
+      "row": 1252
     },
     {
       "sheet": "Сценарии",
       "address": "S12",
-      "value": 0.002,
-      "row": 825
+      "value": 0,
+      "row": 1253
     },
     {
       "sheet": "Сценарии",
       "address": "T12",
-      "value": -0.005,
-      "row": 826
+      "value": 0,
+      "row": 1254
     },
     {
       "sheet": "Сценарии",
       "address": "U12",
       "value": 1,
-      "row": 827
+      "row": 1255
     },
     {
       "sheet": "Сценарии",
       "address": "V12",
       "value": 1,
-      "row": 828
+      "row": 1256
     },
     {
       "sheet": "Сценарии",
       "address": "X12",
       "value": 1.5,
-      "row": 829
+      "row": 1257
     },
     {
       "sheet": "Сценарии",
       "address": "Y12",
       "value": 0.2,
-      "row": 830
+      "row": 1258
     },
     {
       "sheet": "Сценарии",
       "address": "Z12",
       "value": 1,
-      "row": 831
+      "row": 1259
     },
     {
       "sheet": "Сценарии",
       "address": "AA12",
       "value": 0.3,
-      "row": 832
+      "row": 1260
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB12",
+      "value": 0.4,
+      "row": 1261
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC12",
+      "value": 1,
+      "row": 1262
     },
     {
       "sheet": "Сценарии",
       "address": "D13",
       "value": 44000000,
-      "row": 833
+      "row": 1263
     },
     {
       "sheet": "Сценарии",
       "address": "E13",
       "value": 84000000,
-      "row": 834
+      "row": 1264
     },
     {
       "sheet": "Сценарии",
       "address": "F13",
-      "value": 0.09195501187254174,
-      "row": 835
+      "value": 0.20400000000000001,
+      "row": 1265
     },
     {
       "sheet": "Сценарии",
       "address": "G13",
-      "value": 0.011889748318309626,
-      "row": 836
+      "value": 0.196,
+      "row": 1266
     },
     {
       "sheet": "Сценарии",
       "address": "H13",
-      "value": 0.09983360222835361,
-      "row": 837
+      "value": 0.294,
+      "row": 1267
     },
     {
       "sheet": "Сценарии",
       "address": "I13",
-      "value": 0.796321637580795,
-      "row": 838
+      "value": 0.306,
+      "row": 1268
     },
     {
       "sheet": "Сценарии",
       "address": "J13",
-      "value": 0.18,
-      "row": 839
+      "value": 0.15,
+      "row": 1269
     },
     {
       "sheet": "Сценарии",
       "address": "K13",
-      "value": 0.2707090731320231,
-      "row": 840
+      "value": 0.2481,
+      "row": 1270
     },
     {
       "sheet": "Сценарии",
       "address": "L13",
       "value": 2,
-      "row": 841
+      "row": 1271
     },
     {
       "sheet": "Сценарии",
       "address": "M13",
-      "value": 0.6652365721101067,
-      "row": 842
+      "value": 0.4999999999999999,
+      "row": 1272
     },
     {
       "sheet": "Сценарии",
       "address": "N13",
       "value": 0.8,
-      "row": 843
+      "row": 1273
     },
     {
       "sheet": "Сценарии",
       "address": "O13",
-      "value": 1.25,
-      "row": 844
+      "value": 1,
+      "row": 1274
     },
     {
       "sheet": "Сценарии",
       "address": "P13",
-      "value": 0,
-      "row": 845
+      "value": 0.25,
+      "row": 1275
     },
     {
       "sheet": "Сценарии",
       "address": "Q13",
-      "value": 0,
-      "row": 846
+      "value": 0.25,
+      "row": 1276
     },
     {
       "sheet": "Сценарии",
       "address": "R13",
       "value": 0,
-      "row": 847
+      "row": 1277
     },
     {
       "sheet": "Сценарии",
       "address": "S13",
       "value": 0,
-      "row": 848
+      "row": 1278
     },
     {
       "sheet": "Сценарии",
       "address": "T13",
       "value": 0,
-      "row": 849
+      "row": 1279
     },
     {
       "sheet": "Сценарии",
       "address": "U13",
       "value": 1,
-      "row": 850
+      "row": 1280
     },
     {
       "sheet": "Сценарии",
       "address": "V13",
       "value": 1,
-      "row": 851
+      "row": 1281
     },
     {
       "sheet": "Сценарии",
       "address": "X13",
       "value": 1.5,
-      "row": 852
+      "row": 1282
     },
     {
       "sheet": "Сценарии",
       "address": "Y13",
       "value": 0.2,
-      "row": 853
+      "row": 1283
     },
     {
       "sheet": "Сценарии",
       "address": "Z13",
       "value": 1,
-      "row": 854
+      "row": 1284
     },
     {
       "sheet": "Сценарии",
       "address": "AA13",
       "value": 0.3,
-      "row": 855
+      "row": 1285
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB13",
+      "value": 0.4,
+      "row": 1286
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC13",
+      "value": 1,
+      "row": 1287
     },
     {
       "sheet": "Сценарии",
       "address": "D14",
       "value": 44000000,
-      "row": 856
+      "row": 1288
     },
     {
       "sheet": "Сценарии",
       "address": "E14",
       "value": 84000000,
-      "row": 857
+      "row": 1289
     },
     {
       "sheet": "Сценарии",
       "address": "F14",
-      "value": 0.09195501187254174,
-      "row": 858
+      "value": 0.27999999999999997,
+      "row": 1290
     },
     {
       "sheet": "Сценарии",
       "address": "G14",
-      "value": 0.011889748318309626,
-      "row": 859
+      "value": 0.12,
+      "row": 1291
     },
     {
       "sheet": "Сценарии",
       "address": "H14",
-      "value": 0.09983360222835361,
-      "row": 860
+      "value": 0.18,
+      "row": 1292
     },
     {
       "sheet": "Сценарии",
       "address": "I14",
-      "value": 0.796321637580795,
-      "row": 861
+      "value": 0.42,
+      "row": 1293
     },
     {
       "sheet": "Сценарии",
       "address": "J14",
-      "value": 0.15,
-      "row": 862
+      "value": 0.12,
+      "row": 1294
     },
     {
       "sheet": "Сценарии",
       "address": "K14",
-      "value": 0.24070907313202305,
-      "row": 863
+      "value": 0.201,
+      "row": 1295
     },
     {
       "sheet": "Сценарии",
       "address": "L14",
       "value": 2,
-      "row": 864
+      "row": 1296
     },
     {
       "sheet": "Сценарии",
       "address": "M14",
-      "value": 0.6652365721101067,
-      "row": 865
+      "value": 0.5,
+      "row": 1297
     },
     {
       "sheet": "Сценарии",
       "address": "N14",
       "value": 0.8,
-      "row": 866
+      "row": 1298
     },
     {
       "sheet": "Сценарии",
       "address": "O14",
-      "value": 1,
-      "row": 867
+      "value": 0.6,
+      "row": 1299
     },
     {
       "sheet": "Сценарии",
       "address": "P14",
-      "value": 1,
-      "row": 868
+      "value": 0.5,
+      "row": 1300
     },
     {
       "sheet": "Сценарии",
       "address": "Q14",
-      "value": 0.25,
-      "row": 869
+      "value": 0.5,
+      "row": 1301
     },
     {
       "sheet": "Сценарии",
       "address": "R14",
-      "value": 0,
-      "row": 870
+      "value": 0.001,
+      "row": 1302
     },
     {
       "sheet": "Сценарии",
       "address": "S14",
-      "value": 0,
-      "row": 871
+      "value": 0.002,
+      "row": 1303
     },
     {
       "sheet": "Сценарии",
       "address": "T14",
-      "value": 0,
-      "row": 872
+      "value": -0.005,
+      "row": 1304
     },
     {
       "sheet": "Сценарии",
       "address": "U14",
       "value": 1,
-      "row": 873
+      "row": 1305
     },
     {
       "sheet": "Сценарии",
       "address": "V14",
       "value": 1,
-      "row": 874
+      "row": 1306
     },
     {
       "sheet": "Сценарии",
       "address": "X14",
       "value": 1.5,
-      "row": 875
+      "row": 1307
     },
     {
       "sheet": "Сценарии",
       "address": "Y14",
       "value": 0.2,
-      "row": 876
+      "row": 1308
     },
     {
       "sheet": "Сценарии",
       "address": "Z14",
       "value": 1,
-      "row": 877
+      "row": 1309
     },
     {
       "sheet": "Сценарии",
       "address": "AA14",
       "value": 0.3,
-      "row": 878
+      "row": 1310
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB14",
+      "value": 0.4,
+      "row": 1311
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC14",
+      "value": 1,
+      "row": 1312
     },
     {
       "sheet": "Сценарии",
       "address": "D15",
       "value": 44000000,
-      "row": 879
+      "row": 1313
     },
     {
       "sheet": "Сценарии",
       "address": "E15",
       "value": 84000000,
-      "row": 880
+      "row": 1314
     },
     {
       "sheet": "Сценарии",
       "address": "F15",
-      "value": 0.09195501187254174,
-      "row": 881
+      "value": 0.27999999999999997,
+      "row": 1315
     },
     {
       "sheet": "Сценарии",
       "address": "G15",
-      "value": 0.011889748318309626,
-      "row": 882
+      "value": 0.12,
+      "row": 1316
     },
     {
       "sheet": "Сценарии",
       "address": "H15",
-      "value": 0.09983360222835361,
-      "row": 883
+      "value": 0.18,
+      "row": 1317
     },
     {
       "sheet": "Сценарии",
       "address": "I15",
-      "value": 0.796321637580795,
-      "row": 884
+      "value": 0.42,
+      "row": 1318
     },
     {
       "sheet": "Сценарии",
       "address": "J15",
-      "value": 0.15,
-      "row": 885
+      "value": 0.18,
+      "row": 1319
     },
     {
       "sheet": "Сценарии",
       "address": "K15",
-      "value": 0.24070907313202305,
-      "row": 886
+      "value": 0.261,
+      "row": 1320
     },
     {
       "sheet": "Сценарии",
       "address": "L15",
       "value": 2,
-      "row": 887
+      "row": 1321
     },
     {
       "sheet": "Сценарии",
       "address": "M15",
-      "value": 0.6652365721101067,
-      "row": 888
+      "value": 0.5,
+      "row": 1322
     },
     {
       "sheet": "Сценарии",
       "address": "N15",
       "value": 0.8,
-      "row": 889
+      "row": 1323
     },
     {
       "sheet": "Сценарии",
       "address": "O15",
-      "value": 1,
-      "row": 890
+      "value": 1.25,
+      "row": 1324
     },
     {
       "sheet": "Сценарии",
       "address": "P15",
-      "value": 0.25,
-      "row": 891
+      "value": 0,
+      "row": 1325
     },
     {
       "sheet": "Сценарии",
       "address": "Q15",
-      "value": 0.25,
-      "row": 892
+      "value": 0,
+      "row": 1326
     },
     {
       "sheet": "Сценарии",
       "address": "R15",
-      "value": 0.005,
-      "row": 893
+      "value": 0,
+      "row": 1327
     },
     {
       "sheet": "Сценарии",
       "address": "S15",
       "value": 0,
-      "row": 894
+      "row": 1328
     },
     {
       "sheet": "Сценарии",
       "address": "T15",
       "value": 0,
-      "row": 895
+      "row": 1329
     },
     {
       "sheet": "Сценарии",
       "address": "U15",
       "value": 1,
-      "row": 896
+      "row": 1330
     },
     {
       "sheet": "Сценарии",
       "address": "V15",
       "value": 1,
-      "row": 897
+      "row": 1331
     },
     {
       "sheet": "Сценарии",
       "address": "X15",
       "value": 1.5,
-      "row": 898
+      "row": 1332
     },
     {
       "sheet": "Сценарии",
       "address": "Y15",
       "value": 0.2,
-      "row": 899
+      "row": 1333
     },
     {
       "sheet": "Сценарии",
       "address": "Z15",
       "value": 1,
-      "row": 900
+      "row": 1334
     },
     {
       "sheet": "Сценарии",
       "address": "AA15",
       "value": 0.3,
-      "row": 901
+      "row": 1335
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB15",
+      "value": 0.4,
+      "row": 1336
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC15",
+      "value": 1,
+      "row": 1337
     },
     {
       "sheet": "Сценарии",
       "address": "D16",
       "value": 44000000,
-      "row": 902
+      "row": 1338
     },
     {
       "sheet": "Сценарии",
       "address": "E16",
       "value": 84000000,
-      "row": 903
+      "row": 1339
     },
     {
       "sheet": "Сценарии",
       "address": "F16",
-      "value": 0.09195501187254174,
-      "row": 904
+      "value": 0.27999999999999997,
+      "row": 1340
     },
     {
       "sheet": "Сценарии",
       "address": "G16",
-      "value": 0.011889748318309626,
-      "row": 905
+      "value": 0.12,
+      "row": 1341
     },
     {
       "sheet": "Сценарии",
       "address": "H16",
-      "value": 0.09983360222835361,
-      "row": 906
+      "value": 0.18,
+      "row": 1342
     },
     {
       "sheet": "Сценарии",
       "address": "I16",
-      "value": 0.796321637580795,
-      "row": 907
+      "value": 0.42,
+      "row": 1343
     },
     {
       "sheet": "Сценарии",
       "address": "J16",
       "value": 0.15,
-      "row": 908
+      "row": 1344
     },
     {
       "sheet": "Сценарии",
       "address": "K16",
-      "value": 0.24070907313202305,
-      "row": 909
+      "value": 0.23099999999999998,
+      "row": 1345
     },
     {
       "sheet": "Сценарии",
       "address": "L16",
       "value": 2,
-      "row": 910
+      "row": 1346
     },
     {
       "sheet": "Сценарии",
       "address": "M16",
-      "value": 0.6652365721101067,
-      "row": 911
+      "value": 0.5,
+      "row": 1347
     },
     {
       "sheet": "Сценарии",
       "address": "N16",
       "value": 0.8,
-      "row": 912
+      "row": 1348
     },
     {
       "sheet": "Сценарии",
       "address": "O16",
       "value": 1,
-      "row": 913
+      "row": 1349
     },
     {
       "sheet": "Сценарии",
       "address": "P16",
-      "value": 0.25,
-      "row": 914
+      "value": 1,
+      "row": 1350
     },
     {
       "sheet": "Сценарии",
       "address": "Q16",
       "value": 0.25,
-      "row": 915
+      "row": 1351
     },
     {
       "sheet": "Сценарии",
       "address": "R16",
       "value": 0,
-      "row": 916
+      "row": 1352
     },
     {
       "sheet": "Сценарии",
       "address": "S16",
-      "value": 0.03,
-      "row": 917
+      "value": 0,
+      "row": 1353
     },
     {
       "sheet": "Сценарии",
       "address": "T16",
       "value": 0,
-      "row": 918
+      "row": 1354
     },
     {
       "sheet": "Сценарии",
       "address": "U16",
       "value": 1,
-      "row": 919
+      "row": 1355
     },
     {
       "sheet": "Сценарии",
       "address": "V16",
       "value": 1,
-      "row": 920
+      "row": 1356
     },
     {
       "sheet": "Сценарии",
       "address": "X16",
       "value": 1.5,
-      "row": 921
+      "row": 1357
     },
     {
       "sheet": "Сценарии",
       "address": "Y16",
       "value": 0.2,
-      "row": 922
+      "row": 1358
     },
     {
       "sheet": "Сценарии",
       "address": "Z16",
       "value": 1,
-      "row": 923
+      "row": 1359
     },
     {
       "sheet": "Сценарии",
       "address": "AA16",
       "value": 0.3,
-      "row": 924
+      "row": 1360
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB16",
+      "value": 0.4,
+      "row": 1361
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC16",
+      "value": 1,
+      "row": 1362
     },
     {
       "sheet": "Сценарии",
       "address": "D17",
       "value": 44000000,
-      "row": 925
+      "row": 1363
     },
     {
       "sheet": "Сценарии",
       "address": "E17",
       "value": 84000000,
-      "row": 926
+      "row": 1364
     },
     {
       "sheet": "Сценарии",
       "address": "F17",
-      "value": 0.09195501187254174,
-      "row": 927
+      "value": 0.27999999999999997,
+      "row": 1365
     },
     {
       "sheet": "Сценарии",
       "address": "G17",
-      "value": 0.011889748318309626,
-      "row": 928
+      "value": 0.12,
+      "row": 1366
     },
     {
       "sheet": "Сценарии",
       "address": "H17",
-      "value": 0.09983360222835361,
-      "row": 929
+      "value": 0.18,
+      "row": 1367
     },
     {
       "sheet": "Сценарии",
       "address": "I17",
-      "value": 0.796321637580795,
-      "row": 930
+      "value": 0.42,
+      "row": 1368
     },
     {
       "sheet": "Сценарии",
       "address": "J17",
       "value": 0.15,
-      "row": 931
+      "row": 1369
     },
     {
       "sheet": "Сценарии",
       "address": "K17",
-      "value": 0.24070907313202305,
-      "row": 932
+      "value": 0.23099999999999998,
+      "row": 1370
     },
     {
       "sheet": "Сценарии",
       "address": "L17",
       "value": 2,
-      "row": 933
+      "row": 1371
     },
     {
       "sheet": "Сценарии",
       "address": "M17",
-      "value": 0.6652365721101067,
-      "row": 934
+      "value": 0.5,
+      "row": 1372
     },
     {
       "sheet": "Сценарии",
       "address": "N17",
       "value": 0.8,
-      "row": 935
+      "row": 1373
     },
     {
       "sheet": "Сценарии",
       "address": "O17",
       "value": 1,
-      "row": 936
+      "row": 1374
     },
     {
       "sheet": "Сценарии",
       "address": "P17",
       "value": 0.25,
-      "row": 937
+      "row": 1375
     },
     {
       "sheet": "Сценарии",
       "address": "Q17",
       "value": 0.25,
-      "row": 938
+      "row": 1376
     },
     {
       "sheet": "Сценарии",
       "address": "R17",
-      "value": 0,
-      "row": 939
+      "value": 0.005,
+      "row": 1377
     },
     {
       "sheet": "Сценарии",
       "address": "S17",
       "value": 0,
-      "row": 940
+      "row": 1378
     },
     {
       "sheet": "Сценарии",
       "address": "T17",
-      "value": -0.1,
-      "row": 941
+      "value": 0,
+      "row": 1379
     },
     {
       "sheet": "Сценарии",
       "address": "U17",
       "value": 1,
-      "row": 942
+      "row": 1380
     },
     {
       "sheet": "Сценарии",
       "address": "V17",
       "value": 1,
-      "row": 943
+      "row": 1381
     },
     {
       "sheet": "Сценарии",
       "address": "X17",
       "value": 1.5,
-      "row": 944
+      "row": 1382
     },
     {
       "sheet": "Сценарии",
       "address": "Y17",
       "value": 0.2,
-      "row": 945
+      "row": 1383
     },
     {
       "sheet": "Сценарии",
       "address": "Z17",
       "value": 1,
-      "row": 946
+      "row": 1384
     },
     {
       "sheet": "Сценарии",
       "address": "AA17",
       "value": 0.3,
-      "row": 947
+      "row": 1385
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB17",
+      "value": 0.4,
+      "row": 1386
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC17",
+      "value": 1,
+      "row": 1387
     },
     {
       "sheet": "Сценарии",
       "address": "D18",
       "value": 44000000,
-      "row": 948
+      "row": 1388
     },
     {
       "sheet": "Сценарии",
       "address": "E18",
       "value": 84000000,
-      "row": 949
+      "row": 1389
     },
     {
       "sheet": "Сценарии",
       "address": "F18",
-      "value": 0.09195501187254174,
-      "row": 950
+      "value": 0.27999999999999997,
+      "row": 1390
     },
     {
       "sheet": "Сценарии",
       "address": "G18",
-      "value": 0.011889748318309626,
-      "row": 951
+      "value": 0.12,
+      "row": 1391
     },
     {
       "sheet": "Сценарии",
       "address": "H18",
-      "value": 0.09983360222835361,
-      "row": 952
+      "value": 0.18,
+      "row": 1392
     },
     {
       "sheet": "Сценарии",
       "address": "I18",
-      "value": 0.796321637580795,
-      "row": 953
+      "value": 0.42,
+      "row": 1393
     },
     {
       "sheet": "Сценарии",
       "address": "J18",
       "value": 0.15,
-      "row": 954
+      "row": 1394
     },
     {
       "sheet": "Сценарии",
       "address": "K18",
-      "value": 0.24070907313202305,
-      "row": 955
+      "value": 0.23099999999999998,
+      "row": 1395
     },
     {
       "sheet": "Сценарии",
       "address": "L18",
       "value": 2,
-      "row": 956
+      "row": 1396
     },
     {
       "sheet": "Сценарии",
       "address": "M18",
-      "value": 0.6652365721101067,
-      "row": 957
+      "value": 0.5,
+      "row": 1397
     },
     {
       "sheet": "Сценарии",
       "address": "N18",
       "value": 0.8,
-      "row": 958
+      "row": 1398
     },
     {
       "sheet": "Сценарии",
       "address": "O18",
       "value": 1,
-      "row": 959
+      "row": 1399
     },
     {
       "sheet": "Сценарии",
       "address": "P18",
       "value": 0.25,
-      "row": 960
+      "row": 1400
     },
     {
       "sheet": "Сценарии",
       "address": "Q18",
       "value": 0.25,
-      "row": 961
+      "row": 1401
     },
     {
       "sheet": "Сценарии",
       "address": "R18",
-      "value": 0.005,
-      "row": 962
+      "value": 0,
+      "row": 1402
     },
     {
       "sheet": "Сценарии",
       "address": "S18",
-      "value": 0.01,
-      "row": 963
+      "value": 0.03,
+      "row": 1403
     },
     {
       "sheet": "Сценарии",
       "address": "T18",
-      "value": -0.02,
-      "row": 964
+      "value": 0,
+      "row": 1404
     },
     {
       "sheet": "Сценарии",
       "address": "U18",
       "value": 1,
-      "row": 965
+      "row": 1405
     },
     {
       "sheet": "Сценарии",
       "address": "V18",
       "value": 1,
-      "row": 966
+      "row": 1406
     },
     {
       "sheet": "Сценарии",
       "address": "X18",
       "value": 1.5,
-      "row": 967
+      "row": 1407
     },
     {
       "sheet": "Сценарии",
       "address": "Y18",
       "value": 0.2,
-      "row": 968
+      "row": 1408
     },
     {
       "sheet": "Сценарии",
       "address": "Z18",
       "value": 1,
-      "row": 969
+      "row": 1409
     },
     {
       "sheet": "Сценарии",
       "address": "AA18",
       "value": 0.3,
-      "row": 970
+      "row": 1410
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB18",
+      "value": 0.4,
+      "row": 1411
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC18",
+      "value": 1,
+      "row": 1412
     },
     {
       "sheet": "Сценарии",
       "address": "D19",
       "value": 44000000,
-      "row": 971
+      "row": 1413
     },
     {
       "sheet": "Сценарии",
       "address": "E19",
       "value": 84000000,
-      "row": 972
+      "row": 1414
     },
     {
       "sheet": "Сценарии",
       "address": "F19",
-      "value": 0.2264244519703561,
-      "row": 973
+      "value": 0.27999999999999997,
+      "row": 1415
     },
     {
       "sheet": "Сценарии",
       "address": "G19",
-      "value": 0.060867778549262445,
-      "row": 974
+      "value": 0.12,
+      "row": 1416
     },
     {
       "sheet": "Сценарии",
       "address": "H19",
-      "value": 0.19107808347014252,
-      "row": 975
+      "value": 0.18,
+      "row": 1417
     },
     {
       "sheet": "Сценарии",
       "address": "I19",
-      "value": 0.521629686010239,
-      "row": 976
+      "value": 0.42,
+      "row": 1418
     },
     {
       "sheet": "Сценарии",
       "address": "J19",
       "value": 0.15,
-      "row": 977
+      "row": 1419
     },
     {
       "sheet": "Сценарии",
       "address": "K19",
-      "value": 0.2368188268349808,
-      "row": 978
+      "value": 0.23099999999999998,
+      "row": 1420
     },
     {
       "sheet": "Сценарии",
       "address": "L19",
       "value": 2,
-      "row": 979
+      "row": 1421
     },
     {
       "sheet": "Сценарии",
       "address": "M19",
-      "value": 0.5790701142226595,
-      "row": 980
+      "value": 0.5,
+      "row": 1422
     },
     {
       "sheet": "Сценарии",
       "address": "N19",
       "value": 0.8,
-      "row": 981
+      "row": 1423
     },
     {
       "sheet": "Сценарии",
       "address": "O19",
       "value": 1,
-      "row": 982
+      "row": 1424
     },
     {
       "sheet": "Сценарии",
       "address": "P19",
       "value": 0.25,
-      "row": 983
+      "row": 1425
     },
     {
       "sheet": "Сценарии",
       "address": "Q19",
       "value": 0.25,
-      "row": 984
+      "row": 1426
     },
     {
       "sheet": "Сценарии",
       "address": "R19",
       "value": 0,
-      "row": 985
+      "row": 1427
     },
     {
       "sheet": "Сценарии",
       "address": "S19",
       "value": 0,
-      "row": 986
+      "row": 1428
     },
     {
       "sheet": "Сценарии",
       "address": "T19",
-      "value": 0,
-      "row": 987
+      "value": -0.1,
+      "row": 1429
     },
     {
       "sheet": "Сценарии",
       "address": "U19",
       "value": 1,
-      "row": 988
+      "row": 1430
     },
     {
       "sheet": "Сценарии",
       "address": "V19",
       "value": 1,
-      "row": 989
+      "row": 1431
     },
     {
       "sheet": "Сценарии",
       "address": "X19",
       "value": 1.5,
-      "row": 990
+      "row": 1432
     },
     {
       "sheet": "Сценарии",
       "address": "Y19",
       "value": 0.2,
-      "row": 991
+      "row": 1433
     },
     {
       "sheet": "Сценарии",
       "address": "Z19",
       "value": 1,
-      "row": 992
+      "row": 1434
     },
     {
       "sheet": "Сценарии",
       "address": "AA19",
       "value": 0.3,
-      "row": 993
+      "row": 1435
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB19",
+      "value": 0.4,
+      "row": 1436
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC19",
+      "value": 1,
+      "row": 1437
     },
     {
       "sheet": "Сценарии",
       "address": "D20",
       "value": 44000000,
-      "row": 994
+      "row": 1438
     },
     {
       "sheet": "Сценарии",
       "address": "E20",
       "value": 84000000,
-      "row": 995
+      "row": 1439
     },
     {
       "sheet": "Сценарии",
       "address": "F20",
-      "value": 0.050384921365919225,
-      "row": 996
+      "value": 0.27999999999999997,
+      "row": 1440
     },
     {
       "sheet": "Сценарии",
       "address": "G20",
-      "value": 0.004076947835715602,
-      "row": 997
+      "value": 0.12,
+      "row": 1441
     },
     {
       "sheet": "Сценарии",
       "address": "H20",
-      "value": 0.04813187124618166,
-      "row": 998
+      "value": 0.18,
+      "row": 1442
     },
     {
       "sheet": "Сценарии",
       "address": "I20",
-      "value": 0.8974062595521836,
-      "row": 999
+      "value": 0.42,
+      "row": 1443
     },
     {
       "sheet": "Сценарии",
       "address": "J20",
       "value": 0.15,
-      "row": 1000
+      "row": 1444
     },
     {
       "sheet": "Сценарии",
       "address": "K20",
-      "value": 0.2397972254892236,
-      "row": 1001
+      "value": 0.23099999999999998,
+      "row": 1445
     },
     {
       "sheet": "Сценарии",
       "address": "L20",
       "value": 2,
-      "row": 1002
+      "row": 1446
     },
     {
       "sheet": "Сценарии",
       "address": "M20",
-      "value": 0.6827203576161492,
-      "row": 1003
+      "value": 0.5,
+      "row": 1447
     },
     {
       "sheet": "Сценарии",
       "address": "N20",
       "value": 0.8,
-      "row": 1004
+      "row": 1448
     },
     {
       "sheet": "Сценарии",
       "address": "O20",
       "value": 1,
-      "row": 1005
+      "row": 1449
     },
     {
       "sheet": "Сценарии",
       "address": "P20",
       "value": 0.25,
-      "row": 1006
+      "row": 1450
     },
     {
       "sheet": "Сценарии",
       "address": "Q20",
       "value": 0.25,
-      "row": 1007
+      "row": 1451
     },
     {
       "sheet": "Сценарии",
       "address": "R20",
-      "value": 0,
-      "row": 1008
+      "value": 0.005,
+      "row": 1452
     },
     {
       "sheet": "Сценарии",
       "address": "S20",
-      "value": 0,
-      "row": 1009
+      "value": 0.01,
+      "row": 1453
     },
     {
       "sheet": "Сценарии",
       "address": "T20",
-      "value": 0,
-      "row": 1010
+      "value": -0.02,
+      "row": 1454
     },
     {
       "sheet": "Сценарии",
       "address": "U20",
       "value": 1,
-      "row": 1011
+      "row": 1455
     },
     {
       "sheet": "Сценарии",
       "address": "V20",
       "value": 1,
-      "row": 1012
+      "row": 1456
     },
     {
       "sheet": "Сценарии",
       "address": "X20",
       "value": 1.5,
-      "row": 1013
+      "row": 1457
     },
     {
       "sheet": "Сценарии",
       "address": "Y20",
       "value": 0.2,
-      "row": 1014
+      "row": 1458
     },
     {
       "sheet": "Сценарии",
       "address": "Z20",
       "value": 1,
-      "row": 1015
+      "row": 1459
     },
     {
       "sheet": "Сценарии",
       "address": "AA20",
       "value": 0.3,
-      "row": 1016
+      "row": 1460
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB20",
+      "value": 0.4,
+      "row": 1461
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC20",
+      "value": 1,
+      "row": 1462
     },
     {
       "sheet": "Сценарии",
       "address": "D21",
       "value": 44000000,
-      "row": 1017
+      "row": 1463
     },
     {
       "sheet": "Сценарии",
       "address": "E21",
       "value": 84000000,
-      "row": 1018
+      "row": 1464
     },
     {
       "sheet": "Сценарии",
       "address": "F21",
-      "value": 0.01018326022222807,
-      "row": 1019
+      "value": 0.27999999999999997,
+      "row": 1465
     },
     {
       "sheet": "Сценарии",
       "address": "G21",
-      "value": 0.00039069063172448415,
-      "row": 1020
+      "value": 0.12,
+      "row": 1466
     },
     {
       "sheet": "Сценарии",
       "address": "H21",
-      "value": 0.010031437437879178,
-      "row": 1021
+      "value": 0.18,
+      "row": 1467
     },
     {
       "sheet": "Сценарии",
       "address": "I21",
-      "value": 0.9793946117081682,
-      "row": 1022
+      "value": 0.42,
+      "row": 1468
     },
     {
       "sheet": "Сценарии",
       "address": "J21",
-      "value": 0.15,
-      "row": 1023
+      "value": 0.1,
+      "row": 1469
     },
     {
       "sheet": "Сценарии",
       "address": "K21",
-      "value": 0.2399863359494086,
-      "row": 1024
+      "value": 0.181,
+      "row": 1470
     },
     {
       "sheet": "Сценарии",
       "address": "L21",
       "value": 2,
-      "row": 1025
+      "row": 1471
     },
     {
       "sheet": "Сценарии",
       "address": "M21",
-      "value": 0.6967939137453238,
-      "row": 1026
+      "value": 0.5,
+      "row": 1472
     },
     {
       "sheet": "Сценарии",
       "address": "N21",
       "value": 0.8,
-      "row": 1027
+      "row": 1473
     },
     {
       "sheet": "Сценарии",
       "address": "O21",
       "value": 1,
-      "row": 1028
+      "row": 1474
     },
     {
       "sheet": "Сценарии",
       "address": "P21",
       "value": 0.25,
-      "row": 1029
+      "row": 1475
     },
     {
       "sheet": "Сценарии",
       "address": "Q21",
       "value": 0.25,
-      "row": 1030
+      "row": 1476
     },
     {
       "sheet": "Сценарии",
       "address": "R21",
       "value": 0,
-      "row": 1031
+      "row": 1477
     },
     {
       "sheet": "Сценарии",
       "address": "S21",
       "value": 0,
-      "row": 1032
+      "row": 1478
     },
     {
       "sheet": "Сценарии",
       "address": "T21",
       "value": 0,
-      "row": 1033
+      "row": 1479
     },
     {
       "sheet": "Сценарии",
       "address": "U21",
       "value": 1,
-      "row": 1034
+      "row": 1480
     },
     {
       "sheet": "Сценарии",
       "address": "V21",
       "value": 1,
-      "row": 1035
+      "row": 1481
     },
     {
       "sheet": "Сценарии",
       "address": "X21",
       "value": 1.5,
-      "row": 1036
+      "row": 1482
     },
     {
       "sheet": "Сценарии",
       "address": "Y21",
       "value": 0.2,
-      "row": 1037
+      "row": 1483
     },
     {
       "sheet": "Сценарии",
       "address": "Z21",
       "value": 1,
-      "row": 1038
+      "row": 1484
     },
     {
       "sheet": "Сценарии",
       "address": "AA21",
       "value": 0.3,
-      "row": 1039
+      "row": 1485
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB21",
+      "value": 0.4,
+      "row": 1486
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC21",
+      "value": 1,
+      "row": 1487
     },
     {
       "sheet": "Сценарии",
       "address": "D22",
       "value": 44000000,
-      "row": 1040
+      "row": 1488
     },
     {
       "sheet": "Сценарии",
       "address": "E22",
       "value": 84000000,
-      "row": 1041
+      "row": 1489
     },
     {
       "sheet": "Сценарии",
       "address": "F22",
-      "value": 0.09195501187254174,
-      "row": 1042
+      "value": 0.27999999999999997,
+      "row": 1490
     },
     {
       "sheet": "Сценарии",
       "address": "G22",
-      "value": 0.011889748318309626,
-      "row": 1043
+      "value": 0.12,
+      "row": 1491
     },
     {
       "sheet": "Сценарии",
       "address": "H22",
-      "value": 0.09983360222835361,
-      "row": 1044
+      "value": 0.18,
+      "row": 1492
     },
     {
       "sheet": "Сценарии",
       "address": "I22",
-      "value": 0.796321637580795,
-      "row": 1045
+      "value": 0.42,
+      "row": 1493
     },
     {
       "sheet": "Сценарии",
       "address": "J22",
-      "value": 0.1,
-      "row": 1046
+      "value": 0.12,
+      "row": 1494
     },
     {
       "sheet": "Сценарии",
       "address": "K22",
-      "value": 0.19070907313202307,
-      "row": 1047
+      "value": 0.201,
+      "row": 1495
     },
     {
       "sheet": "Сценарии",
       "address": "L22",
       "value": 2,
-      "row": 1048
+      "row": 1496
     },
     {
       "sheet": "Сценарии",
       "address": "M22",
-      "value": 0.6652365721101067,
-      "row": 1049
+      "value": 0.5,
+      "row": 1497
     },
     {
       "sheet": "Сценарии",
       "address": "N22",
       "value": 0.8,
-      "row": 1050
+      "row": 1498
     },
     {
       "sheet": "Сценарии",
       "address": "O22",
       "value": 1,
-      "row": 1051
+      "row": 1499
     },
     {
       "sheet": "Сценарии",
       "address": "P22",
       "value": 0.25,
-      "row": 1052
+      "row": 1500
     },
     {
       "sheet": "Сценарии",
       "address": "Q22",
       "value": 0.25,
-      "row": 1053
+      "row": 1501
     },
     {
       "sheet": "Сценарии",
       "address": "R22",
       "value": 0,
-      "row": 1054
+      "row": 1502
     },
     {
       "sheet": "Сценарии",
       "address": "S22",
       "value": 0,
-      "row": 1055
+      "row": 1503
     },
     {
       "sheet": "Сценарии",
       "address": "T22",
       "value": 0,
-      "row": 1056
+      "row": 1504
     },
     {
       "sheet": "Сценарии",
       "address": "U22",
       "value": 1,
-      "row": 1057
+      "row": 1505
     },
     {
       "sheet": "Сценарии",
       "address": "V22",
       "value": 1,
-      "row": 1058
+      "row": 1506
     },
     {
       "sheet": "Сценарии",
       "address": "X22",
       "value": 1.5,
-      "row": 1059
+      "row": 1507
     },
     {
       "sheet": "Сценарии",
       "address": "Y22",
       "value": 0.2,
-      "row": 1060
+      "row": 1508
     },
     {
       "sheet": "Сценарии",
       "address": "Z22",
       "value": 1,
-      "row": 1061
+      "row": 1509
     },
     {
       "sheet": "Сценарии",
       "address": "AA22",
       "value": 0.3,
-      "row": 1062
+      "row": 1510
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB22",
+      "value": 0.4,
+      "row": 1511
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC22",
+      "value": 1,
+      "row": 1512
     },
     {
       "sheet": "Сценарии",
       "address": "D23",
       "value": 44000000,
-      "row": 1063
+      "row": 1513
     },
     {
       "sheet": "Сценарии",
       "address": "E23",
       "value": 84000000,
-      "row": 1064
+      "row": 1514
     },
     {
       "sheet": "Сценарии",
       "address": "F23",
-      "value": 0.09195501187254174,
-      "row": 1065
+      "value": 0.27999999999999997,
+      "row": 1515
     },
     {
       "sheet": "Сценарии",
       "address": "G23",
-      "value": 0.011889748318309626,
-      "row": 1066
+      "value": 0.12,
+      "row": 1516
     },
     {
       "sheet": "Сценарии",
       "address": "H23",
-      "value": 0.09983360222835361,
-      "row": 1067
+      "value": 0.18,
+      "row": 1517
     },
     {
       "sheet": "Сценарии",
       "address": "I23",
-      "value": 0.796321637580795,
-      "row": 1068
+      "value": 0.42,
+      "row": 1518
     },
     {
       "sheet": "Сценарии",
       "address": "J23",
-      "value": 0.12,
-      "row": 1069
+      "value": 0.18,
+      "row": 1519
     },
     {
       "sheet": "Сценарии",
       "address": "K23",
-      "value": 0.21070907313202306,
-      "row": 1070
+      "value": 0.261,
+      "row": 1520
     },
     {
       "sheet": "Сценарии",
       "address": "L23",
       "value": 2,
-      "row": 1071
+      "row": 1521
     },
     {
       "sheet": "Сценарии",
       "address": "M23",
-      "value": 0.6652365721101067,
-      "row": 1072
+      "value": 0.5,
+      "row": 1522
     },
     {
       "sheet": "Сценарии",
       "address": "N23",
       "value": 0.8,
-      "row": 1073
+      "row": 1523
     },
     {
       "sheet": "Сценарии",
       "address": "O23",
       "value": 1,
-      "row": 1074
+      "row": 1524
     },
     {
       "sheet": "Сценарии",
       "address": "P23",
       "value": 0.25,
-      "row": 1075
+      "row": 1525
     },
     {
       "sheet": "Сценарии",
       "address": "Q23",
       "value": 0.25,
-      "row": 1076
+      "row": 1526
     },
     {
       "sheet": "Сценарии",
       "address": "R23",
       "value": 0,
-      "row": 1077
+      "row": 1527
     },
     {
       "sheet": "Сценарии",
       "address": "S23",
       "value": 0,
-      "row": 1078
+      "row": 1528
     },
     {
       "sheet": "Сценарии",
       "address": "T23",
       "value": 0,
-      "row": 1079
+      "row": 1529
     },
     {
       "sheet": "Сценарии",
       "address": "U23",
       "value": 1,
-      "row": 1080
+      "row": 1530
     },
     {
       "sheet": "Сценарии",
       "address": "V23",
       "value": 1,
-      "row": 1081
+      "row": 1531
     },
     {
       "sheet": "Сценарии",
       "address": "X23",
       "value": 1.5,
-      "row": 1082
+      "row": 1532
     },
     {
       "sheet": "Сценарии",
       "address": "Y23",
       "value": 0.2,
-      "row": 1083
+      "row": 1533
     },
     {
       "sheet": "Сценарии",
       "address": "Z23",
       "value": 1,
-      "row": 1084
+      "row": 1534
     },
     {
       "sheet": "Сценарии",
       "address": "AA23",
       "value": 0.3,
-      "row": 1085
+      "row": 1535
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB23",
+      "value": 0.4,
+      "row": 1536
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC23",
+      "value": 1,
+      "row": 1537
     },
     {
       "sheet": "Сценарии",
       "address": "D24",
       "value": 44000000,
-      "row": 1086
+      "row": 1538
     },
     {
       "sheet": "Сценарии",
       "address": "E24",
       "value": 84000000,
-      "row": 1087
+      "row": 1539
     },
     {
       "sheet": "Сценарии",
       "address": "F24",
-      "value": 0.09195501187254174,
-      "row": 1088
+      "value": 0.27999999999999997,
+      "row": 1540
     },
     {
       "sheet": "Сценарии",
       "address": "G24",
-      "value": 0.011889748318309626,
-      "row": 1089
+      "value": 0.12,
+      "row": 1541
     },
     {
       "sheet": "Сценарии",
       "address": "H24",
-      "value": 0.09983360222835361,
-      "row": 1090
+      "value": 0.18,
+      "row": 1542
     },
     {
       "sheet": "Сценарии",
       "address": "I24",
-      "value": 0.796321637580795,
-      "row": 1091
+      "value": 0.42,
+      "row": 1543
     },
     {
       "sheet": "Сценарии",
       "address": "J24",
-      "value": 0.18,
-      "row": 1092
+      "value": 0.201,
+      "row": 1544
     },
     {
       "sheet": "Сценарии",
       "address": "K24",
-      "value": 0.2707090731320231,
-      "row": 1093
+      "value": 0.28200000000000003,
+      "row": 1545
     },
     {
       "sheet": "Сценарии",
       "address": "L24",
       "value": 2,
-      "row": 1094
+      "row": 1546
     },
     {
       "sheet": "Сценарии",
       "address": "M24",
-      "value": 0.6652365721101067,
-      "row": 1095
+      "value": 0.5,
+      "row": 1547
     },
     {
       "sheet": "Сценарии",
       "address": "N24",
       "value": 0.8,
-      "row": 1096
+      "row": 1548
     },
     {
       "sheet": "Сценарии",
       "address": "O24",
       "value": 1,
-      "row": 1097
+      "row": 1549
     },
     {
       "sheet": "Сценарии",
       "address": "P24",
       "value": 0.25,
-      "row": 1098
+      "row": 1550
     },
     {
       "sheet": "Сценарии",
       "address": "Q24",
       "value": 0.25,
-      "row": 1099
+      "row": 1551
     },
     {
       "sheet": "Сценарии",
       "address": "R24",
       "value": 0,
-      "row": 1100
+      "row": 1552
     },
     {
       "sheet": "Сценарии",
       "address": "S24",
       "value": 0,
-      "row": 1101
+      "row": 1553
     },
     {
       "sheet": "Сценарии",
       "address": "T24",
       "value": 0,
-      "row": 1102
+      "row": 1554
     },
     {
       "sheet": "Сценарии",
       "address": "U24",
       "value": 1,
-      "row": 1103
+      "row": 1555
     },
     {
       "sheet": "Сценарии",
       "address": "V24",
       "value": 1,
-      "row": 1104
+      "row": 1556
     },
     {
       "sheet": "Сценарии",
       "address": "X24",
       "value": 1.5,
-      "row": 1105
+      "row": 1557
     },
     {
       "sheet": "Сценарии",
       "address": "Y24",
       "value": 0.2,
-      "row": 1106
+      "row": 1558
     },
     {
       "sheet": "Сценарии",
       "address": "Z24",
       "value": 1,
-      "row": 1107
+      "row": 1559
     },
     {
       "sheet": "Сценарии",
       "address": "AA24",
       "value": 0.3,
-      "row": 1108
+      "row": 1560
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB24",
+      "value": 0.4,
+      "row": 1561
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC24",
+      "value": 1,
+      "row": 1562
     },
     {
       "sheet": "Сценарии",
       "address": "D25",
       "value": 44000000,
-      "row": 1109
+      "row": 1563
     },
     {
       "sheet": "Сценарии",
       "address": "E25",
       "value": 84000000,
-      "row": 1110
+      "row": 1564
     },
     {
       "sheet": "Сценарии",
       "address": "F25",
-      "value": 0.09195501187254174,
-      "row": 1111
+      "value": 0.27999999999999997,
+      "row": 1565
     },
     {
       "sheet": "Сценарии",
       "address": "G25",
-      "value": 0.011889748318309626,
-      "row": 1112
+      "value": 0.12,
+      "row": 1566
     },
     {
       "sheet": "Сценарии",
       "address": "H25",
-      "value": 0.09983360222835361,
-      "row": 1113
+      "value": 0.18,
+      "row": 1567
     },
     {
       "sheet": "Сценарии",
       "address": "I25",
-      "value": 0.796321637580795,
-      "row": 1114
+      "value": 0.42,
+      "row": 1568
     },
     {
       "sheet": "Сценарии",
       "address": "J25",
-      "value": 0.201,
-      "row": 1115
+      "value": 0.15,
+      "row": 1569
     },
     {
       "sheet": "Сценарии",
       "address": "K25",
-      "value": 0.2917090731320231,
-      "row": 1116
+      "value": 0.23099999999999998,
+      "row": 1570
     },
     {
       "sheet": "Сценарии",
       "address": "L25",
       "value": 2,
-      "row": 1117
+      "row": 1571
     },
     {
       "sheet": "Сценарии",
       "address": "M25",
-      "value": 0.6652365721101067,
-      "row": 1118
+      "value": 0.5,
+      "row": 1572
     },
     {
       "sheet": "Сценарии",
       "address": "N25",
-      "value": 0.8,
-      "row": 1119
+      "value": 0,
+      "row": 1573
     },
     {
       "sheet": "Сценарии",
       "address": "O25",
       "value": 1,
-      "row": 1120
+      "row": 1574
     },
     {
       "sheet": "Сценарии",
       "address": "P25",
       "value": 0.25,
-      "row": 1121
+      "row": 1575
     },
     {
       "sheet": "Сценарии",
       "address": "Q25",
       "value": 0.25,
-      "row": 1122
+      "row": 1576
     },
     {
       "sheet": "Сценарии",
       "address": "R25",
       "value": 0,
-      "row": 1123
+      "row": 1577
     },
     {
       "sheet": "Сценарии",
       "address": "S25",
       "value": 0,
-      "row": 1124
+      "row": 1578
     },
     {
       "sheet": "Сценарии",
       "address": "T25",
       "value": 0,
-      "row": 1125
+      "row": 1579
     },
     {
       "sheet": "Сценарии",
       "address": "U25",
       "value": 1,
-      "row": 1126
+      "row": 1580
     },
     {
       "sheet": "Сценарии",
       "address": "V25",
       "value": 1,
-      "row": 1127
+      "row": 1581
     },
     {
       "sheet": "Сценарии",
       "address": "X25",
       "value": 1.5,
-      "row": 1128
+      "row": 1582
     },
     {
       "sheet": "Сценарии",
       "address": "Y25",
       "value": 0.2,
-      "row": 1129
+      "row": 1583
     },
     {
       "sheet": "Сценарии",
       "address": "Z25",
       "value": 1,
-      "row": 1130
+      "row": 1584
     },
     {
       "sheet": "Сценарии",
       "address": "AA25",
       "value": 0.3,
-      "row": 1131
+      "row": 1585
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB25",
+      "value": 0.4,
+      "row": 1586
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC25",
+      "value": 1,
+      "row": 1587
     },
     {
       "sheet": "Сценарии",
       "address": "D26",
       "value": 44000000,
-      "row": 1132
+      "row": 1588
     },
     {
       "sheet": "Сценарии",
       "address": "E26",
       "value": 84000000,
-      "row": 1133
+      "row": 1589
     },
     {
       "sheet": "Сценарии",
       "address": "F26",
-      "value": 0.09195501187254174,
-      "row": 1134
+      "value": 0.27999999999999997,
+      "row": 1590
     },
     {
       "sheet": "Сценарии",
       "address": "G26",
-      "value": 0.011889748318309626,
-      "row": 1135
+      "value": 0.12,
+      "row": 1591
     },
     {
       "sheet": "Сценарии",
       "address": "H26",
-      "value": 0.09983360222835361,
-      "row": 1136
+      "value": 0.18,
+      "row": 1592
     },
     {
       "sheet": "Сценарии",
       "address": "I26",
-      "value": 0.796321637580795,
-      "row": 1137
+      "value": 0.42,
+      "row": 1593
     },
     {
       "sheet": "Сценарии",
       "address": "J26",
       "value": 0.15,
-      "row": 1138
+      "row": 1594
     },
     {
       "sheet": "Сценарии",
       "address": "K26",
-      "value": 0.24070907313202305,
-      "row": 1139
+      "value": 0.23099999999999998,
+      "row": 1595
     },
     {
       "sheet": "Сценарии",
       "address": "L26",
       "value": 2,
-      "row": 1140
+      "row": 1596
     },
     {
       "sheet": "Сценарии",
       "address": "M26",
-      "value": 0.6652365721101067,
-      "row": 1141
+      "value": 0.5,
+      "row": 1597
     },
     {
       "sheet": "Сценарии",
       "address": "N26",
-      "value": 0,
-      "row": 1142
+      "value": 0.5,
+      "row": 1598
     },
     {
       "sheet": "Сценарии",
       "address": "O26",
       "value": 1,
-      "row": 1143
+      "row": 1599
     },
     {
       "sheet": "Сценарии",
       "address": "P26",
       "value": 0.25,
-      "row": 1144
+      "row": 1600
     },
     {
       "sheet": "Сценарии",
       "address": "Q26",
       "value": 0.25,
-      "row": 1145
+      "row": 1601
     },
     {
       "sheet": "Сценарии",
       "address": "R26",
       "value": 0,
-      "row": 1146
+      "row": 1602
     },
     {
       "sheet": "Сценарии",
       "address": "S26",
       "value": 0,
-      "row": 1147
+      "row": 1603
     },
     {
       "sheet": "Сценарии",
       "address": "T26",
       "value": 0,
-      "row": 1148
+      "row": 1604
     },
     {
       "sheet": "Сценарии",
       "address": "U26",
       "value": 1,
-      "row": 1149
+      "row": 1605
     },
     {
       "sheet": "Сценарии",
       "address": "V26",
       "value": 1,
-      "row": 1150
+      "row": 1606
     },
     {
       "sheet": "Сценарии",
       "address": "X26",
       "value": 1.5,
-      "row": 1151
+      "row": 1607
     },
     {
       "sheet": "Сценарии",
       "address": "Y26",
       "value": 0.2,
-      "row": 1152
+      "row": 1608
     },
     {
       "sheet": "Сценарии",
       "address": "Z26",
       "value": 1,
-      "row": 1153
+      "row": 1609
     },
     {
       "sheet": "Сценарии",
       "address": "AA26",
       "value": 0.3,
-      "row": 1154
+      "row": 1610
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB26",
+      "value": 0.4,
+      "row": 1611
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC26",
+      "value": 1,
+      "row": 1612
     },
     {
       "sheet": "Сценарии",
       "address": "D27",
       "value": 44000000,
-      "row": 1155
+      "row": 1613
     },
     {
       "sheet": "Сценарии",
       "address": "E27",
       "value": 84000000,
-      "row": 1156
+      "row": 1614
     },
     {
       "sheet": "Сценарии",
       "address": "F27",
-      "value": 0.09195501187254174,
-      "row": 1157
+      "value": 0.27999999999999997,
+      "row": 1615
     },
     {
       "sheet": "Сценарии",
       "address": "G27",
-      "value": 0.011889748318309626,
-      "row": 1158
+      "value": 0.12,
+      "row": 1616
     },
     {
       "sheet": "Сценарии",
       "address": "H27",
-      "value": 0.09983360222835361,
-      "row": 1159
+      "value": 0.18,
+      "row": 1617
     },
     {
       "sheet": "Сценарии",
       "address": "I27",
-      "value": 0.796321637580795,
-      "row": 1160
+      "value": 0.42,
+      "row": 1618
     },
     {
       "sheet": "Сценарии",
       "address": "J27",
       "value": 0.15,
-      "row": 1161
+      "row": 1619
     },
     {
       "sheet": "Сценарии",
       "address": "K27",
-      "value": 0.24070907313202305,
-      "row": 1162
+      "value": 0.23099999999999998,
+      "row": 1620
     },
     {
       "sheet": "Сценарии",
       "address": "L27",
       "value": 2,
-      "row": 1163
+      "row": 1621
     },
     {
       "sheet": "Сценарии",
       "address": "M27",
-      "value": 0.6652365721101067,
-      "row": 1164
+      "value": 0.5,
+      "row": 1622
     },
     {
       "sheet": "Сценарии",
       "address": "N27",
-      "value": 0.5,
-      "row": 1165
+      "value": 1,
+      "row": 1623
     },
     {
       "sheet": "Сценарии",
       "address": "O27",
       "value": 1,
-      "row": 1166
+      "row": 1624
     },
     {
       "sheet": "Сценарии",
       "address": "P27",
       "value": 0.25,
-      "row": 1167
+      "row": 1625
     },
     {
       "sheet": "Сценарии",
       "address": "Q27",
       "value": 0.25,
-      "row": 1168
+      "row": 1626
     },
     {
       "sheet": "Сценарии",
       "address": "R27",
       "value": 0,
-      "row": 1169
+      "row": 1627
     },
     {
       "sheet": "Сценарии",
       "address": "S27",
       "value": 0,
-      "row": 1170
+      "row": 1628
     },
     {
       "sheet": "Сценарии",
       "address": "T27",
       "value": 0,
-      "row": 1171
+      "row": 1629
     },
     {
       "sheet": "Сценарии",
       "address": "U27",
       "value": 1,
-      "row": 1172
+      "row": 1630
     },
     {
       "sheet": "Сценарии",
       "address": "V27",
       "value": 1,
-      "row": 1173
+      "row": 1631
     },
     {
       "sheet": "Сценарии",
       "address": "X27",
       "value": 1.5,
-      "row": 1174
+      "row": 1632
     },
     {
       "sheet": "Сценарии",
       "address": "Y27",
       "value": 0.2,
-      "row": 1175
+      "row": 1633
     },
     {
       "sheet": "Сценарии",
       "address": "Z27",
       "value": 1,
-      "row": 1176
+      "row": 1634
     },
     {
       "sheet": "Сценарии",
       "address": "AA27",
       "value": 0.3,
-      "row": 1177
+      "row": 1635
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB27",
+      "value": 0.4,
+      "row": 1636
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC27",
+      "value": 1,
+      "row": 1637
     },
     {
       "sheet": "Сценарии",
       "address": "D28",
       "value": 44000000,
-      "row": 1178
+      "row": 1638
     },
     {
       "sheet": "Сценарии",
       "address": "E28",
       "value": 84000000,
-      "row": 1179
+      "row": 1639
     },
     {
       "sheet": "Сценарии",
       "address": "F28",
-      "value": 0.09195501187254174,
-      "row": 1180
+      "value": 0.27999999999999997,
+      "row": 1640
     },
     {
       "sheet": "Сценарии",
       "address": "G28",
-      "value": 0.011889748318309626,
-      "row": 1181
+      "value": 0.12,
+      "row": 1641
     },
     {
       "sheet": "Сценарии",
       "address": "H28",
-      "value": 0.09983360222835361,
-      "row": 1182
+      "value": 0.18,
+      "row": 1642
     },
     {
       "sheet": "Сценарии",
       "address": "I28",
-      "value": 0.796321637580795,
-      "row": 1183
+      "value": 0.42,
+      "row": 1643
     },
     {
       "sheet": "Сценарии",
       "address": "J28",
       "value": 0.15,
-      "row": 1184
+      "row": 1644
     },
     {
       "sheet": "Сценарии",
       "address": "K28",
-      "value": 0.24070907313202305,
-      "row": 1185
+      "value": 0.23099999999999998,
+      "row": 1645
     },
     {
       "sheet": "Сценарии",
       "address": "L28",
       "value": 2,
-      "row": 1186
+      "row": 1646
     },
     {
       "sheet": "Сценарии",
       "address": "M28",
-      "value": 0.6652365721101067,
-      "row": 1187
+      "value": 0.5,
+      "row": 1647
     },
     {
       "sheet": "Сценарии",
       "address": "N28",
-      "value": 1,
-      "row": 1188
+      "value": 0.8,
+      "row": 1648
     },
     {
       "sheet": "Сценарии",
       "address": "O28",
-      "value": 1,
-      "row": 1189
+      "value": 0.5,
+      "row": 1649
     },
     {
       "sheet": "Сценарии",
       "address": "P28",
       "value": 0.25,
-      "row": 1190
+      "row": 1650
     },
     {
       "sheet": "Сценарии",
       "address": "Q28",
       "value": 0.25,
-      "row": 1191
+      "row": 1651
     },
     {
       "sheet": "Сценарии",
       "address": "R28",
       "value": 0,
-      "row": 1192
+      "row": 1652
     },
     {
       "sheet": "Сценарии",
       "address": "S28",
       "value": 0,
-      "row": 1193
+      "row": 1653
     },
     {
       "sheet": "Сценарии",
       "address": "T28",
       "value": 0,
-      "row": 1194
+      "row": 1654
     },
     {
       "sheet": "Сценарии",
       "address": "U28",
       "value": 1,
-      "row": 1195
+      "row": 1655
     },
     {
       "sheet": "Сценарии",
       "address": "V28",
       "value": 1,
-      "row": 1196
+      "row": 1656
     },
     {
       "sheet": "Сценарии",
       "address": "X28",
       "value": 1.5,
-      "row": 1197
+      "row": 1657
     },
     {
       "sheet": "Сценарии",
       "address": "Y28",
       "value": 0.2,
-      "row": 1198
+      "row": 1658
     },
     {
       "sheet": "Сценарии",
       "address": "Z28",
       "value": 1,
-      "row": 1199
+      "row": 1659
     },
     {
       "sheet": "Сценарии",
       "address": "AA28",
       "value": 0.3,
-      "row": 1200
+      "row": 1660
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB28",
+      "value": 0.4,
+      "row": 1661
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC28",
+      "value": 1,
+      "row": 1662
     },
     {
       "sheet": "Сценарии",
       "address": "D29",
       "value": 44000000,
-      "row": 1201
+      "row": 1663
     },
     {
       "sheet": "Сценарии",
       "address": "E29",
       "value": 84000000,
-      "row": 1202
+      "row": 1664
     },
     {
       "sheet": "Сценарии",
       "address": "F29",
-      "value": 0.09195501187254174,
-      "row": 1203
+      "value": 0.27999999999999997,
+      "row": 1665
     },
     {
       "sheet": "Сценарии",
       "address": "G29",
-      "value": 0.011889748318309626,
-      "row": 1204
+      "value": 0.12,
+      "row": 1666
     },
     {
       "sheet": "Сценарии",
       "address": "H29",
-      "value": 0.09983360222835361,
-      "row": 1205
+      "value": 0.18,
+      "row": 1667
     },
     {
       "sheet": "Сценарии",
       "address": "I29",
-      "value": 0.796321637580795,
-      "row": 1206
+      "value": 0.42,
+      "row": 1668
     },
     {
       "sheet": "Сценарии",
       "address": "J29",
       "value": 0.15,
-      "row": 1207
+      "row": 1669
     },
     {
       "sheet": "Сценарии",
       "address": "K29",
-      "value": 0.24070907313202305,
-      "row": 1208
+      "value": 0.23099999999999998,
+      "row": 1670
     },
     {
       "sheet": "Сценарии",
       "address": "L29",
       "value": 2,
-      "row": 1209
+      "row": 1671
     },
     {
       "sheet": "Сценарии",
       "address": "M29",
-      "value": 0.6652365721101067,
-      "row": 1210
+      "value": 0.5,
+      "row": 1672
     },
     {
       "sheet": "Сценарии",
       "address": "N29",
       "value": 0.8,
-      "row": 1211
+      "row": 1673
     },
     {
       "sheet": "Сценарии",
       "address": "O29",
-      "value": 0.5,
-      "row": 1212
+      "value": 1.5,
+      "row": 1674
     },
     {
       "sheet": "Сценарии",
       "address": "P29",
       "value": 0.25,
-      "row": 1213
+      "row": 1675
     },
     {
       "sheet": "Сценарии",
       "address": "Q29",
       "value": 0.25,
-      "row": 1214
+      "row": 1676
     },
     {
       "sheet": "Сценарии",
       "address": "R29",
       "value": 0,
-      "row": 1215
+      "row": 1677
     },
     {
       "sheet": "Сценарии",
       "address": "S29",
       "value": 0,
-      "row": 1216
+      "row": 1678
     },
     {
       "sheet": "Сценарии",
       "address": "T29",
       "value": 0,
-      "row": 1217
+      "row": 1679
     },
     {
       "sheet": "Сценарии",
       "address": "U29",
       "value": 1,
-      "row": 1218
+      "row": 1680
     },
     {
       "sheet": "Сценарии",
       "address": "V29",
       "value": 1,
-      "row": 1219
+      "row": 1681
     },
     {
       "sheet": "Сценарии",
       "address": "X29",
       "value": 1.5,
-      "row": 1220
+      "row": 1682
     },
     {
       "sheet": "Сценарии",
       "address": "Y29",
       "value": 0.2,
-      "row": 1221
+      "row": 1683
     },
     {
       "sheet": "Сценарии",
       "address": "Z29",
       "value": 1,
-      "row": 1222
+      "row": 1684
     },
     {
       "sheet": "Сценарии",
       "address": "AA29",
       "value": 0.3,
-      "row": 1223
+      "row": 1685
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB29",
+      "value": 0.4,
+      "row": 1686
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC29",
+      "value": 1,
+      "row": 1687
     },
     {
       "sheet": "Сценарии",
       "address": "D30",
       "value": 44000000,
-      "row": 1224
+      "row": 1688
     },
     {
       "sheet": "Сценарии",
       "address": "E30",
       "value": 84000000,
-      "row": 1225
+      "row": 1689
     },
     {
       "sheet": "Сценарии",
       "address": "F30",
-      "value": 0.09195501187254174,
-      "row": 1226
+      "value": 0.27999999999999997,
+      "row": 1690
     },
     {
       "sheet": "Сценарии",
       "address": "G30",
-      "value": 0.011889748318309626,
-      "row": 1227
+      "value": 0.12,
+      "row": 1691
     },
     {
       "sheet": "Сценарии",
       "address": "H30",
-      "value": 0.09983360222835361,
-      "row": 1228
+      "value": 0.18,
+      "row": 1692
     },
     {
       "sheet": "Сценарии",
       "address": "I30",
-      "value": 0.796321637580795,
-      "row": 1229
+      "value": 0.42,
+      "row": 1693
     },
     {
       "sheet": "Сценарии",
       "address": "J30",
       "value": 0.15,
-      "row": 1230
+      "row": 1694
     },
     {
       "sheet": "Сценарии",
       "address": "K30",
-      "value": 0.24070907313202305,
-      "row": 1231
+      "value": 0.23099999999999998,
+      "row": 1695
     },
     {
       "sheet": "Сценарии",
       "address": "L30",
       "value": 2,
-      "row": 1232
+      "row": 1696
     },
     {
       "sheet": "Сценарии",
       "address": "M30",
-      "value": 0.6652365721101067,
-      "row": 1233
+      "value": 0.5,
+      "row": 1697
     },
     {
       "sheet": "Сценарии",
       "address": "N30",
-      "value": 0.8,
-      "row": 1234
+      "value": 0.5,
+      "row": 1698
     },
     {
       "sheet": "Сценарии",
       "address": "O30",
-      "value": 1.5,
-      "row": 1235
+      "value": 1,
+      "row": 1699
     },
     {
       "sheet": "Сценарии",
       "address": "P30",
       "value": 0.25,
-      "row": 1236
+      "row": 1700
     },
     {
       "sheet": "Сценарии",
       "address": "Q30",
       "value": 0.25,
-      "row": 1237
+      "row": 1701
     },
     {
       "sheet": "Сценарии",
       "address": "R30",
       "value": 0,
-      "row": 1238
+      "row": 1702
     },
     {
       "sheet": "Сценарии",
       "address": "S30",
       "value": 0,
-      "row": 1239
+      "row": 1703
     },
     {
       "sheet": "Сценарии",
       "address": "T30",
       "value": 0,
-      "row": 1240
+      "row": 1704
     },
     {
       "sheet": "Сценарии",
       "address": "U30",
       "value": 1,
-      "row": 1241
+      "row": 1705
     },
     {
       "sheet": "Сценарии",
       "address": "V30",
       "value": 1,
-      "row": 1242
+      "row": 1706
     },
     {
       "sheet": "Сценарии",
       "address": "X30",
-      "value": 1.5,
-      "row": 1243
+      "value": 1.2,
+      "row": 1707
     },
     {
       "sheet": "Сценарии",
       "address": "Y30",
-      "value": 0.2,
-      "row": 1244
+      "value": 0.4,
+      "row": 1708
     },
     {
       "sheet": "Сценарии",
       "address": "Z30",
       "value": 1,
-      "row": 1245
+      "row": 1709
     },
     {
       "sheet": "Сценарии",
       "address": "AA30",
-      "value": 0.3,
-      "row": 1246
+      "value": 0.5,
+      "row": 1710
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB30",
+      "value": 0.4,
+      "row": 1711
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC30",
+      "value": 1,
+      "row": 1712
     },
     {
       "sheet": "Сценарии",
       "address": "D31",
       "value": 44000000,
-      "row": 1247
+      "row": 1713
     },
     {
       "sheet": "Сценарии",
       "address": "E31",
       "value": 84000000,
-      "row": 1248
+      "row": 1714
     },
     {
       "sheet": "Сценарии",
       "address": "F31",
-      "value": 0.09195501187254174,
-      "row": 1249
+      "value": 0.27999999999999997,
+      "row": 1715
     },
     {
       "sheet": "Сценарии",
       "address": "G31",
-      "value": 0.011889748318309626,
-      "row": 1250
+      "value": 0.12,
+      "row": 1716
     },
     {
       "sheet": "Сценарии",
       "address": "H31",
-      "value": 0.09983360222835361,
-      "row": 1251
+      "value": 0.18,
+      "row": 1717
     },
     {
       "sheet": "Сценарии",
       "address": "I31",
-      "value": 0.796321637580795,
-      "row": 1252
+      "value": 0.42,
+      "row": 1718
     },
     {
       "sheet": "Сценарии",
       "address": "J31",
       "value": 0.15,
-      "row": 1253
+      "row": 1719
     },
     {
       "sheet": "Сценарии",
       "address": "K31",
-      "value": 0.24070907313202305,
-      "row": 1254
+      "value": 0.23099999999999998,
+      "row": 1720
     },
     {
       "sheet": "Сценарии",
       "address": "L31",
       "value": 2,
-      "row": 1255
+      "row": 1721
     },
     {
       "sheet": "Сценарии",
       "address": "M31",
-      "value": 0.6652365721101067,
-      "row": 1256
+      "value": 0.5,
+      "row": 1722
     },
     {
       "sheet": "Сценарии",
       "address": "N31",
-      "value": 0.5,
-      "row": 1257
+      "value": 0.8,
+      "row": 1723
     },
     {
       "sheet": "Сценарии",
       "address": "O31",
       "value": 1,
-      "row": 1258
+      "row": 1724
     },
     {
       "sheet": "Сценарии",
       "address": "P31",
       "value": 0.25,
-      "row": 1259
+      "row": 1725
     },
     {
       "sheet": "Сценарии",
       "address": "Q31",
       "value": 0.25,
-      "row": 1260
+      "row": 1726
     },
     {
       "sheet": "Сценарии",
       "address": "R31",
       "value": 0,
-      "row": 1261
+      "row": 1727
     },
     {
       "sheet": "Сценарии",
       "address": "S31",
       "value": 0,
-      "row": 1262
+      "row": 1728
     },
     {
       "sheet": "Сценарии",
       "address": "T31",
       "value": 0,
-      "row": 1263
+      "row": 1729
     },
     {
       "sheet": "Сценарии",
       "address": "U31",
       "value": 1,
-      "row": 1264
+      "row": 1730
     },
     {
       "sheet": "Сценарии",
       "address": "V31",
       "value": 1,
-      "row": 1265
+      "row": 1731
     },
     {
       "sheet": "Сценарии",
       "address": "X31",
-      "value": 1.2,
-      "row": 1266
+      "value": 1.5,
+      "row": 1732
     },
     {
       "sheet": "Сценарии",
       "address": "Y31",
-      "value": 0.4,
-      "row": 1267
+      "value": 0.2,
+      "row": 1733
     },
     {
       "sheet": "Сценарии",
       "address": "Z31",
       "value": 1,
-      "row": 1268
+      "row": 1734
     },
     {
       "sheet": "Сценарии",
       "address": "AA31",
+      "value": 0.3,
+      "row": 1735
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB31",
+      "value": 0.25,
+      "row": 1736
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC31",
+      "value": 1,
+      "row": 1737
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D32",
+      "value": 44000000,
+      "row": 1738
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E32",
+      "value": 84000000,
+      "row": 1739
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F32",
+      "value": 0.27999999999999997,
+      "row": 1740
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G32",
+      "value": 0.12,
+      "row": 1741
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H32",
+      "value": 0.18,
+      "row": 1742
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I32",
+      "value": 0.42,
+      "row": 1743
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J32",
+      "value": 0.15,
+      "row": 1744
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K32",
+      "value": 0.23099999999999998,
+      "row": 1745
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L32",
+      "value": 2,
+      "row": 1746
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M32",
       "value": 0.5,
-      "row": 1269
+      "row": 1747
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N32",
+      "value": 0.8,
+      "row": 1748
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O32",
+      "value": 1,
+      "row": 1749
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P32",
+      "value": 0.25,
+      "row": 1750
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q32",
+      "value": 0.25,
+      "row": 1751
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R32",
+      "value": 0,
+      "row": 1752
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S32",
+      "value": 0,
+      "row": 1753
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T32",
+      "value": 0,
+      "row": 1754
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U32",
+      "value": 1,
+      "row": 1755
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V32",
+      "value": 1,
+      "row": 1756
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X32",
+      "value": 1.5,
+      "row": 1757
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y32",
+      "value": 0.2,
+      "row": 1758
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z32",
+      "value": 1,
+      "row": 1759
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA32",
+      "value": 0.3,
+      "row": 1760
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB32",
+      "value": 0.6,
+      "row": 1761
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC32",
+      "value": 1,
+      "row": 1762
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D33",
+      "value": 44000000,
+      "row": 1763
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E33",
+      "value": 84000000,
+      "row": 1764
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F33",
+      "value": 0.27999999999999997,
+      "row": 1765
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G33",
+      "value": 0.12,
+      "row": 1766
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H33",
+      "value": 0.18,
+      "row": 1767
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I33",
+      "value": 0.42,
+      "row": 1768
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J33",
+      "value": 0.15,
+      "row": 1769
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K33",
+      "value": 0.23099999999999998,
+      "row": 1770
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L33",
+      "value": 2,
+      "row": 1771
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M33",
+      "value": 0.5,
+      "row": 1772
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N33",
+      "value": 0.8,
+      "row": 1773
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O33",
+      "value": 1,
+      "row": 1774
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P33",
+      "value": 0.25,
+      "row": 1775
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q33",
+      "value": 0.25,
+      "row": 1776
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R33",
+      "value": 0,
+      "row": 1777
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S33",
+      "value": 0,
+      "row": 1778
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T33",
+      "value": 0,
+      "row": 1779
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U33",
+      "value": 1,
+      "row": 1780
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V33",
+      "value": 1,
+      "row": 1781
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X33",
+      "value": 1.5,
+      "row": 1782
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y33",
+      "value": 0.2,
+      "row": 1783
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z33",
+      "value": 1,
+      "row": 1784
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA33",
+      "value": 0.3,
+      "row": 1785
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB33",
+      "value": 0.8,
+      "row": 1786
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC33",
+      "value": 1,
+      "row": 1787
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D34",
+      "value": 44000000,
+      "row": 1788
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E34",
+      "value": 84000000,
+      "row": 1789
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F34",
+      "value": 0.27999999999999997,
+      "row": 1790
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G34",
+      "value": 0.12,
+      "row": 1791
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H34",
+      "value": 0.18,
+      "row": 1792
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I34",
+      "value": 0.42,
+      "row": 1793
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J34",
+      "value": 0.15,
+      "row": 1794
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K34",
+      "value": 0.23099999999999998,
+      "row": 1795
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L34",
+      "value": 2,
+      "row": 1796
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M34",
+      "value": 0.5,
+      "row": 1797
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N34",
+      "value": 0.8,
+      "row": 1798
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O34",
+      "value": 1,
+      "row": 1799
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P34",
+      "value": 0.25,
+      "row": 1800
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q34",
+      "value": 0.25,
+      "row": 1801
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R34",
+      "value": 0,
+      "row": 1802
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S34",
+      "value": 0,
+      "row": 1803
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T34",
+      "value": 0,
+      "row": 1804
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U34",
+      "value": 1,
+      "row": 1805
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V34",
+      "value": 1,
+      "row": 1806
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X34",
+      "value": 1.5,
+      "row": 1807
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y34",
+      "value": 0.2,
+      "row": 1808
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z34",
+      "value": 1,
+      "row": 1809
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA34",
+      "value": 0.3,
+      "row": 1810
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB34",
+      "value": 1,
+      "row": 1811
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC34",
+      "value": 1,
+      "row": 1812
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D35",
+      "value": 44000000,
+      "row": 1813
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E35",
+      "value": 84000000,
+      "row": 1814
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F35",
+      "value": 0.13999999999999999,
+      "row": 1815
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G35",
+      "value": 0.06,
+      "row": 1816
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H35",
+      "value": 0.24,
+      "row": 1817
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I35",
+      "value": 0.5599999999999999,
+      "row": 1818
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J35",
+      "value": 0.15,
+      "row": 1819
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K35",
+      "value": 0.249,
+      "row": 1820
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L35",
+      "value": 2,
+      "row": 1821
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M35",
+      "value": 0.625,
+      "row": 1822
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N35",
+      "value": 0.8,
+      "row": 1823
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O35",
+      "value": 1,
+      "row": 1824
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P35",
+      "value": 0.25,
+      "row": 1825
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q35",
+      "value": 0.25,
+      "row": 1826
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R35",
+      "value": 0,
+      "row": 1827
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S35",
+      "value": 0,
+      "row": 1828
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T35",
+      "value": 0,
+      "row": 1829
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U35",
+      "value": 1,
+      "row": 1830
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V35",
+      "value": 1,
+      "row": 1831
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X35",
+      "value": 1.5,
+      "row": 1832
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y35",
+      "value": 0.2,
+      "row": 1833
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z35",
+      "value": 1,
+      "row": 1834
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA35",
+      "value": 0.3,
+      "row": 1835
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB35",
+      "value": 0.4,
+      "row": 1836
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC35",
+      "value": 1,
+      "row": 1837
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D36",
+      "value": 44000000,
+      "row": 1838
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E36",
+      "value": 84000000,
+      "row": 1839
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F36",
+      "value": 0.42,
+      "row": 1840
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G36",
+      "value": 0.18,
+      "row": 1841
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H36",
+      "value": 0.12,
+      "row": 1842
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I36",
+      "value": 0.27999999999999997,
+      "row": 1843
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J36",
+      "value": 0.15,
+      "row": 1844
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K36",
+      "value": 0.213,
+      "row": 1845
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L36",
+      "value": 2,
+      "row": 1846
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M36",
+      "value": 0.24999999999999997,
+      "row": 1847
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N36",
+      "value": 0.8,
+      "row": 1848
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O36",
+      "value": 1,
+      "row": 1849
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P36",
+      "value": 0.25,
+      "row": 1850
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q36",
+      "value": 0.25,
+      "row": 1851
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R36",
+      "value": 0,
+      "row": 1852
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S36",
+      "value": 0,
+      "row": 1853
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T36",
+      "value": 0,
+      "row": 1854
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U36",
+      "value": 1,
+      "row": 1855
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V36",
+      "value": 1,
+      "row": 1856
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X36",
+      "value": 1.5,
+      "row": 1857
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y36",
+      "value": 0.2,
+      "row": 1858
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z36",
+      "value": 1,
+      "row": 1859
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA36",
+      "value": 0.3,
+      "row": 1860
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB36",
+      "value": 0.4,
+      "row": 1861
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC36",
+      "value": 1,
+      "row": 1862
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D37",
+      "value": 44000000,
+      "row": 1863
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E37",
+      "value": 84000000,
+      "row": 1864
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F37",
+      "value": 0.27999999999999997,
+      "row": 1865
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G37",
+      "value": 0.12,
+      "row": 1866
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H37",
+      "value": 0.18,
+      "row": 1867
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I37",
+      "value": 0.42,
+      "row": 1868
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J37",
+      "value": 0.15,
+      "row": 1869
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K37",
+      "value": 0.23099999999999998,
+      "row": 1870
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L37",
+      "value": 2,
+      "row": 1871
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M37",
+      "value": 0.5,
+      "row": 1872
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N37",
+      "value": 0.8,
+      "row": 1873
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O37",
+      "value": 1,
+      "row": 1874
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P37",
+      "value": 0.25,
+      "row": 1875
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q37",
+      "value": 0.25,
+      "row": 1876
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R37",
+      "value": 0,
+      "row": 1877
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S37",
+      "value": 0,
+      "row": 1878
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T37",
+      "value": 0,
+      "row": 1879
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U37",
+      "value": 1,
+      "row": 1880
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V37",
+      "value": 1,
+      "row": 1881
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X37",
+      "value": 1.5,
+      "row": 1882
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y37",
+      "value": 0.2,
+      "row": 1883
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z37",
+      "value": 1,
+      "row": 1884
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA37",
+      "value": 0.3,
+      "row": 1885
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB37",
+      "value": 0.4,
+      "row": 1886
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC37",
+      "value": 1,
+      "row": 1887
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D38",
+      "value": 44000000,
+      "row": 1888
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E38",
+      "value": 84000000,
+      "row": 1889
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F38",
+      "value": 0.27999999999999997,
+      "row": 1890
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G38",
+      "value": 0.12,
+      "row": 1891
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H38",
+      "value": 0.18,
+      "row": 1892
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I38",
+      "value": 0.42,
+      "row": 1893
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J38",
+      "value": 0.15,
+      "row": 1894
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K38",
+      "value": 0.23099999999999998,
+      "row": 1895
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L38",
+      "value": 2,
+      "row": 1896
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M38",
+      "value": 0.5,
+      "row": 1897
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N38",
+      "value": 0.8,
+      "row": 1898
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O38",
+      "value": 1,
+      "row": 1899
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P38",
+      "value": 0.25,
+      "row": 1900
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q38",
+      "value": 0.25,
+      "row": 1901
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R38",
+      "value": 0,
+      "row": 1902
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S38",
+      "value": 0,
+      "row": 1903
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T38",
+      "value": 0,
+      "row": 1904
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U38",
+      "value": 1,
+      "row": 1905
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V38",
+      "value": 1,
+      "row": 1906
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X38",
+      "value": 1.5,
+      "row": 1907
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y38",
+      "value": 0.2,
+      "row": 1908
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z38",
+      "value": 1,
+      "row": 1909
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA38",
+      "value": 0.3,
+      "row": 1910
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB38",
+      "value": 0.4,
+      "row": 1911
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC38",
+      "value": 1,
+      "row": 1912
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D39",
+      "value": 44000000,
+      "row": 1913
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E39",
+      "value": 84000000,
+      "row": 1914
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F39",
+      "value": 0.27999999999999997,
+      "row": 1915
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G39",
+      "value": 0.12,
+      "row": 1916
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H39",
+      "value": 0.18,
+      "row": 1917
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I39",
+      "value": 0.42,
+      "row": 1918
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J39",
+      "value": 0.15,
+      "row": 1919
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K39",
+      "value": 0.23099999999999998,
+      "row": 1920
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L39",
+      "value": 2,
+      "row": 1921
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M39",
+      "value": 0.5,
+      "row": 1922
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N39",
+      "value": 0.8,
+      "row": 1923
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O39",
+      "value": 1,
+      "row": 1924
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P39",
+      "value": 0.25,
+      "row": 1925
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q39",
+      "value": 0.25,
+      "row": 1926
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R39",
+      "value": 0,
+      "row": 1927
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S39",
+      "value": 0,
+      "row": 1928
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T39",
+      "value": 0,
+      "row": 1929
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U39",
+      "value": 1,
+      "row": 1930
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V39",
+      "value": 1,
+      "row": 1931
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X39",
+      "value": 1.5,
+      "row": 1932
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y39",
+      "value": 0.2,
+      "row": 1933
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z39",
+      "value": 1,
+      "row": 1934
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA39",
+      "value": 0.3,
+      "row": 1935
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB39",
+      "value": 0.4,
+      "row": 1936
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC39",
+      "value": 0.75,
+      "row": 1937
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D40",
+      "value": 44000000,
+      "row": 1938
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E40",
+      "value": 84000000,
+      "row": 1939
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F40",
+      "value": 0.27999999999999997,
+      "row": 1940
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G40",
+      "value": 0.12,
+      "row": 1941
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H40",
+      "value": 0.18,
+      "row": 1942
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I40",
+      "value": 0.42,
+      "row": 1943
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J40",
+      "value": 0.15,
+      "row": 1944
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K40",
+      "value": 0.23099999999999998,
+      "row": 1945
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L40",
+      "value": 2,
+      "row": 1946
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M40",
+      "value": 0.5,
+      "row": 1947
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N40",
+      "value": 0.8,
+      "row": 1948
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O40",
+      "value": 1,
+      "row": 1949
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P40",
+      "value": 0.25,
+      "row": 1950
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q40",
+      "value": 0.25,
+      "row": 1951
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R40",
+      "value": 0,
+      "row": 1952
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S40",
+      "value": 0,
+      "row": 1953
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T40",
+      "value": 0,
+      "row": 1954
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U40",
+      "value": 1,
+      "row": 1955
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V40",
+      "value": 1,
+      "row": 1956
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X40",
+      "value": 1.5,
+      "row": 1957
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y40",
+      "value": 0.2,
+      "row": 1958
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z40",
+      "value": 1,
+      "row": 1959
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA40",
+      "value": 0.3,
+      "row": 1960
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AB40",
+      "value": 0.4,
+      "row": 1961
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AC40",
+      "value": 1.25,
+      "row": 1962
     }
   ],
   "activeScenario": 6,
-  "scenarioCount": 26,
+  "scenarioCount": 35,
   "weightsFirstRow": 5
 }

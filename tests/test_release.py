@@ -46,7 +46,10 @@ class ReleaseTests(unittest.TestCase):
             output=Path(folder)/'weights.xlsx';refresh(ROOT,inputs,cases,results,output)
             book=FormulaBook(output)
             self.assertEqual(book.get('Когорты','O7'),1.)
-            x=next(r for r in results if r['scenario']=='taobao_calibrated' and r['hypothesis']=='H1')
+            from cart_stock import crossover
+            self.assertAlmostEqual(book.get('Порог H1 H4','D25'),crossover(inputs,.4,.15,1.)['threshold'],places=8)
+            self.assertEqual(book.get('Порог H1 H4','B3'),'Актуально')
+            x=next(r for r in results if r['scenario']=='ozon_stock_base' and r['hypothesis']=='H1')
             self.assertAlmostEqual(book.get('Итоги','F8'),x['delta_pp'],places=8)
 
     def test_all_scenarios_match_live_excel_formulas(self):
@@ -61,7 +64,7 @@ class ReleaseTests(unittest.TestCase):
     def test_recorded_original_45_checks_were_executed(self):
         result=load_inputs(ROOT/'results/excel_verification.json')
         self.assertEqual(len(result['original_tests']),45)
-        self.assertEqual(len(result['scenario_parity']),26)
+        self.assertEqual(len(result['scenario_parity']),len(scenarios(load_inputs(ROOT/'data/model_inputs.json'),None)))
         self.assertTrue(result['stale_warning_verified'])
 
     def test_reproducible_refresh_without_raw_data(self):

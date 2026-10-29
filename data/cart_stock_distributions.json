@@ -1,0 +1,161 @@
+{
+  "bounds": {
+    "lower_necessary": 0.10919540229885058,
+    "upper_necessary": 0.5,
+    "interpretation": "Necessary bounds, not a confidence interval; endpoint depends on median convention."
+  },
+  "distributions": [
+    {
+      "id": "stock_11",
+      "large_share": 0.11,
+      "mean": 60,
+      "median": 24,
+      "maximum": 300,
+      "synthetic_users": 10000,
+      "large_conditional_mean": 299.45454545454544,
+      "histogram": [
+        {
+          "sku": 24,
+          "users": 5100
+        },
+        {
+          "sku": 39,
+          "users": 3800
+        },
+        {
+          "sku": 299,
+          "users": 600
+        },
+        {
+          "sku": 300,
+          "users": 500
+        }
+      ],
+      "status": "Constructed example, not fitted or observed"
+    },
+    {
+      "id": "stock_20",
+      "large_share": 0.2,
+      "mean": 60,
+      "median": 24,
+      "maximum": 300,
+      "synthetic_users": 10000,
+      "large_conditional_mean": 182.25,
+      "histogram": [
+        {
+          "sku": 24,
+          "users": 5100
+        },
+        {
+          "sku": 39,
+          "users": 2900
+        },
+        {
+          "sku": 182,
+          "users": 1617
+        },
+        {
+          "sku": 183,
+          "users": 382
+        },
+        {
+          "sku": 300,
+          "users": 1
+        }
+      ],
+      "status": "Constructed example, not fitted or observed"
+    },
+    {
+      "id": "stock_30",
+      "large_share": 0.3,
+      "mean": 60,
+      "median": 24,
+      "maximum": 300,
+      "synthetic_users": 10000,
+      "large_conditional_mean": 134.5,
+      "histogram": [
+        {
+          "sku": 24,
+          "users": 5100
+        },
+        {
+          "sku": 39,
+          "users": 1900
+        },
+        {
+          "sku": 134,
+          "users": 1665
+        },
+        {
+          "sku": 135,
+          "users": 1334
+        },
+        {
+          "sku": 300,
+          "users": 1
+        }
+      ],
+      "status": "Constructed example, not fitted or observed"
+    },
+    {
+      "id": "stock_40",
+      "large_share": 0.4,
+      "mean": 60,
+      "median": 24,
+      "maximum": 300,
+      "synthetic_users": 10000,
+      "large_conditional_mean": 110.625,
+      "histogram": [
+        {
+          "sku": 24,
+          "users": 5100
+        },
+        {
+          "sku": 39,
+          "users": 900
+        },
+        {
+          "sku": 110,
+          "users": 1689
+        },
+        {
+          "sku": 111,
+          "users": 2310
+        },
+        {
+          "sku": 300,
+          "users": 1
+        }
+      ],
+      "status": "Constructed example, not fitted or observed"
+    },
+    {
+      "id": "stock_49",
+      "large_share": 0.49,
+      "mean": 60,
+      "median": 24,
+      "maximum": 300,
+      "synthetic_users": 10000,
+      "large_conditional_mean": 97.46938775510205,
+      "histogram": [
+        {
+          "sku": 24,
+          "users": 5100
+        },
+        {
+          "sku": 97,
+          "users": 2802
+        },
+        {
+          "sku": 98,
+          "users": 2097
+        },
+        {
+          "sku": 300,
+          "users": 1
+        }
+      ],
+      "status": "Constructed example, not fitted or observed"
+    }
+  ]
+}

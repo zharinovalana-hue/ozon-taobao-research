@@ -1,12 +1,15 @@
 {
   "date": "2026-10-29",
-  "python_unit_tests_passed": 29,
+  "python_unit_tests_passed": 33,
   "original_assertions_passed": 45,
-  "live_scenario_parities_passed": 26,
+  "live_scenario_parities_passed": 35,
   "original_calculation_sheet_formulas_preserved": true,
   "portable_refresh_and_cache_check_passed": true,
   "native_excel_executed": false,
   "raw_archive_rerun": false,
-  "model_sha256": "9979e006f4eaea8559a8cece5a2890008f6e592c01d61148603a1a30e3316409",
-  "authoring_note": "Artifact Tool exported and completed assertions, but its authoring process exited 1 after export; resulting file independently reopened/recalculated/round-trip validated by the successful portable Python path."
+  "model_sha256": "e9063820490852c32c54d47c2b03e286333b20ed3fb2a238bf28dbf007cc7f13",
+  "authoring_note": "Artifact Tool exported and completed assertions, but its authoring process exited 1 after export; resulting file independently reopened/recalculated/round-trip validated by the successful portable Python path.",
+  "stock_flow_separated": true,
+  "stock_histogram_moments_verified": true,
+  "crossover_refresh_regression_verified": true
 }

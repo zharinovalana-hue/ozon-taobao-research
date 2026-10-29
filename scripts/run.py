@@ -11,7 +11,7 @@ def write_json(path,data):
 
 def write_csv(path,rows):
     with path.open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(dict.fromkeys(k for row in rows for k in row)));w.writeheader();w.writerows(rows)
 
 def generate(root=ROOT):
     inputs=load_inputs(root/'data/model_inputs.json');summary=load_inputs(root/'data/taobao_summary.json')
@@ -20,11 +20,11 @@ def generate(root=ROOT):
     public=public_scale(inputs,cases);intensity=public['orders_per_assumed_active_user_day']
     rows=[]
     for c in cases:
-        rows.append({**{k:v for k,v in c.items() if k not in ['shares','weights']},
+        rows.append({**{k:v for k,v in c.items() if k not in ['shares','weights','traffic']},
                      **{f'S{k+1}':v for k,v in enumerate(c['shares'])},
                      'orders_per_buying_user_day_proxy':intensity/c['global_cr'],
                      'intensity_caution':c['global_cr']>intensity})
-    eligible=[c['id'] for c in cases if c['kind'] in ['base','cautious','favorable','threshold','cr','overlap','reach','platform']]
+    eligible=[c['id'] for c in cases if c['kind'] in ['stock','cautious','favorable','cr','overlap','reach','platform','need','favorite','selection','h4_reach']]
     robust=[]
     for h in inputs['hypotheses']:
         rr=[r for r in results if r['scenario'] in eligible and r['hypothesis']==h['id']]
@@ -37,6 +37,9 @@ def generate(root=ROOT):
             all_positive=all(r['delta_pp']>0 for r in rr),all_guardrails_pass=all(r['guard_c'] and r['guard_f'] and r['guard_arpu'] for r in rr),
             wins=sum(x==1 for x in ranks)))
     root.joinpath('results').mkdir(exist_ok=True)
+    from cart_stock import distributions,bounds,crossover
+    write_json(root/'data/cart_stock_distributions.json',dict(bounds=bounds(),distributions=distributions()))
+    write_csv(root/'results/h1_h4_crossover.csv',[crossover(inputs,n,g,h) for g in [.12,.15,.18,.201] for n in [.25,.4,.6,.8,1.] for h in [.75,1.,1.25]])
     write_json(root/'data/scenarios.json',cases)
     write_csv(root/'results/scenario_results.csv',results)
     write_csv(root/'results/scenario_inputs.csv',rows)

@@ -29,9 +29,9 @@ def validate(inputs,c):
     crs=[c['whale_cr']+g for g in inputs['case_cr_gaps']]
     if min(crs)<0 or max(crs)>1: raise ValueError('Cohort CR outside [0,1]; anchor incompatible with case gaps')
     if abs(sum(s*r for s,r in zip(shares,crs))-c['global_cr'])>1e-9: raise ValueError('CR anchors do not reconcile')
-    if abs(sum(s*t[0] for s,t in zip(shares,inputs['traffic']))-inputs['case_daily_cart'])>1e-9 or abs(sum(s*t[1] for s,t in zip(shares,inputs['traffic']))-inputs['case_daily_fav'])>1e-9:
+    if abs(sum(s*t[0] for s,t in zip(shares,c.get('traffic',inputs['traffic'])))-inputs['case_daily_cart'])>1e-9 or abs(sum(s*t[1] for s,t in zip(shares,c.get('traffic',inputs['traffic'])))-inputs['case_daily_fav'])>1e-9:
         raise ValueError('Weighted daily section visits must preserve case 65%/13% totals')
-    for k,(pC,pF,_) in enumerate(inputs['traffic']):
+    for k,(pC,pF,_) in enumerate(c.get('traffic',inputs['traffic'])):
         both=pF*c['overlap']; states=[pC-both,pF-both,both,1-pC-pF+both]
         owners=1 if k<2 else c['owners_small']
         if min(states)<-1e-12 or pF>owners+1e-12 or both>pC*owners+1e-12: raise ValueError('Infeasible daily/ownership intersections')
@@ -40,7 +40,7 @@ def validate(inputs,c):
         norm=sum(s*v for s,v in zip(states,weights))
         if norm<=0 or crs[k]*max(weights)/norm>1+1e-12: raise ValueError('Invalid normalized state CR')
     for h in inputs['hypotheses']:
-        for eC,eF,eCF in h['reach']:
+        for eC,eF,eCF in scenario_reach(h,c):
             a,b,d=[x*c['reach_scale'] for x in [eC,eF,eCF]]
             if min(a,b,d)<0 or max(a,b)>1 or d<max(0,a+b-1)-1e-12 or d>min(a,b)+1e-12:
                 raise ValueError('Infeasible target intersection')
@@ -49,16 +49,16 @@ def evaluate(inputs,case):
     validate(inputs,case)
     q=case['shares']; D=case['dau']; result=[]
     retention=(1-case['behavior_penalty'])*(1-case['product_penalty'])
-    cart_users=D*sum(s*t[0] for s,t in zip(q,inputs['traffic']))
-    fav_users=D*sum(s*t[1] for s,t in zip(q,inputs['traffic']))
+    cart_users=D*sum(s*t[0] for s,t in zip(q,case.get('traffic',inputs['traffic'])))
+    fav_users=D*sum(s*t[1] for s,t in zip(q,case.get('traffic',inputs['traffic'])))
     for h in inputs['hypotheses']:
         b0=b1=rev0=rev1=c0=c1=f0=f1=target=population=0.
         for k in range(4):
-            pC,pF,_=inputs['traffic'][k];both=pF*case['overlap']
+            pC,pF,_=case.get('traffic',inputs['traffic'])[k];both=pF*case['overlap']
             states=[pC-both,pF-both,both,1-pC-pF+both]
             weights=case.get('weights',inputs['weights'])[k]
             norm=sum(s*v for s,v in zip(states,weights))
-            ec,ef,inter=[v*case['reach_scale'] for v in h['reach'][k]]
+            ec,ef,inter=[v*case['reach_scale'] for v in scenario_reach(h,case)[k]]
             for t,(visitC,visitF) in enumerate([(1,0),(0,1),(1,1),(0,0)]):
                 n=D*q[k]*states[t]
                 cr=(case['whale_cr']+inputs['case_cr_gaps'][k])*weights[t]/norm
@@ -84,32 +84,40 @@ def evaluate(inputs,case):
             ozon_calibrated=case['enforce_ozon'],effective_uplift=inputs['uplift']*retention))
     return result
 
-def scenarios(inputs,summary_path):
-    summary=load_inputs(summary_path)
-    q=[x['share'] for x in summary['cohorts']]
-    events_owner=summary['fav_users']/summary['users']
-    small_proxy=(events_owner-q[0]-q[1])/(q[2]+q[3])
-    def make(id,name,kind,shares=q,global_cr=.15,anchor=2,whale=.3,owners=None,dau=None,mau=None,**kw):
-        if dau is None:dau=inputs['public_ozon']['dau_march_2026']
-        if mau is None:mau=inputs['public_ozon']['mau_march_2026']
+def scenario_reach(h,c):
+    reach=copy.deepcopy(h['reach'])
+    if h['id']=='H1' and 'h1_need' in c:
+        for k in [1,2]:reach[k][0]=c['h1_need']
+    if h['id']=='H4':
+        reach=[[v*c.get('h4_reach_multiplier',1.) for v in row] for row in reach]
+    return reach
+
+def scenarios(inputs,summary_path=None):
+    # summary_path retained for compatibility; intentionally never read for Ozon.
+    from cart_stock import distributions,joint
+    def make(id,name,kind,p=.3,f=.4,shares=None,global_cr=.15,anchor=2,whale=.3,owners=None,dau=None,mau=None,**kw):
+        shares=joint(p,f) if shares is None else shares
         owner=(.7-shares[0]-shares[1])/(shares[2]+shares[3]) if owners is None else owners
         gap=sum(s*g for s,g in zip(shares,inputs['case_cr_gaps']))
-        if anchor==1: global_cr=whale+gap
-        else: whale=global_cr-gap
+        if anchor==1:global_cr=whale+gap
+        else:whale=global_cr-gap
         c=dict(id=id,name=name,kind=kind,shares=list(shares),global_cr=global_cr,global_cr_input=global_cr,
-               whale_cr=whale,anchor=anchor,owners_small=owner,dau=dau,mau=mau,overlap=.8,reach_scale=1.,
-               behavior_penalty=.25,product_penalty=.25,loss_c=0.,loss_f=0.,income_delta=0.,
-               revenue_per_buyer=1.,enforce_ozon=True,threshold='P90',platform_note='No platform mix data; aggregate stress only')
+               whale_cr=whale,anchor=anchor,owners_small=owner,
+               dau=dau or inputs['public_ozon']['dau_march_2026'],mau=mau or inputs['public_ozon']['mau_march_2026'],
+               overlap=.8,reach_scale=1.,behavior_penalty=.25,product_penalty=.25,loss_c=0.,loss_f=0.,
+               income_delta=0.,revenue_per_buyer=1.,enforce_ozon=True,threshold='40+ SKU; F threshold unknown',
+               large_share=p,fav_large_share=f,h1_need=.4,h4_reach_multiplier=1.,
+               platform_note='Unmeasured composition; equal stock distribution across daily visit groups assumed')
         c.update(kw);return c
     cases=[]
     for k,x in enumerate(inputs['legacy_cases']):
         c=make(['legacy_low','original','legacy_high'][k],x['name'],'control',shares=x['shares'],anchor=1,whale=x['whale_cr'],
-               owners=x['owners_small'],dau=100000,mau=400000,revenue_per_buyer=1000.,threshold='Ozon thresholds unknown')
-        c['global_cr_input']=x['global_cr_input'];cases.append(c)
+               owners=x['owners_small'],dau=100000,mau=400000,revenue_per_buyer=1000.,threshold='Legacy undefined cohort thresholds')
+        c.pop('h1_need');c.pop('large_share');c['global_cr_input']=x['global_cr_input'];cases.append(c)
+    for d in distributions():
+        p=d['large_share'];id='ozon_stock_base' if p==.3 else d['id']
+        cases.append(make(id,'Корзины 40+: '+str(round(p*100))+'%','stock',p=p,stock_distribution=d['id']))
     cases.extend([
-        make('taobao_external','Taobao: внешний без калибровки','external',anchor=1,owners=small_proxy,enforce_ozon=False,dau=100000,mau=400000),
-        make('taobao_control_201','Taobao + контроль CR 20,1%','control',global_cr=.201,dau=100000,mau=400000),
-        make('taobao_calibrated','Taobao / Ozon: базовый','base'),
         make('cautious','Осторожный','cautious',global_cr=.12,reach_scale=.6,behavior_penalty=.5,product_penalty=.5,loss_c=.001,loss_f=.002,income_delta=-.005),
         make('favorable','Благоприятный','favorable',global_cr=.18,reach_scale=1.25,behavior_penalty=0.,product_penalty=0.),
         make('zero','Нулевая польза','zero',behavior_penalty=1.),
@@ -117,25 +125,21 @@ def scenarios(inputs,summary_path):
         make('negative_fav','Ущерб CR Избранного 3%','negative',loss_f=.03),
         make('negative_revenue','Ущерб доходу покупателя 10%','negative',income_delta=-.10),
         make('negative_combined','Совместный негативный','negative',loss_c=.005,loss_f=.01,income_delta=-.02)])
-    thresholds=summary.get('thresholds',[])
-    for x in thresholds:
-        if x['quantile']==.9:continue
-        label='P'+str(round(x['quantile']*100))
-        cases.append(make('threshold_'+label.lower(),'Пороги Taobao '+label,'threshold',shares=x['shares'],threshold=label))
-    for cr in [.10,.12,.18,.201]:
-        cases.append(make('cr_'+str(round(cr*1000)),'Чувствительность CR '+str(cr*100)+'%','cr',global_cr=cr))
-    for overlap in [0,.5,1.]:
-        cases.append(make('overlap_'+str(round(overlap*100)),'Пересечение визитов '+str(round(overlap*100))+'%','overlap',overlap=overlap))
-    for scale in [.5,1.5]:
-        cases.append(make('reach_'+str(scale),'Охват ×'+str(scale),'reach',reach_scale=scale))
-    # Qualitative platform facts cannot identify platform weights. These are explicit stress cases.
-    cases.append(make('platform_mix_stress','Сдвиг состава визитов: стресс','platform',overlap=.5,
-        weights=[[1.2,.4,1.,.5] for _ in range(4)]))
+    for cr in [.10,.12,.18,.201]:cases.append(make('cr_'+str(round(cr*1000)),'Чувствительность CR '+str(cr*100)+'%','cr',global_cr=cr))
+    for overlap in [0,.5,1.]:cases.append(make('overlap_'+str(round(overlap*100)),'Пересечение визитов '+str(round(overlap*100))+'%','overlap',overlap=overlap))
+    for scale in [.5,1.5]:cases.append(make('reach_'+str(scale),'Охват ×'+str(scale),'reach',reach_scale=scale))
+    cases.append(make('platform_mix_stress','Сдвиг состава визитов: стресс','platform',overlap=.5,weights=[[1.2,.4,1.,.5] for _ in range(4)]))
+    for need in [.25,.6,.8,1.]:cases.append(make('h1_need_'+str(need),'Потребность в H1 среди 40+: '+str(round(need*100))+'%','need',h1_need=need))
+    for f in [.2,.6]:cases.append(make('fav_'+str(f),'Большое Избранное: '+str(round(f*100))+'%','favorite',f=f))
+    for ratio in [.5,1.4]:
+        pc_big=.65*ratio;pc_small=.65*(1-.3*ratio)/.7
+        cases.append(make('selection_'+str(ratio),'40+ среди посетителей: ×'+str(ratio),'selection',traffic=[[pc_small,.13,.8],[pc_big,.13,.8],[pc_big,.13,.8],[pc_small,.13,.8]]))
+    for scale in [.75,1.25]:cases.append(make('h4_reach_'+str(scale),'Охват H4: ×'+str(scale),'h4_reach',h4_reach_multiplier=scale))
     for c in cases:validate(inputs,c)
     return cases
 
 def public_scale(inputs,cases):
-    p=inputs['public_ozon'];base=next(c for c in cases if c['id']=='taobao_calibrated')
+    p=inputs['public_ozon'];base=next(c for c in cases if c['id']=='ozon_stock_base')
     intensity=p['q1_orders']/(p['q1_days']*p['dau_march_2026'])
     return dict(orders_per_day_q1=p['q1_orders']/p['q1_days'],orders_per_assumed_active_user_day=intensity,
         assumption='March DAU used as proxy for Q1 average; audience/product scopes may differ. Not observed unique-buyer CR or a hard bound.',
