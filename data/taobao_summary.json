@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "origin": "Provided existing user aggregate; raw archive not rerun in this publication",
+  "file_sha256": "a05f92ff8d351c6181c1aa62b5db83ceacdab9e5238105b31dab230ec9ee0353",
+  "users": 987994,
+  "cart_users": 738996,
+  "fav_users": 389823,
+  "both_users": 269544,
+  "buyers": 672404,
+  "means": {
+    "cart_count": 5.452041206727976,
+    "fav_count": 2.904852661048549
+  },
+  "quantiles": {
+    "cart_count": {
+      "0.5": 3.0,
+      "0.75": 8.0,
+      "0.9": 14.0,
+      "0.95": 20.0,
+      "0.99": 34.0
+    },
+    "fav_count": {
+      "0.5": 0.0,
+      "0.75": 2.0,
+      "0.9": 9.0,
+      "0.95": 15.0,
+      "0.99": 35.0
+    }
+  },
+  "cohorts": [
+    {
+      "id": "S1",
+      "users": 90851,
+      "share": 0.09195501187254174,
+      "buyers": 66107,
+      "purchase_rate": 0.727641963214494
+    },
+    {
+      "id": "S2",
+      "users": 11747,
+      "share": 0.011889748318309626,
+      "buyers": 9714,
+      "purchase_rate": 0.8269345364773985
+    },
+    {
+      "id": "S3",
+      "users": 98635,
+      "share": 0.09983360222835361,
+      "buyers": 80864,
+      "purchase_rate": 0.8198306889035333
+    },
+    {
+      "id": "S4",
+      "users": 786761,
+      "share": 0.796321637580795,
+      "buyers": 515719,
+      "purchase_rate": 0.6554963959830241
+    }
+  ],
+  "thresholds": [
+    {
+      "quantile": 0.75,
+      "cart_threshold": 8,
+      "fav_threshold": 2,
+      "shares": [
+        0.2264244519703561,
+        0.060867778549262445,
+        0.19107808347014252,
+        0.521629686010239
+      ],
+      "cohorts": [
+        {
+          "id": "S1",
+          "users": 223706,
+          "share": 0.2264244519703561,
+          "buyers": 153352,
+          "purchase_rate": 0.685506870624838
+        },
+        {
+          "id": "S2",
+          "users": 60137,
+          "share": 0.060867778549262445,
+          "buyers": 49313,
+          "purchase_rate": 0.8200109749405524
+        },
+        {
+          "id": "S3",
+          "users": 188784,
+          "share": 0.19107808347014252,
+          "buyers": 147937,
+          "purchase_rate": 0.7836310280532248
+        },
+        {
+          "id": "S4",
+          "users": 515367,
+          "share": 0.521629686010239,
+          "buyers": 321802,
+          "purchase_rate": 0.6244132821853164
+        }
+      ]
+    },
+    {
+      "quantile": 0.9,
+      "cart_threshold": 14,
+      "fav_threshold": 9,
+      "shares": [
+        0.09195501187254174,
+        0.011889748318309626,
+        0.09983360222835361,
+        0.796321637580795
+      ],
+      "cohorts": [
+        {
+          "id": "S1",
+          "users": 90851,
+          "share": 0.09195501187254174,
+          "buyers": 66107,
+          "purchase_rate": 0.727641963214494
+        },
+        {
+          "id": "S2",
+          "users": 11747,
+          "share": 0.011889748318309626,
+          "buyers": 9714,
+          "purchase_rate": 0.8269345364773985
+        },
+        {
+          "id": "S3",
+          "users": 98635,
+          "share": 0.09983360222835361,
+          "buyers": 80864,
+          "purchase_rate": 0.8198306889035333
+        },
+        {
+          "id": "S4",
+          "users": 786761,
+          "share": 0.796321637580795,
+          "buyers": 515719,
+          "purchase_rate": 0.6554963959830241
+        }
+      ]
+    },
+    {
+      "quantile": 0.95,
+      "cart_threshold": 20,
+      "fav_threshold": 15,
+      "shares": [
+        0.050384921365919225,
+        0.004076947835715602,
+        0.04813187124618166,
+        0.8974062595521836
+      ],
+      "cohorts": [
+        {
+          "id": "S1",
+          "users": 49780,
+          "share": 0.050384921365919225,
+          "buyers": 36843,
+          "purchase_rate": 0.740116512655685
+        },
+        {
+          "id": "S2",
+          "users": 4028,
+          "share": 0.004076947835715602,
+          "buyers": 3325,
+          "purchase_rate": 0.8254716981132075
+        },
+        {
+          "id": "S3",
+          "users": 47554,
+          "share": 0.04813187124618166,
+          "buyers": 39881,
+          "purchase_rate": 0.8386465912436388
+        },
+        {
+          "id": "S4",
+          "users": 886632,
+          "share": 0.8974062595521836,
+          "buyers": 592355,
+          "purchase_rate": 0.6680956699058911
+        }
+      ]
+    },
+    {
+      "quantile": 0.99,
+      "cart_threshold": 34,
+      "fav_threshold": 35,
+      "shares": [
+        0.01018326022222807,
+        0.00039069063172448415,
+        0.010031437437879178,
+        0.9793946117081682
+      ],
+      "cohorts": [
+        {
+          "id": "S1",
+          "users": 10061,
+          "share": 0.01018326022222807,
+          "buyers": 7402,
+          "purchase_rate": 0.7357121558493191
+        },
+        {
+          "id": "S2",
+          "users": 386,
+          "share": 0.00039069063172448415,
+          "buyers": 264,
+          "purchase_rate": 0.6839378238341969
+        },
+        {
+          "id": "S3",
+          "users": 9911,
+          "share": 0.010031437437879178,
+          "buyers": 8535,
+          "purchase_rate": 0.8611643628291797
+        },
+        {
+          "id": "S4",
+          "users": 967636,
+          "share": 0.9793946117081682,
+          "buyers": 656203,
+          "purchase_rate": 0.6781506682264818
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Unique additions over source window, not list stock",
+    "Purchased is any buy in same window, not necessarily after cart/fav",
+    "No daily DAU/CR or purchase-lag estimates can be recovered from this aggregate"
+  ]
+}

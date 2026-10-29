@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+.tmp/
+work/
+*.zip
+UserBehavior*
+taobao_users.csv
+*.sqlite
+*.metadata.json
+~$*
+*.inspect.ndjson

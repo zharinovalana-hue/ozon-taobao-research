@@ -1,0 +1,7758 @@
+{
+  "caseRows": [
+    {
+      "id": "legacy_low",
+      "row": 6
+    },
+    {
+      "id": "original",
+      "row": 7
+    },
+    {
+      "id": "legacy_high",
+      "row": 8
+    },
+    {
+      "id": "taobao_external",
+      "row": 9
+    },
+    {
+      "id": "taobao_control_201",
+      "row": 10
+    },
+    {
+      "id": "taobao_calibrated",
+      "row": 11
+    },
+    {
+      "id": "cautious",
+      "row": 12
+    },
+    {
+      "id": "favorable",
+      "row": 13
+    },
+    {
+      "id": "zero",
+      "row": 14
+    },
+    {
+      "id": "negative_cart",
+      "row": 15
+    },
+    {
+      "id": "negative_fav",
+      "row": 16
+    },
+    {
+      "id": "negative_revenue",
+      "row": 17
+    },
+    {
+      "id": "negative_combined",
+      "row": 18
+    },
+    {
+      "id": "threshold_p75",
+      "row": 19
+    },
+    {
+      "id": "threshold_p95",
+      "row": 20
+    },
+    {
+      "id": "threshold_p99",
+      "row": 21
+    },
+    {
+      "id": "cr_100",
+      "row": 22
+    },
+    {
+      "id": "cr_120",
+      "row": 23
+    },
+    {
+      "id": "cr_180",
+      "row": 24
+    },
+    {
+      "id": "cr_201",
+      "row": 25
+    },
+    {
+      "id": "overlap_0",
+      "row": 26
+    },
+    {
+      "id": "overlap_50",
+      "row": 27
+    },
+    {
+      "id": "overlap_100",
+      "row": 28
+    },
+    {
+      "id": "reach_0.5",
+      "row": 29
+    },
+    {
+      "id": "reach_1.5",
+      "row": 30
+    },
+    {
+      "id": "platform_mix_stress",
+      "row": 31
+    }
+  ],
+  "scenarioFields": [
+    "index",
+    "name",
+    "kind",
+    "dau",
+    "mau",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "global_cr_input",
+    "whale_cr",
+    "anchor",
+    "owners_small",
+    "overlap",
+    "reach_scale",
+    "behavior_penalty",
+    "product_penalty",
+    "loss_c",
+    "loss_f",
+    "income_delta",
+    "revenue_per_buyer",
+    "enforce_ozon",
+    "threshold",
+    "wC",
+    "wF",
+    "wBoth",
+    "wOutside"
+  ],
+  "comparisonFields": [
+    "scenario_name",
+    "hypothesis",
+    "cr0",
+    "delta_pp",
+    "relative_cr",
+    "delta_buyers",
+    "target_users",
+    "cart_cr0",
+    "cart_cr1",
+    "fav_cr0",
+    "fav_cr1",
+    "arpu0",
+    "arpu1",
+    "arpu_index1",
+    "guard_c",
+    "guard_f",
+    "guard_arpu",
+    "positive_and_safe",
+    "ozon_calibrated"
+  ],
+  "comparisonFirstRow": 19,
+  "topCases": [
+    "original",
+    "taobao_external",
+    "taobao_control_201",
+    "taobao_calibrated",
+    "cautious",
+    "favorable",
+    "zero",
+    "negative_combined"
+  ],
+  "capture": [
+    {
+      "sheet": "Параметры",
+      "address": "B10",
+      "value": 0.1,
+      "row": 6
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C15",
+      "value": 0.1,
+      "row": 7
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D15",
+      "value": 0.2,
+      "row": 8
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E15",
+      "value": 0.3,
+      "row": 9
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C16",
+      "value": 0.15,
+      "row": 10
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D16",
+      "value": 0.2,
+      "row": 11
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E16",
+      "value": 0.25,
+      "row": 12
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C17",
+      "value": 0.35,
+      "row": 13
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D17",
+      "value": 0.3,
+      "row": 14
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E17",
+      "value": 0.25,
+      "row": 15
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C18",
+      "value": 0.4,
+      "row": 16
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D18",
+      "value": 0.3,
+      "row": 17
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E18",
+      "value": 0.2,
+      "row": 18
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C19",
+      "value": 0.25,
+      "row": 19
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D19",
+      "value": 0.3,
+      "row": 20
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E19",
+      "value": 0.4,
+      "row": 21
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C20",
+      "value": 0.12,
+      "row": 22
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D20",
+      "value": 0.18,
+      "row": 23
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E20",
+      "value": 0.25,
+      "row": 24
+    },
+    {
+      "sheet": "Параметры",
+      "address": "C21",
+      "value": 0.6,
+      "row": 25
+    },
+    {
+      "sheet": "Параметры",
+      "address": "D21",
+      "value": 0.5,
+      "row": 26
+    },
+    {
+      "sheet": "Параметры",
+      "address": "E21",
+      "value": 0.4,
+      "row": 27
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C5",
+      "value": 0,
+      "row": 28
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D5",
+      "value": 0,
+      "row": 29
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E5",
+      "value": 0,
+      "row": 30
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F5",
+      "value": 0,
+      "row": 31
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G5",
+      "value": 0,
+      "row": 32
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H5",
+      "value": 0,
+      "row": 33
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C6",
+      "value": 0.4,
+      "row": 34
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D6",
+      "value": 0,
+      "row": 35
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E6",
+      "value": 0,
+      "row": 36
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F6",
+      "value": 0,
+      "row": 37
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G6",
+      "value": 0,
+      "row": 38
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H6",
+      "value": 0,
+      "row": 39
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C7",
+      "value": 0.4,
+      "row": 40
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D7",
+      "value": 0,
+      "row": 41
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E7",
+      "value": 0,
+      "row": 42
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F7",
+      "value": 0,
+      "row": 43
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G7",
+      "value": 0,
+      "row": 44
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H7",
+      "value": 0,
+      "row": 45
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C8",
+      "value": 0,
+      "row": 46
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D8",
+      "value": 0,
+      "row": 47
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E8",
+      "value": 0,
+      "row": 48
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F8",
+      "value": 0,
+      "row": 49
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G8",
+      "value": 0,
+      "row": 50
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H8",
+      "value": 0,
+      "row": 51
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C9",
+      "value": 0.2,
+      "row": 52
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D9",
+      "value": 0.25,
+      "row": 53
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E9",
+      "value": 0.1,
+      "row": 54
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F9",
+      "value": 0,
+      "row": 55
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G9",
+      "value": 0,
+      "row": 56
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H9",
+      "value": 0,
+      "row": 57
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C10",
+      "value": 0.2,
+      "row": 58
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D10",
+      "value": 0.25,
+      "row": 59
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E10",
+      "value": 0.1,
+      "row": 60
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F10",
+      "value": 0,
+      "row": 61
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G10",
+      "value": 0,
+      "row": 62
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H10",
+      "value": 0,
+      "row": 63
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C11",
+      "value": 0.2,
+      "row": 64
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D11",
+      "value": 0.25,
+      "row": 65
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E11",
+      "value": 0.1,
+      "row": 66
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F11",
+      "value": 0,
+      "row": 67
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G11",
+      "value": 0,
+      "row": 68
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H11",
+      "value": 0,
+      "row": 69
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C12",
+      "value": 0.2,
+      "row": 70
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D12",
+      "value": 0.25,
+      "row": 71
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E12",
+      "value": 0.1,
+      "row": 72
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F12",
+      "value": 0,
+      "row": 73
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G12",
+      "value": 0,
+      "row": 74
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H12",
+      "value": 0,
+      "row": 75
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C13",
+      "value": 0.1,
+      "row": 76
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D13",
+      "value": 0,
+      "row": 77
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E13",
+      "value": 0,
+      "row": 78
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F13",
+      "value": 0,
+      "row": 79
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G13",
+      "value": 0,
+      "row": 80
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H13",
+      "value": 0,
+      "row": 81
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C14",
+      "value": 0.4,
+      "row": 82
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D14",
+      "value": 0,
+      "row": 83
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E14",
+      "value": 0,
+      "row": 84
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F14",
+      "value": 0,
+      "row": 85
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G14",
+      "value": 0,
+      "row": 86
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H14",
+      "value": 0,
+      "row": 87
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C15",
+      "value": 0.4,
+      "row": 88
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D15",
+      "value": 0,
+      "row": 89
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E15",
+      "value": 0,
+      "row": 90
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F15",
+      "value": 0,
+      "row": 91
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G15",
+      "value": 0,
+      "row": 92
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H15",
+      "value": 0,
+      "row": 93
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C16",
+      "value": 0.1,
+      "row": 94
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D16",
+      "value": 0,
+      "row": 95
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E16",
+      "value": 0,
+      "row": 96
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F16",
+      "value": 0,
+      "row": 97
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G16",
+      "value": 0,
+      "row": 98
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H16",
+      "value": 0,
+      "row": 99
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C17",
+      "value": 0.2,
+      "row": 100
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D17",
+      "value": 0.2,
+      "row": 101
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E17",
+      "value": 0.1,
+      "row": 102
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F17",
+      "value": 0,
+      "row": 103
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G17",
+      "value": 0,
+      "row": 104
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H17",
+      "value": 0,
+      "row": 105
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C18",
+      "value": 0.3,
+      "row": 106
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D18",
+      "value": 0.3,
+      "row": 107
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E18",
+      "value": 0.1,
+      "row": 108
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F18",
+      "value": 0,
+      "row": 109
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G18",
+      "value": 0,
+      "row": 110
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H18",
+      "value": 0,
+      "row": 111
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C19",
+      "value": 0.3,
+      "row": 112
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D19",
+      "value": 0.3,
+      "row": 113
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E19",
+      "value": 0.1,
+      "row": 114
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F19",
+      "value": 0,
+      "row": 115
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G19",
+      "value": 0,
+      "row": 116
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H19",
+      "value": 0,
+      "row": 117
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C20",
+      "value": 0.2,
+      "row": 118
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D20",
+      "value": 0.2,
+      "row": 119
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E20",
+      "value": 0.1,
+      "row": 120
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F20",
+      "value": 0,
+      "row": 121
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G20",
+      "value": 0,
+      "row": 122
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H20",
+      "value": 0,
+      "row": 123
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C21",
+      "value": 0,
+      "row": 124
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D21",
+      "value": 0.5,
+      "row": 125
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E21",
+      "value": 0,
+      "row": 126
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F21",
+      "value": 0,
+      "row": 127
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G21",
+      "value": 0,
+      "row": 128
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H21",
+      "value": 0,
+      "row": 129
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C22",
+      "value": 0,
+      "row": 130
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D22",
+      "value": 0.5,
+      "row": 131
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E22",
+      "value": 0,
+      "row": 132
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F22",
+      "value": 0,
+      "row": 133
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G22",
+      "value": 0,
+      "row": 134
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H22",
+      "value": 0,
+      "row": 135
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C23",
+      "value": 0,
+      "row": 136
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D23",
+      "value": 0.2,
+      "row": 137
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E23",
+      "value": 0,
+      "row": 138
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F23",
+      "value": 0,
+      "row": 139
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G23",
+      "value": 0,
+      "row": 140
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H23",
+      "value": 0,
+      "row": 141
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C24",
+      "value": 0,
+      "row": 142
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D24",
+      "value": 0.2,
+      "row": 143
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E24",
+      "value": 0,
+      "row": 144
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F24",
+      "value": 0,
+      "row": 145
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G24",
+      "value": 0,
+      "row": 146
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H24",
+      "value": 0,
+      "row": 147
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C25",
+      "value": 0,
+      "row": 148
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D25",
+      "value": 0.3,
+      "row": 149
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E25",
+      "value": 0,
+      "row": 150
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F25",
+      "value": 0,
+      "row": 151
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G25",
+      "value": 0,
+      "row": 152
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H25",
+      "value": 0,
+      "row": 153
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C26",
+      "value": 0,
+      "row": 154
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D26",
+      "value": 0.3,
+      "row": 155
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E26",
+      "value": 0,
+      "row": 156
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F26",
+      "value": 0,
+      "row": 157
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G26",
+      "value": 0,
+      "row": 158
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H26",
+      "value": 0,
+      "row": 159
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C27",
+      "value": 0,
+      "row": 160
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D27",
+      "value": 0.1,
+      "row": 161
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E27",
+      "value": 0,
+      "row": 162
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F27",
+      "value": 0,
+      "row": 163
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G27",
+      "value": 0,
+      "row": 164
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H27",
+      "value": 0,
+      "row": 165
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C28",
+      "value": 0,
+      "row": 166
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D28",
+      "value": 0.1,
+      "row": 167
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E28",
+      "value": 0,
+      "row": 168
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F28",
+      "value": 0,
+      "row": 169
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G28",
+      "value": 0,
+      "row": 170
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H28",
+      "value": 0,
+      "row": 171
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C29",
+      "value": 0,
+      "row": 172
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D29",
+      "value": 0.3,
+      "row": 173
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E29",
+      "value": 0,
+      "row": 174
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F29",
+      "value": 0,
+      "row": 175
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G29",
+      "value": 0,
+      "row": 176
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H29",
+      "value": 0,
+      "row": 177
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C30",
+      "value": 0,
+      "row": 178
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D30",
+      "value": 0.3,
+      "row": 179
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E30",
+      "value": 0,
+      "row": 180
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F30",
+      "value": 0,
+      "row": 181
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G30",
+      "value": 0,
+      "row": 182
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H30",
+      "value": 0,
+      "row": 183
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C31",
+      "value": 0,
+      "row": 184
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D31",
+      "value": 0.1,
+      "row": 185
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E31",
+      "value": 0,
+      "row": 186
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F31",
+      "value": 0,
+      "row": 187
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G31",
+      "value": 0,
+      "row": 188
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H31",
+      "value": 0,
+      "row": 189
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C32",
+      "value": 0,
+      "row": 190
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D32",
+      "value": 0.1,
+      "row": 191
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E32",
+      "value": 0,
+      "row": 192
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F32",
+      "value": 0,
+      "row": 193
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G32",
+      "value": 0,
+      "row": 194
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H32",
+      "value": 0,
+      "row": 195
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C33",
+      "value": 0,
+      "row": 196
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D33",
+      "value": 0.3,
+      "row": 197
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E33",
+      "value": 0,
+      "row": 198
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F33",
+      "value": 0,
+      "row": 199
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G33",
+      "value": 0,
+      "row": 200
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H33",
+      "value": 0,
+      "row": 201
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C34",
+      "value": 0,
+      "row": 202
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D34",
+      "value": 0.3,
+      "row": 203
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E34",
+      "value": 0,
+      "row": 204
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F34",
+      "value": 0,
+      "row": 205
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G34",
+      "value": 0,
+      "row": 206
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H34",
+      "value": 0,
+      "row": 207
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C35",
+      "value": 0,
+      "row": 208
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D35",
+      "value": 0.1,
+      "row": 209
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E35",
+      "value": 0,
+      "row": 210
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F35",
+      "value": 0,
+      "row": 211
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G35",
+      "value": 0,
+      "row": 212
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H35",
+      "value": 0,
+      "row": 213
+    },
+    {
+      "sheet": "Входы H",
+      "address": "C36",
+      "value": 0,
+      "row": 214
+    },
+    {
+      "sheet": "Входы H",
+      "address": "D36",
+      "value": 0.1,
+      "row": 215
+    },
+    {
+      "sheet": "Входы H",
+      "address": "E36",
+      "value": 0,
+      "row": 216
+    },
+    {
+      "sheet": "Входы H",
+      "address": "F36",
+      "value": 0,
+      "row": 217
+    },
+    {
+      "sheet": "Входы H",
+      "address": "G36",
+      "value": 0,
+      "row": 218
+    },
+    {
+      "sheet": "Входы H",
+      "address": "H36",
+      "value": 0,
+      "row": 219
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N5",
+      "value": 1.5,
+      "row": 220
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O5",
+      "value": 0.2,
+      "row": 221
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P5",
+      "value": 1,
+      "row": 222
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q5",
+      "value": 0.3,
+      "row": 223
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N6",
+      "value": 1.5,
+      "row": 224
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O6",
+      "value": 0.2,
+      "row": 225
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P6",
+      "value": 1,
+      "row": 226
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q6",
+      "value": 0.3,
+      "row": 227
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N7",
+      "value": 1.5,
+      "row": 228
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O7",
+      "value": 0.2,
+      "row": 229
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P7",
+      "value": 1,
+      "row": 230
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q7",
+      "value": 0.3,
+      "row": 231
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N8",
+      "value": 1.5,
+      "row": 232
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O8",
+      "value": 0.2,
+      "row": 233
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P8",
+      "value": 1,
+      "row": 234
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q8",
+      "value": 0.3,
+      "row": 235
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N9",
+      "value": 1.5,
+      "row": 236
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O9",
+      "value": 0.2,
+      "row": 237
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P9",
+      "value": 1,
+      "row": 238
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q9",
+      "value": 0.3,
+      "row": 239
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N10",
+      "value": 1.5,
+      "row": 240
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O10",
+      "value": 0.2,
+      "row": 241
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P10",
+      "value": 1,
+      "row": 242
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q10",
+      "value": 0.3,
+      "row": 243
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N11",
+      "value": 1.5,
+      "row": 244
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O11",
+      "value": 0.2,
+      "row": 245
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P11",
+      "value": 1,
+      "row": 246
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q11",
+      "value": 0.3,
+      "row": 247
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N12",
+      "value": 1.5,
+      "row": 248
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O12",
+      "value": 0.2,
+      "row": 249
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P12",
+      "value": 1,
+      "row": 250
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q12",
+      "value": 0.3,
+      "row": 251
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N13",
+      "value": 1.5,
+      "row": 252
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O13",
+      "value": 0.2,
+      "row": 253
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P13",
+      "value": 1,
+      "row": 254
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q13",
+      "value": 0.3,
+      "row": 255
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N14",
+      "value": 1.5,
+      "row": 256
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O14",
+      "value": 0.2,
+      "row": 257
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P14",
+      "value": 1,
+      "row": 258
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q14",
+      "value": 0.3,
+      "row": 259
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N15",
+      "value": 1.5,
+      "row": 260
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O15",
+      "value": 0.2,
+      "row": 261
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P15",
+      "value": 1,
+      "row": 262
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q15",
+      "value": 0.3,
+      "row": 263
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N16",
+      "value": 1.5,
+      "row": 264
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O16",
+      "value": 0.2,
+      "row": 265
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P16",
+      "value": 1,
+      "row": 266
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q16",
+      "value": 0.3,
+      "row": 267
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N17",
+      "value": 1.5,
+      "row": 268
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O17",
+      "value": 0.2,
+      "row": 269
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P17",
+      "value": 1,
+      "row": 270
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q17",
+      "value": 0.3,
+      "row": 271
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N18",
+      "value": 1.5,
+      "row": 272
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O18",
+      "value": 0.2,
+      "row": 273
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P18",
+      "value": 1,
+      "row": 274
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q18",
+      "value": 0.3,
+      "row": 275
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N19",
+      "value": 1.5,
+      "row": 276
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O19",
+      "value": 0.2,
+      "row": 277
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P19",
+      "value": 1,
+      "row": 278
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q19",
+      "value": 0.3,
+      "row": 279
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N20",
+      "value": 1.5,
+      "row": 280
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O20",
+      "value": 0.2,
+      "row": 281
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P20",
+      "value": 1,
+      "row": 282
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q20",
+      "value": 0.3,
+      "row": 283
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N21",
+      "value": 1.5,
+      "row": 284
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O21",
+      "value": 0.2,
+      "row": 285
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P21",
+      "value": 1,
+      "row": 286
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q21",
+      "value": 0.3,
+      "row": 287
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N22",
+      "value": 1.5,
+      "row": 288
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O22",
+      "value": 0.2,
+      "row": 289
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P22",
+      "value": 1,
+      "row": 290
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q22",
+      "value": 0.3,
+      "row": 291
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N23",
+      "value": 1.5,
+      "row": 292
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O23",
+      "value": 0.2,
+      "row": 293
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P23",
+      "value": 1,
+      "row": 294
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q23",
+      "value": 0.3,
+      "row": 295
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N24",
+      "value": 1.5,
+      "row": 296
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O24",
+      "value": 0.2,
+      "row": 297
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P24",
+      "value": 1,
+      "row": 298
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q24",
+      "value": 0.3,
+      "row": 299
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N25",
+      "value": 1.5,
+      "row": 300
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O25",
+      "value": 0.2,
+      "row": 301
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P25",
+      "value": 1,
+      "row": 302
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q25",
+      "value": 0.3,
+      "row": 303
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N26",
+      "value": 1.5,
+      "row": 304
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O26",
+      "value": 0.2,
+      "row": 305
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P26",
+      "value": 1,
+      "row": 306
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q26",
+      "value": 0.3,
+      "row": 307
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N27",
+      "value": 1.5,
+      "row": 308
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O27",
+      "value": 0.2,
+      "row": 309
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P27",
+      "value": 1,
+      "row": 310
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q27",
+      "value": 0.3,
+      "row": 311
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N28",
+      "value": 1.5,
+      "row": 312
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O28",
+      "value": 0.2,
+      "row": 313
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P28",
+      "value": 1,
+      "row": 314
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q28",
+      "value": 0.3,
+      "row": 315
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N29",
+      "value": 1.5,
+      "row": 316
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O29",
+      "value": 0.2,
+      "row": 317
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P29",
+      "value": 1,
+      "row": 318
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q29",
+      "value": 0.3,
+      "row": 319
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N30",
+      "value": 1.5,
+      "row": 320
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O30",
+      "value": 0.2,
+      "row": 321
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P30",
+      "value": 1,
+      "row": 322
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q30",
+      "value": 0.3,
+      "row": 323
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N31",
+      "value": 1.5,
+      "row": 324
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O31",
+      "value": 0.2,
+      "row": 325
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P31",
+      "value": 1,
+      "row": 326
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q31",
+      "value": 0.3,
+      "row": 327
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N32",
+      "value": 1.5,
+      "row": 328
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O32",
+      "value": 0.2,
+      "row": 329
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P32",
+      "value": 1,
+      "row": 330
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q32",
+      "value": 0.3,
+      "row": 331
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N33",
+      "value": 1.5,
+      "row": 332
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O33",
+      "value": 0.2,
+      "row": 333
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P33",
+      "value": 1,
+      "row": 334
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q33",
+      "value": 0.3,
+      "row": 335
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N34",
+      "value": 1.5,
+      "row": 336
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O34",
+      "value": 0.2,
+      "row": 337
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P34",
+      "value": 1,
+      "row": 338
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q34",
+      "value": 0.3,
+      "row": 339
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N35",
+      "value": 1.5,
+      "row": 340
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O35",
+      "value": 0.2,
+      "row": 341
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P35",
+      "value": 1,
+      "row": 342
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q35",
+      "value": 0.3,
+      "row": 343
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N36",
+      "value": 1.5,
+      "row": 344
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O36",
+      "value": 0.2,
+      "row": 345
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P36",
+      "value": 1,
+      "row": 346
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q36",
+      "value": 0.3,
+      "row": 347
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N37",
+      "value": 1.5,
+      "row": 348
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O37",
+      "value": 0.2,
+      "row": 349
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P37",
+      "value": 1,
+      "row": 350
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q37",
+      "value": 0.3,
+      "row": 351
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N38",
+      "value": 1.5,
+      "row": 352
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O38",
+      "value": 0.2,
+      "row": 353
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P38",
+      "value": 1,
+      "row": 354
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q38",
+      "value": 0.3,
+      "row": 355
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N39",
+      "value": 1.5,
+      "row": 356
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O39",
+      "value": 0.2,
+      "row": 357
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P39",
+      "value": 1,
+      "row": 358
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q39",
+      "value": 0.3,
+      "row": 359
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N40",
+      "value": 1.5,
+      "row": 360
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O40",
+      "value": 0.2,
+      "row": 361
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P40",
+      "value": 1,
+      "row": 362
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q40",
+      "value": 0.3,
+      "row": 363
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N41",
+      "value": 1.5,
+      "row": 364
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O41",
+      "value": 0.2,
+      "row": 365
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P41",
+      "value": 1,
+      "row": 366
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q41",
+      "value": 0.3,
+      "row": 367
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N42",
+      "value": 1.5,
+      "row": 368
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O42",
+      "value": 0.2,
+      "row": 369
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P42",
+      "value": 1,
+      "row": 370
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q42",
+      "value": 0.3,
+      "row": 371
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N43",
+      "value": 1.5,
+      "row": 372
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O43",
+      "value": 0.2,
+      "row": 373
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P43",
+      "value": 1,
+      "row": 374
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q43",
+      "value": 0.3,
+      "row": 375
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N44",
+      "value": 1.5,
+      "row": 376
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O44",
+      "value": 0.2,
+      "row": 377
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P44",
+      "value": 1,
+      "row": 378
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q44",
+      "value": 0.3,
+      "row": 379
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N45",
+      "value": 1.5,
+      "row": 380
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O45",
+      "value": 0.2,
+      "row": 381
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P45",
+      "value": 1,
+      "row": 382
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q45",
+      "value": 0.3,
+      "row": 383
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N46",
+      "value": 1.5,
+      "row": 384
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O46",
+      "value": 0.2,
+      "row": 385
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P46",
+      "value": 1,
+      "row": 386
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q46",
+      "value": 0.3,
+      "row": 387
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N47",
+      "value": 1.5,
+      "row": 388
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O47",
+      "value": 0.2,
+      "row": 389
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P47",
+      "value": 1,
+      "row": 390
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q47",
+      "value": 0.3,
+      "row": 391
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N48",
+      "value": 1.5,
+      "row": 392
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O48",
+      "value": 0.2,
+      "row": 393
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P48",
+      "value": 1,
+      "row": 394
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q48",
+      "value": 0.3,
+      "row": 395
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N49",
+      "value": 1.5,
+      "row": 396
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O49",
+      "value": 0.2,
+      "row": 397
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P49",
+      "value": 1,
+      "row": 398
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q49",
+      "value": 0.3,
+      "row": 399
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N50",
+      "value": 1.5,
+      "row": 400
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O50",
+      "value": 0.2,
+      "row": 401
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P50",
+      "value": 1,
+      "row": 402
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q50",
+      "value": 0.3,
+      "row": 403
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N51",
+      "value": 1.5,
+      "row": 404
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O51",
+      "value": 0.2,
+      "row": 405
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P51",
+      "value": 1,
+      "row": 406
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q51",
+      "value": 0.3,
+      "row": 407
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N52",
+      "value": 1.5,
+      "row": 408
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O52",
+      "value": 0.2,
+      "row": 409
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P52",
+      "value": 1,
+      "row": 410
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q52",
+      "value": 0.3,
+      "row": 411
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N53",
+      "value": 1.5,
+      "row": 412
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O53",
+      "value": 0.2,
+      "row": 413
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P53",
+      "value": 1,
+      "row": 414
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q53",
+      "value": 0.3,
+      "row": 415
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N54",
+      "value": 1.5,
+      "row": 416
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O54",
+      "value": 0.2,
+      "row": 417
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P54",
+      "value": 1,
+      "row": 418
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q54",
+      "value": 0.3,
+      "row": 419
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N55",
+      "value": 1.5,
+      "row": 420
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O55",
+      "value": 0.2,
+      "row": 421
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P55",
+      "value": 1,
+      "row": 422
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q55",
+      "value": 0.3,
+      "row": 423
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N56",
+      "value": 1.5,
+      "row": 424
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O56",
+      "value": 0.2,
+      "row": 425
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P56",
+      "value": 1,
+      "row": 426
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q56",
+      "value": 0.3,
+      "row": 427
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N57",
+      "value": 1.5,
+      "row": 428
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O57",
+      "value": 0.2,
+      "row": 429
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P57",
+      "value": 1,
+      "row": 430
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q57",
+      "value": 0.3,
+      "row": 431
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N58",
+      "value": 1.5,
+      "row": 432
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O58",
+      "value": 0.2,
+      "row": 433
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P58",
+      "value": 1,
+      "row": 434
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q58",
+      "value": 0.3,
+      "row": 435
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N59",
+      "value": 1.5,
+      "row": 436
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O59",
+      "value": 0.2,
+      "row": 437
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P59",
+      "value": 1,
+      "row": 438
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q59",
+      "value": 0.3,
+      "row": 439
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N60",
+      "value": 1.5,
+      "row": 440
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O60",
+      "value": 0.2,
+      "row": 441
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P60",
+      "value": 1,
+      "row": 442
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q60",
+      "value": 0.3,
+      "row": 443
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N61",
+      "value": 1.5,
+      "row": 444
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O61",
+      "value": 0.2,
+      "row": 445
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P61",
+      "value": 1,
+      "row": 446
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q61",
+      "value": 0.3,
+      "row": 447
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N62",
+      "value": 1.5,
+      "row": 448
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O62",
+      "value": 0.2,
+      "row": 449
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P62",
+      "value": 1,
+      "row": 450
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q62",
+      "value": 0.3,
+      "row": 451
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N63",
+      "value": 1.5,
+      "row": 452
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O63",
+      "value": 0.2,
+      "row": 453
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P63",
+      "value": 1,
+      "row": 454
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q63",
+      "value": 0.3,
+      "row": 455
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N64",
+      "value": 1.5,
+      "row": 456
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O64",
+      "value": 0.2,
+      "row": 457
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P64",
+      "value": 1,
+      "row": 458
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q64",
+      "value": 0.3,
+      "row": 459
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N65",
+      "value": 1.5,
+      "row": 460
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O65",
+      "value": 0.2,
+      "row": 461
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P65",
+      "value": 1,
+      "row": 462
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q65",
+      "value": 0.3,
+      "row": 463
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N66",
+      "value": 1.5,
+      "row": 464
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O66",
+      "value": 0.2,
+      "row": 465
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P66",
+      "value": 1,
+      "row": 466
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q66",
+      "value": 0.3,
+      "row": 467
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N67",
+      "value": 1.5,
+      "row": 468
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O67",
+      "value": 0.2,
+      "row": 469
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P67",
+      "value": 1,
+      "row": 470
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q67",
+      "value": 0.3,
+      "row": 471
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N68",
+      "value": 1.5,
+      "row": 472
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O68",
+      "value": 0.2,
+      "row": 473
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P68",
+      "value": 1,
+      "row": 474
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q68",
+      "value": 0.3,
+      "row": 475
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N69",
+      "value": 1.5,
+      "row": 476
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O69",
+      "value": 0.2,
+      "row": 477
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P69",
+      "value": 1,
+      "row": 478
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q69",
+      "value": 0.3,
+      "row": 479
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N70",
+      "value": 1.5,
+      "row": 480
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O70",
+      "value": 0.2,
+      "row": 481
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P70",
+      "value": 1,
+      "row": 482
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q70",
+      "value": 0.3,
+      "row": 483
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N71",
+      "value": 1.5,
+      "row": 484
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O71",
+      "value": 0.2,
+      "row": 485
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P71",
+      "value": 1,
+      "row": 486
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q71",
+      "value": 0.3,
+      "row": 487
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N72",
+      "value": 1.5,
+      "row": 488
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O72",
+      "value": 0.2,
+      "row": 489
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P72",
+      "value": 1,
+      "row": 490
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q72",
+      "value": 0.3,
+      "row": 491
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N73",
+      "value": 1.5,
+      "row": 492
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O73",
+      "value": 0.2,
+      "row": 493
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P73",
+      "value": 1,
+      "row": 494
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q73",
+      "value": 0.3,
+      "row": 495
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N74",
+      "value": 1.5,
+      "row": 496
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O74",
+      "value": 0.2,
+      "row": 497
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P74",
+      "value": 1,
+      "row": 498
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q74",
+      "value": 0.3,
+      "row": 499
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N75",
+      "value": 1.5,
+      "row": 500
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O75",
+      "value": 0.2,
+      "row": 501
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P75",
+      "value": 1,
+      "row": 502
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q75",
+      "value": 0.3,
+      "row": 503
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N76",
+      "value": 1.5,
+      "row": 504
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O76",
+      "value": 0.2,
+      "row": 505
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P76",
+      "value": 1,
+      "row": 506
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q76",
+      "value": 0.3,
+      "row": 507
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N77",
+      "value": 1.5,
+      "row": 508
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O77",
+      "value": 0.2,
+      "row": 509
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P77",
+      "value": 1,
+      "row": 510
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q77",
+      "value": 0.3,
+      "row": 511
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N78",
+      "value": 1.5,
+      "row": 512
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O78",
+      "value": 0.2,
+      "row": 513
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P78",
+      "value": 1,
+      "row": 514
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q78",
+      "value": 0.3,
+      "row": 515
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N79",
+      "value": 1.5,
+      "row": 516
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O79",
+      "value": 0.2,
+      "row": 517
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P79",
+      "value": 1,
+      "row": 518
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q79",
+      "value": 0.3,
+      "row": 519
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N80",
+      "value": 1.5,
+      "row": 520
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O80",
+      "value": 0.2,
+      "row": 521
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P80",
+      "value": 1,
+      "row": 522
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q80",
+      "value": 0.3,
+      "row": 523
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N81",
+      "value": 1.5,
+      "row": 524
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O81",
+      "value": 0.2,
+      "row": 525
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P81",
+      "value": 1,
+      "row": 526
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q81",
+      "value": 0.3,
+      "row": 527
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N82",
+      "value": 1.5,
+      "row": 528
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O82",
+      "value": 0.2,
+      "row": 529
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P82",
+      "value": 1,
+      "row": 530
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q82",
+      "value": 0.3,
+      "row": 531
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N83",
+      "value": 1.5,
+      "row": 532
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O83",
+      "value": 0.2,
+      "row": 533
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P83",
+      "value": 1,
+      "row": 534
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q83",
+      "value": 0.3,
+      "row": 535
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N84",
+      "value": 1.5,
+      "row": 536
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O84",
+      "value": 0.2,
+      "row": 537
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P84",
+      "value": 1,
+      "row": 538
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q84",
+      "value": 0.3,
+      "row": 539
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N85",
+      "value": 1.5,
+      "row": 540
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O85",
+      "value": 0.2,
+      "row": 541
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P85",
+      "value": 1,
+      "row": 542
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q85",
+      "value": 0.3,
+      "row": 543
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N86",
+      "value": 1.5,
+      "row": 544
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O86",
+      "value": 0.2,
+      "row": 545
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P86",
+      "value": 1,
+      "row": 546
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q86",
+      "value": 0.3,
+      "row": 547
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N87",
+      "value": 1.5,
+      "row": 548
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O87",
+      "value": 0.2,
+      "row": 549
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P87",
+      "value": 1,
+      "row": 550
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q87",
+      "value": 0.3,
+      "row": 551
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N88",
+      "value": 1.5,
+      "row": 552
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O88",
+      "value": 0.2,
+      "row": 553
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P88",
+      "value": 1,
+      "row": 554
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q88",
+      "value": 0.3,
+      "row": 555
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N89",
+      "value": 1.5,
+      "row": 556
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O89",
+      "value": 0.2,
+      "row": 557
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P89",
+      "value": 1,
+      "row": 558
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q89",
+      "value": 0.3,
+      "row": 559
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N90",
+      "value": 1.5,
+      "row": 560
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O90",
+      "value": 0.2,
+      "row": 561
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P90",
+      "value": 1,
+      "row": 562
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q90",
+      "value": 0.3,
+      "row": 563
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N91",
+      "value": 1.5,
+      "row": 564
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O91",
+      "value": 0.2,
+      "row": 565
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P91",
+      "value": 1,
+      "row": 566
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q91",
+      "value": 0.3,
+      "row": 567
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N92",
+      "value": 1.5,
+      "row": 568
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O92",
+      "value": 0.2,
+      "row": 569
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P92",
+      "value": 1,
+      "row": 570
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q92",
+      "value": 0.3,
+      "row": 571
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N93",
+      "value": 1.5,
+      "row": 572
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O93",
+      "value": 0.2,
+      "row": 573
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P93",
+      "value": 1,
+      "row": 574
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q93",
+      "value": 0.3,
+      "row": 575
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N94",
+      "value": 1.5,
+      "row": 576
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O94",
+      "value": 0.2,
+      "row": 577
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P94",
+      "value": 1,
+      "row": 578
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q94",
+      "value": 0.3,
+      "row": 579
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N95",
+      "value": 1.5,
+      "row": 580
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O95",
+      "value": 0.2,
+      "row": 581
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P95",
+      "value": 1,
+      "row": 582
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q95",
+      "value": 0.3,
+      "row": 583
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N96",
+      "value": 1.5,
+      "row": 584
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O96",
+      "value": 0.2,
+      "row": 585
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P96",
+      "value": 1,
+      "row": 586
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q96",
+      "value": 0.3,
+      "row": 587
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N97",
+      "value": 1.5,
+      "row": 588
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O97",
+      "value": 0.2,
+      "row": 589
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P97",
+      "value": 1,
+      "row": 590
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q97",
+      "value": 0.3,
+      "row": 591
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N98",
+      "value": 1.5,
+      "row": 592
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O98",
+      "value": 0.2,
+      "row": 593
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P98",
+      "value": 1,
+      "row": 594
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q98",
+      "value": 0.3,
+      "row": 595
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N99",
+      "value": 1.5,
+      "row": 596
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O99",
+      "value": 0.2,
+      "row": 597
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P99",
+      "value": 1,
+      "row": 598
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q99",
+      "value": 0.3,
+      "row": 599
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N100",
+      "value": 1.5,
+      "row": 600
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O100",
+      "value": 0.2,
+      "row": 601
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P100",
+      "value": 1,
+      "row": 602
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q100",
+      "value": 0.3,
+      "row": 603
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N101",
+      "value": 1.5,
+      "row": 604
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O101",
+      "value": 0.2,
+      "row": 605
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P101",
+      "value": 1,
+      "row": 606
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q101",
+      "value": 0.3,
+      "row": 607
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N102",
+      "value": 1.5,
+      "row": 608
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O102",
+      "value": 0.2,
+      "row": 609
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P102",
+      "value": 1,
+      "row": 610
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q102",
+      "value": 0.3,
+      "row": 611
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N103",
+      "value": 1.5,
+      "row": 612
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O103",
+      "value": 0.2,
+      "row": 613
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P103",
+      "value": 1,
+      "row": 614
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q103",
+      "value": 0.3,
+      "row": 615
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N104",
+      "value": 1.5,
+      "row": 616
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O104",
+      "value": 0.2,
+      "row": 617
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P104",
+      "value": 1,
+      "row": 618
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q104",
+      "value": 0.3,
+      "row": 619
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N105",
+      "value": 1.2,
+      "row": 620
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O105",
+      "value": 0.4,
+      "row": 621
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P105",
+      "value": 1,
+      "row": 622
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q105",
+      "value": 0.5,
+      "row": 623
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N106",
+      "value": 1.2,
+      "row": 624
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O106",
+      "value": 0.4,
+      "row": 625
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P106",
+      "value": 1,
+      "row": 626
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q106",
+      "value": 0.5,
+      "row": 627
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N107",
+      "value": 1.2,
+      "row": 628
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O107",
+      "value": 0.4,
+      "row": 629
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P107",
+      "value": 1,
+      "row": 630
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q107",
+      "value": 0.5,
+      "row": 631
+    },
+    {
+      "sheet": "Входы H",
+      "address": "N108",
+      "value": 1.2,
+      "row": 632
+    },
+    {
+      "sheet": "Входы H",
+      "address": "O108",
+      "value": 0.4,
+      "row": 633
+    },
+    {
+      "sheet": "Входы H",
+      "address": "P108",
+      "value": 1,
+      "row": 634
+    },
+    {
+      "sheet": "Входы H",
+      "address": "Q108",
+      "value": 0.5,
+      "row": 635
+    },
+    {
+      "sheet": "Когорты",
+      "address": "H5",
+      "value": 0.65,
+      "row": 636
+    },
+    {
+      "sheet": "Когорты",
+      "address": "I5",
+      "value": 0.13,
+      "row": 637
+    },
+    {
+      "sheet": "Когорты",
+      "address": "H6",
+      "value": 0.65,
+      "row": 638
+    },
+    {
+      "sheet": "Когорты",
+      "address": "I6",
+      "value": 0.13,
+      "row": 639
+    },
+    {
+      "sheet": "Когорты",
+      "address": "H7",
+      "value": 0.65,
+      "row": 640
+    },
+    {
+      "sheet": "Когорты",
+      "address": "I7",
+      "value": 0.13,
+      "row": 641
+    },
+    {
+      "sheet": "Когорты",
+      "address": "H8",
+      "value": 0.65,
+      "row": 642
+    },
+    {
+      "sheet": "Когорты",
+      "address": "I8",
+      "value": 0.13,
+      "row": 643
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B5",
+      "value": 0.65,
+      "row": 644
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B6",
+      "value": 0.13,
+      "row": 645
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B7",
+      "value": 0.91,
+      "row": 646
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B8",
+      "value": 0.2,
+      "row": 647
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B9",
+      "value": 0.6,
+      "row": 648
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B10",
+      "value": 0.8,
+      "row": 649
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B11",
+      "value": 60,
+      "row": 650
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B12",
+      "value": 24,
+      "row": 651
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B13",
+      "value": 300,
+      "row": 652
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B14",
+      "value": 420,
+      "row": 653
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B15",
+      "value": 32,
+      "row": 654
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B16",
+      "value": 40,
+      "row": 655
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B17",
+      "value": -9,
+      "row": 656
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B18",
+      "value": -18,
+      "row": 657
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B19",
+      "value": -9,
+      "row": 658
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B20",
+      "value": 6,
+      "row": 659
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B21",
+      "value": 30,
+      "row": 660
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B22",
+      "value": 0,
+      "row": 661
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B23",
+      "value": 0,
+      "row": 662
+    },
+    {
+      "sheet": "Исходные",
+      "address": "B24",
+      "value": 0,
+      "row": 663
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B6",
+      "value": 44000000,
+      "row": 664
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B7",
+      "value": 84000000,
+      "row": 665
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B8",
+      "value": 807700000,
+      "row": 666
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B9",
+      "value": 90,
+      "row": 667
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B10",
+      "value": 67300000,
+      "row": 668
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B11",
+      "value": 42,
+      "row": 669
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B12",
+      "value": 1200000000,
+      "row": 670
+    },
+    {
+      "sheet": "Масштаб",
+      "address": "B13",
+      "value": 51,
+      "row": 671
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D6",
+      "value": 100000,
+      "row": 672
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E6",
+      "value": 400000,
+      "row": 673
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F6",
+      "value": 0.1,
+      "row": 674
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G6",
+      "value": 0.15,
+      "row": 675
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H6",
+      "value": 0.35,
+      "row": 676
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I6",
+      "value": 0.4,
+      "row": 677
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J6",
+      "value": 0.12,
+      "row": 678
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K6",
+      "value": 0.25,
+      "row": 679
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L6",
+      "value": 1,
+      "row": 680
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M6",
+      "value": 0.6,
+      "row": 681
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N6",
+      "value": 0.8,
+      "row": 682
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O6",
+      "value": 1,
+      "row": 683
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P6",
+      "value": 0.25,
+      "row": 684
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q6",
+      "value": 0.25,
+      "row": 685
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R6",
+      "value": 0,
+      "row": 686
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S6",
+      "value": 0,
+      "row": 687
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T6",
+      "value": 0,
+      "row": 688
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U6",
+      "value": 1000,
+      "row": 689
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V6",
+      "value": 1,
+      "row": 690
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X6",
+      "value": 1.5,
+      "row": 691
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y6",
+      "value": 0.2,
+      "row": 692
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z6",
+      "value": 1,
+      "row": 693
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA6",
+      "value": 0.3,
+      "row": 694
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D7",
+      "value": 100000,
+      "row": 695
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E7",
+      "value": 400000,
+      "row": 696
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F7",
+      "value": 0.2,
+      "row": 697
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G7",
+      "value": 0.2,
+      "row": 698
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H7",
+      "value": 0.3,
+      "row": 699
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I7",
+      "value": 0.3,
+      "row": 700
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J7",
+      "value": 0.18,
+      "row": 701
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K7",
+      "value": 0.3,
+      "row": 702
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L7",
+      "value": 1,
+      "row": 703
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M7",
+      "value": 0.5,
+      "row": 704
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N7",
+      "value": 0.8,
+      "row": 705
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O7",
+      "value": 1,
+      "row": 706
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P7",
+      "value": 0.25,
+      "row": 707
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q7",
+      "value": 0.25,
+      "row": 708
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R7",
+      "value": 0,
+      "row": 709
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S7",
+      "value": 0,
+      "row": 710
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T7",
+      "value": 0,
+      "row": 711
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U7",
+      "value": 1000,
+      "row": 712
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V7",
+      "value": 1,
+      "row": 713
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X7",
+      "value": 1.5,
+      "row": 714
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y7",
+      "value": 0.2,
+      "row": 715
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z7",
+      "value": 1,
+      "row": 716
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA7",
+      "value": 0.3,
+      "row": 717
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D8",
+      "value": 100000,
+      "row": 718
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E8",
+      "value": 400000,
+      "row": 719
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F8",
+      "value": 0.3,
+      "row": 720
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G8",
+      "value": 0.25,
+      "row": 721
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H8",
+      "value": 0.25,
+      "row": 722
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I8",
+      "value": 0.2,
+      "row": 723
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J8",
+      "value": 0.25,
+      "row": 724
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K8",
+      "value": 0.4,
+      "row": 725
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L8",
+      "value": 1,
+      "row": 726
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M8",
+      "value": 0.4,
+      "row": 727
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N8",
+      "value": 0.8,
+      "row": 728
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O8",
+      "value": 1,
+      "row": 729
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P8",
+      "value": 0.25,
+      "row": 730
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q8",
+      "value": 0.25,
+      "row": 731
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R8",
+      "value": 0,
+      "row": 732
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S8",
+      "value": 0,
+      "row": 733
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T8",
+      "value": 0,
+      "row": 734
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U8",
+      "value": 1000,
+      "row": 735
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V8",
+      "value": 1,
+      "row": 736
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X8",
+      "value": 1.5,
+      "row": 737
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y8",
+      "value": 0.2,
+      "row": 738
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z8",
+      "value": 1,
+      "row": 739
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA8",
+      "value": 0.3,
+      "row": 740
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D9",
+      "value": 100000,
+      "row": 741
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E9",
+      "value": 400000,
+      "row": 742
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F9",
+      "value": 0.09195501187254174,
+      "row": 743
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G9",
+      "value": 0.011889748318309626,
+      "row": 744
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H9",
+      "value": 0.09983360222835361,
+      "row": 745
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I9",
+      "value": 0.796321637580795,
+      "row": 746
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J9",
+      "value": 0.20929092686797693,
+      "row": 747
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K9",
+      "value": 0.3,
+      "row": 748
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L9",
+      "value": 1,
+      "row": 749
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M9",
+      "value": 0.32440286606219143,
+      "row": 750
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N9",
+      "value": 0.8,
+      "row": 751
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O9",
+      "value": 1,
+      "row": 752
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P9",
+      "value": 0.25,
+      "row": 753
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q9",
+      "value": 0.25,
+      "row": 754
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R9",
+      "value": 0,
+      "row": 755
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S9",
+      "value": 0,
+      "row": 756
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T9",
+      "value": 0,
+      "row": 757
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U9",
+      "value": 1,
+      "row": 758
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V9",
+      "value": 0,
+      "row": 759
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X9",
+      "value": 1.5,
+      "row": 760
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y9",
+      "value": 0.2,
+      "row": 761
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z9",
+      "value": 1,
+      "row": 762
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA9",
+      "value": 0.3,
+      "row": 763
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D10",
+      "value": 100000,
+      "row": 764
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E10",
+      "value": 400000,
+      "row": 765
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F10",
+      "value": 0.09195501187254174,
+      "row": 766
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G10",
+      "value": 0.011889748318309626,
+      "row": 767
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H10",
+      "value": 0.09983360222835361,
+      "row": 768
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I10",
+      "value": 0.796321637580795,
+      "row": 769
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J10",
+      "value": 0.201,
+      "row": 770
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K10",
+      "value": 0.2917090731320231,
+      "row": 771
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L10",
+      "value": 2,
+      "row": 772
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M10",
+      "value": 0.6652365721101067,
+      "row": 773
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N10",
+      "value": 0.8,
+      "row": 774
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O10",
+      "value": 1,
+      "row": 775
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P10",
+      "value": 0.25,
+      "row": 776
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q10",
+      "value": 0.25,
+      "row": 777
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R10",
+      "value": 0,
+      "row": 778
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S10",
+      "value": 0,
+      "row": 779
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T10",
+      "value": 0,
+      "row": 780
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U10",
+      "value": 1,
+      "row": 781
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V10",
+      "value": 1,
+      "row": 782
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X10",
+      "value": 1.5,
+      "row": 783
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y10",
+      "value": 0.2,
+      "row": 784
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z10",
+      "value": 1,
+      "row": 785
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA10",
+      "value": 0.3,
+      "row": 786
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D11",
+      "value": 44000000,
+      "row": 787
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E11",
+      "value": 84000000,
+      "row": 788
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F11",
+      "value": 0.09195501187254174,
+      "row": 789
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G11",
+      "value": 0.011889748318309626,
+      "row": 790
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H11",
+      "value": 0.09983360222835361,
+      "row": 791
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I11",
+      "value": 0.796321637580795,
+      "row": 792
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J11",
+      "value": 0.15,
+      "row": 793
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K11",
+      "value": 0.24070907313202305,
+      "row": 794
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L11",
+      "value": 2,
+      "row": 795
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M11",
+      "value": 0.6652365721101067,
+      "row": 796
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N11",
+      "value": 0.8,
+      "row": 797
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O11",
+      "value": 1,
+      "row": 798
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P11",
+      "value": 0.25,
+      "row": 799
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q11",
+      "value": 0.25,
+      "row": 800
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R11",
+      "value": 0,
+      "row": 801
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S11",
+      "value": 0,
+      "row": 802
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T11",
+      "value": 0,
+      "row": 803
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U11",
+      "value": 1,
+      "row": 804
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V11",
+      "value": 1,
+      "row": 805
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X11",
+      "value": 1.5,
+      "row": 806
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y11",
+      "value": 0.2,
+      "row": 807
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z11",
+      "value": 1,
+      "row": 808
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA11",
+      "value": 0.3,
+      "row": 809
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D12",
+      "value": 44000000,
+      "row": 810
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E12",
+      "value": 84000000,
+      "row": 811
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F12",
+      "value": 0.09195501187254174,
+      "row": 812
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G12",
+      "value": 0.011889748318309626,
+      "row": 813
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H12",
+      "value": 0.09983360222835361,
+      "row": 814
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I12",
+      "value": 0.796321637580795,
+      "row": 815
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J12",
+      "value": 0.12,
+      "row": 816
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K12",
+      "value": 0.21070907313202306,
+      "row": 817
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L12",
+      "value": 2,
+      "row": 818
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M12",
+      "value": 0.6652365721101067,
+      "row": 819
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N12",
+      "value": 0.8,
+      "row": 820
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O12",
+      "value": 0.6,
+      "row": 821
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P12",
+      "value": 0.5,
+      "row": 822
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q12",
+      "value": 0.5,
+      "row": 823
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R12",
+      "value": 0.001,
+      "row": 824
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S12",
+      "value": 0.002,
+      "row": 825
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T12",
+      "value": -0.005,
+      "row": 826
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U12",
+      "value": 1,
+      "row": 827
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V12",
+      "value": 1,
+      "row": 828
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X12",
+      "value": 1.5,
+      "row": 829
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y12",
+      "value": 0.2,
+      "row": 830
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z12",
+      "value": 1,
+      "row": 831
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA12",
+      "value": 0.3,
+      "row": 832
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D13",
+      "value": 44000000,
+      "row": 833
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E13",
+      "value": 84000000,
+      "row": 834
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F13",
+      "value": 0.09195501187254174,
+      "row": 835
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G13",
+      "value": 0.011889748318309626,
+      "row": 836
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H13",
+      "value": 0.09983360222835361,
+      "row": 837
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I13",
+      "value": 0.796321637580795,
+      "row": 838
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J13",
+      "value": 0.18,
+      "row": 839
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K13",
+      "value": 0.2707090731320231,
+      "row": 840
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L13",
+      "value": 2,
+      "row": 841
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M13",
+      "value": 0.6652365721101067,
+      "row": 842
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N13",
+      "value": 0.8,
+      "row": 843
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O13",
+      "value": 1.25,
+      "row": 844
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P13",
+      "value": 0,
+      "row": 845
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q13",
+      "value": 0,
+      "row": 846
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R13",
+      "value": 0,
+      "row": 847
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S13",
+      "value": 0,
+      "row": 848
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T13",
+      "value": 0,
+      "row": 849
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U13",
+      "value": 1,
+      "row": 850
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V13",
+      "value": 1,
+      "row": 851
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X13",
+      "value": 1.5,
+      "row": 852
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y13",
+      "value": 0.2,
+      "row": 853
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z13",
+      "value": 1,
+      "row": 854
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA13",
+      "value": 0.3,
+      "row": 855
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D14",
+      "value": 44000000,
+      "row": 856
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E14",
+      "value": 84000000,
+      "row": 857
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F14",
+      "value": 0.09195501187254174,
+      "row": 858
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G14",
+      "value": 0.011889748318309626,
+      "row": 859
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H14",
+      "value": 0.09983360222835361,
+      "row": 860
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I14",
+      "value": 0.796321637580795,
+      "row": 861
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J14",
+      "value": 0.15,
+      "row": 862
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K14",
+      "value": 0.24070907313202305,
+      "row": 863
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L14",
+      "value": 2,
+      "row": 864
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M14",
+      "value": 0.6652365721101067,
+      "row": 865
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N14",
+      "value": 0.8,
+      "row": 866
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O14",
+      "value": 1,
+      "row": 867
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P14",
+      "value": 1,
+      "row": 868
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q14",
+      "value": 0.25,
+      "row": 869
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R14",
+      "value": 0,
+      "row": 870
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S14",
+      "value": 0,
+      "row": 871
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T14",
+      "value": 0,
+      "row": 872
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U14",
+      "value": 1,
+      "row": 873
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V14",
+      "value": 1,
+      "row": 874
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X14",
+      "value": 1.5,
+      "row": 875
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y14",
+      "value": 0.2,
+      "row": 876
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z14",
+      "value": 1,
+      "row": 877
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA14",
+      "value": 0.3,
+      "row": 878
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D15",
+      "value": 44000000,
+      "row": 879
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E15",
+      "value": 84000000,
+      "row": 880
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F15",
+      "value": 0.09195501187254174,
+      "row": 881
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G15",
+      "value": 0.011889748318309626,
+      "row": 882
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H15",
+      "value": 0.09983360222835361,
+      "row": 883
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I15",
+      "value": 0.796321637580795,
+      "row": 884
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J15",
+      "value": 0.15,
+      "row": 885
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K15",
+      "value": 0.24070907313202305,
+      "row": 886
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L15",
+      "value": 2,
+      "row": 887
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M15",
+      "value": 0.6652365721101067,
+      "row": 888
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N15",
+      "value": 0.8,
+      "row": 889
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O15",
+      "value": 1,
+      "row": 890
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P15",
+      "value": 0.25,
+      "row": 891
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q15",
+      "value": 0.25,
+      "row": 892
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R15",
+      "value": 0.005,
+      "row": 893
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S15",
+      "value": 0,
+      "row": 894
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T15",
+      "value": 0,
+      "row": 895
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U15",
+      "value": 1,
+      "row": 896
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V15",
+      "value": 1,
+      "row": 897
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X15",
+      "value": 1.5,
+      "row": 898
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y15",
+      "value": 0.2,
+      "row": 899
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z15",
+      "value": 1,
+      "row": 900
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA15",
+      "value": 0.3,
+      "row": 901
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D16",
+      "value": 44000000,
+      "row": 902
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E16",
+      "value": 84000000,
+      "row": 903
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F16",
+      "value": 0.09195501187254174,
+      "row": 904
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G16",
+      "value": 0.011889748318309626,
+      "row": 905
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H16",
+      "value": 0.09983360222835361,
+      "row": 906
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I16",
+      "value": 0.796321637580795,
+      "row": 907
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J16",
+      "value": 0.15,
+      "row": 908
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K16",
+      "value": 0.24070907313202305,
+      "row": 909
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L16",
+      "value": 2,
+      "row": 910
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M16",
+      "value": 0.6652365721101067,
+      "row": 911
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N16",
+      "value": 0.8,
+      "row": 912
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O16",
+      "value": 1,
+      "row": 913
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P16",
+      "value": 0.25,
+      "row": 914
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q16",
+      "value": 0.25,
+      "row": 915
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R16",
+      "value": 0,
+      "row": 916
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S16",
+      "value": 0.03,
+      "row": 917
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T16",
+      "value": 0,
+      "row": 918
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U16",
+      "value": 1,
+      "row": 919
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V16",
+      "value": 1,
+      "row": 920
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X16",
+      "value": 1.5,
+      "row": 921
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y16",
+      "value": 0.2,
+      "row": 922
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z16",
+      "value": 1,
+      "row": 923
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA16",
+      "value": 0.3,
+      "row": 924
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D17",
+      "value": 44000000,
+      "row": 925
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E17",
+      "value": 84000000,
+      "row": 926
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F17",
+      "value": 0.09195501187254174,
+      "row": 927
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G17",
+      "value": 0.011889748318309626,
+      "row": 928
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H17",
+      "value": 0.09983360222835361,
+      "row": 929
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I17",
+      "value": 0.796321637580795,
+      "row": 930
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J17",
+      "value": 0.15,
+      "row": 931
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K17",
+      "value": 0.24070907313202305,
+      "row": 932
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L17",
+      "value": 2,
+      "row": 933
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M17",
+      "value": 0.6652365721101067,
+      "row": 934
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N17",
+      "value": 0.8,
+      "row": 935
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O17",
+      "value": 1,
+      "row": 936
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P17",
+      "value": 0.25,
+      "row": 937
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q17",
+      "value": 0.25,
+      "row": 938
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R17",
+      "value": 0,
+      "row": 939
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S17",
+      "value": 0,
+      "row": 940
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T17",
+      "value": -0.1,
+      "row": 941
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U17",
+      "value": 1,
+      "row": 942
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V17",
+      "value": 1,
+      "row": 943
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X17",
+      "value": 1.5,
+      "row": 944
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y17",
+      "value": 0.2,
+      "row": 945
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z17",
+      "value": 1,
+      "row": 946
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA17",
+      "value": 0.3,
+      "row": 947
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D18",
+      "value": 44000000,
+      "row": 948
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E18",
+      "value": 84000000,
+      "row": 949
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F18",
+      "value": 0.09195501187254174,
+      "row": 950
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G18",
+      "value": 0.011889748318309626,
+      "row": 951
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H18",
+      "value": 0.09983360222835361,
+      "row": 952
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I18",
+      "value": 0.796321637580795,
+      "row": 953
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J18",
+      "value": 0.15,
+      "row": 954
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K18",
+      "value": 0.24070907313202305,
+      "row": 955
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L18",
+      "value": 2,
+      "row": 956
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M18",
+      "value": 0.6652365721101067,
+      "row": 957
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N18",
+      "value": 0.8,
+      "row": 958
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O18",
+      "value": 1,
+      "row": 959
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P18",
+      "value": 0.25,
+      "row": 960
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q18",
+      "value": 0.25,
+      "row": 961
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R18",
+      "value": 0.005,
+      "row": 962
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S18",
+      "value": 0.01,
+      "row": 963
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T18",
+      "value": -0.02,
+      "row": 964
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U18",
+      "value": 1,
+      "row": 965
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V18",
+      "value": 1,
+      "row": 966
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X18",
+      "value": 1.5,
+      "row": 967
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y18",
+      "value": 0.2,
+      "row": 968
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z18",
+      "value": 1,
+      "row": 969
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA18",
+      "value": 0.3,
+      "row": 970
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D19",
+      "value": 44000000,
+      "row": 971
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E19",
+      "value": 84000000,
+      "row": 972
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F19",
+      "value": 0.2264244519703561,
+      "row": 973
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G19",
+      "value": 0.060867778549262445,
+      "row": 974
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H19",
+      "value": 0.19107808347014252,
+      "row": 975
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I19",
+      "value": 0.521629686010239,
+      "row": 976
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J19",
+      "value": 0.15,
+      "row": 977
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K19",
+      "value": 0.2368188268349808,
+      "row": 978
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L19",
+      "value": 2,
+      "row": 979
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M19",
+      "value": 0.5790701142226595,
+      "row": 980
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N19",
+      "value": 0.8,
+      "row": 981
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O19",
+      "value": 1,
+      "row": 982
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P19",
+      "value": 0.25,
+      "row": 983
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q19",
+      "value": 0.25,
+      "row": 984
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R19",
+      "value": 0,
+      "row": 985
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S19",
+      "value": 0,
+      "row": 986
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T19",
+      "value": 0,
+      "row": 987
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U19",
+      "value": 1,
+      "row": 988
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V19",
+      "value": 1,
+      "row": 989
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X19",
+      "value": 1.5,
+      "row": 990
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y19",
+      "value": 0.2,
+      "row": 991
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z19",
+      "value": 1,
+      "row": 992
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA19",
+      "value": 0.3,
+      "row": 993
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D20",
+      "value": 44000000,
+      "row": 994
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E20",
+      "value": 84000000,
+      "row": 995
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F20",
+      "value": 0.050384921365919225,
+      "row": 996
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G20",
+      "value": 0.004076947835715602,
+      "row": 997
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H20",
+      "value": 0.04813187124618166,
+      "row": 998
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I20",
+      "value": 0.8974062595521836,
+      "row": 999
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J20",
+      "value": 0.15,
+      "row": 1000
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K20",
+      "value": 0.2397972254892236,
+      "row": 1001
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L20",
+      "value": 2,
+      "row": 1002
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M20",
+      "value": 0.6827203576161492,
+      "row": 1003
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N20",
+      "value": 0.8,
+      "row": 1004
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O20",
+      "value": 1,
+      "row": 1005
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P20",
+      "value": 0.25,
+      "row": 1006
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q20",
+      "value": 0.25,
+      "row": 1007
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R20",
+      "value": 0,
+      "row": 1008
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S20",
+      "value": 0,
+      "row": 1009
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T20",
+      "value": 0,
+      "row": 1010
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U20",
+      "value": 1,
+      "row": 1011
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V20",
+      "value": 1,
+      "row": 1012
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X20",
+      "value": 1.5,
+      "row": 1013
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y20",
+      "value": 0.2,
+      "row": 1014
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z20",
+      "value": 1,
+      "row": 1015
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA20",
+      "value": 0.3,
+      "row": 1016
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D21",
+      "value": 44000000,
+      "row": 1017
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E21",
+      "value": 84000000,
+      "row": 1018
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F21",
+      "value": 0.01018326022222807,
+      "row": 1019
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G21",
+      "value": 0.00039069063172448415,
+      "row": 1020
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H21",
+      "value": 0.010031437437879178,
+      "row": 1021
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I21",
+      "value": 0.9793946117081682,
+      "row": 1022
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J21",
+      "value": 0.15,
+      "row": 1023
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K21",
+      "value": 0.2399863359494086,
+      "row": 1024
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L21",
+      "value": 2,
+      "row": 1025
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M21",
+      "value": 0.6967939137453238,
+      "row": 1026
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N21",
+      "value": 0.8,
+      "row": 1027
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O21",
+      "value": 1,
+      "row": 1028
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P21",
+      "value": 0.25,
+      "row": 1029
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q21",
+      "value": 0.25,
+      "row": 1030
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R21",
+      "value": 0,
+      "row": 1031
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S21",
+      "value": 0,
+      "row": 1032
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T21",
+      "value": 0,
+      "row": 1033
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U21",
+      "value": 1,
+      "row": 1034
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V21",
+      "value": 1,
+      "row": 1035
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X21",
+      "value": 1.5,
+      "row": 1036
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y21",
+      "value": 0.2,
+      "row": 1037
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z21",
+      "value": 1,
+      "row": 1038
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA21",
+      "value": 0.3,
+      "row": 1039
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D22",
+      "value": 44000000,
+      "row": 1040
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E22",
+      "value": 84000000,
+      "row": 1041
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F22",
+      "value": 0.09195501187254174,
+      "row": 1042
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G22",
+      "value": 0.011889748318309626,
+      "row": 1043
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H22",
+      "value": 0.09983360222835361,
+      "row": 1044
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I22",
+      "value": 0.796321637580795,
+      "row": 1045
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J22",
+      "value": 0.1,
+      "row": 1046
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K22",
+      "value": 0.19070907313202307,
+      "row": 1047
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L22",
+      "value": 2,
+      "row": 1048
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M22",
+      "value": 0.6652365721101067,
+      "row": 1049
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N22",
+      "value": 0.8,
+      "row": 1050
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O22",
+      "value": 1,
+      "row": 1051
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P22",
+      "value": 0.25,
+      "row": 1052
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q22",
+      "value": 0.25,
+      "row": 1053
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R22",
+      "value": 0,
+      "row": 1054
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S22",
+      "value": 0,
+      "row": 1055
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T22",
+      "value": 0,
+      "row": 1056
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U22",
+      "value": 1,
+      "row": 1057
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V22",
+      "value": 1,
+      "row": 1058
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X22",
+      "value": 1.5,
+      "row": 1059
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y22",
+      "value": 0.2,
+      "row": 1060
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z22",
+      "value": 1,
+      "row": 1061
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA22",
+      "value": 0.3,
+      "row": 1062
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D23",
+      "value": 44000000,
+      "row": 1063
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E23",
+      "value": 84000000,
+      "row": 1064
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F23",
+      "value": 0.09195501187254174,
+      "row": 1065
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G23",
+      "value": 0.011889748318309626,
+      "row": 1066
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H23",
+      "value": 0.09983360222835361,
+      "row": 1067
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I23",
+      "value": 0.796321637580795,
+      "row": 1068
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J23",
+      "value": 0.12,
+      "row": 1069
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K23",
+      "value": 0.21070907313202306,
+      "row": 1070
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L23",
+      "value": 2,
+      "row": 1071
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M23",
+      "value": 0.6652365721101067,
+      "row": 1072
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N23",
+      "value": 0.8,
+      "row": 1073
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O23",
+      "value": 1,
+      "row": 1074
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P23",
+      "value": 0.25,
+      "row": 1075
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q23",
+      "value": 0.25,
+      "row": 1076
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R23",
+      "value": 0,
+      "row": 1077
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S23",
+      "value": 0,
+      "row": 1078
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T23",
+      "value": 0,
+      "row": 1079
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U23",
+      "value": 1,
+      "row": 1080
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V23",
+      "value": 1,
+      "row": 1081
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X23",
+      "value": 1.5,
+      "row": 1082
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y23",
+      "value": 0.2,
+      "row": 1083
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z23",
+      "value": 1,
+      "row": 1084
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA23",
+      "value": 0.3,
+      "row": 1085
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D24",
+      "value": 44000000,
+      "row": 1086
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E24",
+      "value": 84000000,
+      "row": 1087
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F24",
+      "value": 0.09195501187254174,
+      "row": 1088
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G24",
+      "value": 0.011889748318309626,
+      "row": 1089
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H24",
+      "value": 0.09983360222835361,
+      "row": 1090
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I24",
+      "value": 0.796321637580795,
+      "row": 1091
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J24",
+      "value": 0.18,
+      "row": 1092
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K24",
+      "value": 0.2707090731320231,
+      "row": 1093
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L24",
+      "value": 2,
+      "row": 1094
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M24",
+      "value": 0.6652365721101067,
+      "row": 1095
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N24",
+      "value": 0.8,
+      "row": 1096
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O24",
+      "value": 1,
+      "row": 1097
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P24",
+      "value": 0.25,
+      "row": 1098
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q24",
+      "value": 0.25,
+      "row": 1099
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R24",
+      "value": 0,
+      "row": 1100
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S24",
+      "value": 0,
+      "row": 1101
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T24",
+      "value": 0,
+      "row": 1102
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U24",
+      "value": 1,
+      "row": 1103
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V24",
+      "value": 1,
+      "row": 1104
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X24",
+      "value": 1.5,
+      "row": 1105
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y24",
+      "value": 0.2,
+      "row": 1106
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z24",
+      "value": 1,
+      "row": 1107
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA24",
+      "value": 0.3,
+      "row": 1108
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D25",
+      "value": 44000000,
+      "row": 1109
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E25",
+      "value": 84000000,
+      "row": 1110
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F25",
+      "value": 0.09195501187254174,
+      "row": 1111
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G25",
+      "value": 0.011889748318309626,
+      "row": 1112
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H25",
+      "value": 0.09983360222835361,
+      "row": 1113
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I25",
+      "value": 0.796321637580795,
+      "row": 1114
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J25",
+      "value": 0.201,
+      "row": 1115
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K25",
+      "value": 0.2917090731320231,
+      "row": 1116
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L25",
+      "value": 2,
+      "row": 1117
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M25",
+      "value": 0.6652365721101067,
+      "row": 1118
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N25",
+      "value": 0.8,
+      "row": 1119
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O25",
+      "value": 1,
+      "row": 1120
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P25",
+      "value": 0.25,
+      "row": 1121
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q25",
+      "value": 0.25,
+      "row": 1122
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R25",
+      "value": 0,
+      "row": 1123
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S25",
+      "value": 0,
+      "row": 1124
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T25",
+      "value": 0,
+      "row": 1125
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U25",
+      "value": 1,
+      "row": 1126
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V25",
+      "value": 1,
+      "row": 1127
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X25",
+      "value": 1.5,
+      "row": 1128
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y25",
+      "value": 0.2,
+      "row": 1129
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z25",
+      "value": 1,
+      "row": 1130
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA25",
+      "value": 0.3,
+      "row": 1131
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D26",
+      "value": 44000000,
+      "row": 1132
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E26",
+      "value": 84000000,
+      "row": 1133
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F26",
+      "value": 0.09195501187254174,
+      "row": 1134
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G26",
+      "value": 0.011889748318309626,
+      "row": 1135
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H26",
+      "value": 0.09983360222835361,
+      "row": 1136
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I26",
+      "value": 0.796321637580795,
+      "row": 1137
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J26",
+      "value": 0.15,
+      "row": 1138
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K26",
+      "value": 0.24070907313202305,
+      "row": 1139
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L26",
+      "value": 2,
+      "row": 1140
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M26",
+      "value": 0.6652365721101067,
+      "row": 1141
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N26",
+      "value": 0,
+      "row": 1142
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O26",
+      "value": 1,
+      "row": 1143
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P26",
+      "value": 0.25,
+      "row": 1144
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q26",
+      "value": 0.25,
+      "row": 1145
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R26",
+      "value": 0,
+      "row": 1146
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S26",
+      "value": 0,
+      "row": 1147
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T26",
+      "value": 0,
+      "row": 1148
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U26",
+      "value": 1,
+      "row": 1149
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V26",
+      "value": 1,
+      "row": 1150
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X26",
+      "value": 1.5,
+      "row": 1151
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y26",
+      "value": 0.2,
+      "row": 1152
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z26",
+      "value": 1,
+      "row": 1153
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA26",
+      "value": 0.3,
+      "row": 1154
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D27",
+      "value": 44000000,
+      "row": 1155
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E27",
+      "value": 84000000,
+      "row": 1156
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F27",
+      "value": 0.09195501187254174,
+      "row": 1157
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G27",
+      "value": 0.011889748318309626,
+      "row": 1158
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H27",
+      "value": 0.09983360222835361,
+      "row": 1159
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I27",
+      "value": 0.796321637580795,
+      "row": 1160
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J27",
+      "value": 0.15,
+      "row": 1161
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K27",
+      "value": 0.24070907313202305,
+      "row": 1162
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L27",
+      "value": 2,
+      "row": 1163
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M27",
+      "value": 0.6652365721101067,
+      "row": 1164
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N27",
+      "value": 0.5,
+      "row": 1165
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O27",
+      "value": 1,
+      "row": 1166
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P27",
+      "value": 0.25,
+      "row": 1167
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q27",
+      "value": 0.25,
+      "row": 1168
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R27",
+      "value": 0,
+      "row": 1169
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S27",
+      "value": 0,
+      "row": 1170
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T27",
+      "value": 0,
+      "row": 1171
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U27",
+      "value": 1,
+      "row": 1172
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V27",
+      "value": 1,
+      "row": 1173
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X27",
+      "value": 1.5,
+      "row": 1174
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y27",
+      "value": 0.2,
+      "row": 1175
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z27",
+      "value": 1,
+      "row": 1176
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA27",
+      "value": 0.3,
+      "row": 1177
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D28",
+      "value": 44000000,
+      "row": 1178
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E28",
+      "value": 84000000,
+      "row": 1179
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F28",
+      "value": 0.09195501187254174,
+      "row": 1180
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G28",
+      "value": 0.011889748318309626,
+      "row": 1181
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H28",
+      "value": 0.09983360222835361,
+      "row": 1182
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I28",
+      "value": 0.796321637580795,
+      "row": 1183
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J28",
+      "value": 0.15,
+      "row": 1184
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K28",
+      "value": 0.24070907313202305,
+      "row": 1185
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L28",
+      "value": 2,
+      "row": 1186
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M28",
+      "value": 0.6652365721101067,
+      "row": 1187
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N28",
+      "value": 1,
+      "row": 1188
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O28",
+      "value": 1,
+      "row": 1189
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P28",
+      "value": 0.25,
+      "row": 1190
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q28",
+      "value": 0.25,
+      "row": 1191
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R28",
+      "value": 0,
+      "row": 1192
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S28",
+      "value": 0,
+      "row": 1193
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T28",
+      "value": 0,
+      "row": 1194
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U28",
+      "value": 1,
+      "row": 1195
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V28",
+      "value": 1,
+      "row": 1196
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X28",
+      "value": 1.5,
+      "row": 1197
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y28",
+      "value": 0.2,
+      "row": 1198
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z28",
+      "value": 1,
+      "row": 1199
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA28",
+      "value": 0.3,
+      "row": 1200
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D29",
+      "value": 44000000,
+      "row": 1201
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E29",
+      "value": 84000000,
+      "row": 1202
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F29",
+      "value": 0.09195501187254174,
+      "row": 1203
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G29",
+      "value": 0.011889748318309626,
+      "row": 1204
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H29",
+      "value": 0.09983360222835361,
+      "row": 1205
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I29",
+      "value": 0.796321637580795,
+      "row": 1206
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J29",
+      "value": 0.15,
+      "row": 1207
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K29",
+      "value": 0.24070907313202305,
+      "row": 1208
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L29",
+      "value": 2,
+      "row": 1209
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M29",
+      "value": 0.6652365721101067,
+      "row": 1210
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N29",
+      "value": 0.8,
+      "row": 1211
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O29",
+      "value": 0.5,
+      "row": 1212
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P29",
+      "value": 0.25,
+      "row": 1213
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q29",
+      "value": 0.25,
+      "row": 1214
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R29",
+      "value": 0,
+      "row": 1215
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S29",
+      "value": 0,
+      "row": 1216
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T29",
+      "value": 0,
+      "row": 1217
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U29",
+      "value": 1,
+      "row": 1218
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V29",
+      "value": 1,
+      "row": 1219
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X29",
+      "value": 1.5,
+      "row": 1220
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y29",
+      "value": 0.2,
+      "row": 1221
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z29",
+      "value": 1,
+      "row": 1222
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA29",
+      "value": 0.3,
+      "row": 1223
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D30",
+      "value": 44000000,
+      "row": 1224
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E30",
+      "value": 84000000,
+      "row": 1225
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F30",
+      "value": 0.09195501187254174,
+      "row": 1226
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G30",
+      "value": 0.011889748318309626,
+      "row": 1227
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H30",
+      "value": 0.09983360222835361,
+      "row": 1228
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I30",
+      "value": 0.796321637580795,
+      "row": 1229
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J30",
+      "value": 0.15,
+      "row": 1230
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K30",
+      "value": 0.24070907313202305,
+      "row": 1231
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L30",
+      "value": 2,
+      "row": 1232
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M30",
+      "value": 0.6652365721101067,
+      "row": 1233
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N30",
+      "value": 0.8,
+      "row": 1234
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O30",
+      "value": 1.5,
+      "row": 1235
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P30",
+      "value": 0.25,
+      "row": 1236
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q30",
+      "value": 0.25,
+      "row": 1237
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R30",
+      "value": 0,
+      "row": 1238
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S30",
+      "value": 0,
+      "row": 1239
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T30",
+      "value": 0,
+      "row": 1240
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U30",
+      "value": 1,
+      "row": 1241
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V30",
+      "value": 1,
+      "row": 1242
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X30",
+      "value": 1.5,
+      "row": 1243
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y30",
+      "value": 0.2,
+      "row": 1244
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z30",
+      "value": 1,
+      "row": 1245
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA30",
+      "value": 0.3,
+      "row": 1246
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "D31",
+      "value": 44000000,
+      "row": 1247
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "E31",
+      "value": 84000000,
+      "row": 1248
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "F31",
+      "value": 0.09195501187254174,
+      "row": 1249
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "G31",
+      "value": 0.011889748318309626,
+      "row": 1250
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "H31",
+      "value": 0.09983360222835361,
+      "row": 1251
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "I31",
+      "value": 0.796321637580795,
+      "row": 1252
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "J31",
+      "value": 0.15,
+      "row": 1253
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "K31",
+      "value": 0.24070907313202305,
+      "row": 1254
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "L31",
+      "value": 2,
+      "row": 1255
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "M31",
+      "value": 0.6652365721101067,
+      "row": 1256
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "N31",
+      "value": 0.5,
+      "row": 1257
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "O31",
+      "value": 1,
+      "row": 1258
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "P31",
+      "value": 0.25,
+      "row": 1259
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Q31",
+      "value": 0.25,
+      "row": 1260
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "R31",
+      "value": 0,
+      "row": 1261
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "S31",
+      "value": 0,
+      "row": 1262
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "T31",
+      "value": 0,
+      "row": 1263
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "U31",
+      "value": 1,
+      "row": 1264
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "V31",
+      "value": 1,
+      "row": 1265
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "X31",
+      "value": 1.2,
+      "row": 1266
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Y31",
+      "value": 0.4,
+      "row": 1267
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "Z31",
+      "value": 1,
+      "row": 1268
+    },
+    {
+      "sheet": "Сценарии",
+      "address": "AA31",
+      "value": 0.5,
+      "row": 1269
+    }
+  ],
+  "activeScenario": 6,
+  "scenarioCount": 26,
+  "weightsFirstRow": 5
+}

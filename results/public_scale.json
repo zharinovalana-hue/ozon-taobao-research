@@ -1,0 +1,11 @@
+{
+  "orders_per_day_q1": 8974444.444444444,
+  "orders_per_assumed_active_user_day": 0.20396464646464646,
+  "assumption": "March DAU used as proxy for Q1 average; audience/product scopes may differ. Not observed unique-buyer CR or a hard bound.",
+  "daily_cart_scaled": 28600000.0,
+  "daily_fav_scaled": 5720000.0,
+  "monthly_cart_scaled": 76440000.0,
+  "monthly_fav_scaled": 16800000.0,
+  "base_global_cr_assumed": 0.15,
+  "implied_orders_per_buying_user_day_at_base_cr": 1.3597643097643097
+}
