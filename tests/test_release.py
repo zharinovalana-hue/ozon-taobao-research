@@ -61,11 +61,43 @@ class ReleaseTests(unittest.TestCase):
             for r,x in zip([8,9,10,11,12,14,15,16],evaluate(inputs,c)):
                 self.assertAlmostEqual(b.get('Итоги','F'+str(r)),x['delta_pp'],places=8,msg=c['id'])
 
+    def test_refresh_keeps_asymmetric_h1_reach_in_controls(self):
+        from refresh_excel import refresh
+        inputs=load_inputs(ROOT/'data/model_inputs.json')
+        inputs['hypotheses'][0]['reach'][1][0]=.5
+        inputs['hypotheses'][0]['reach'][2][0]=.35
+        cases=scenarios(inputs)
+        results=[r for c in cases for r in evaluate(inputs,c)]
+        with tempfile.TemporaryDirectory() as folder:
+            output=Path(folder)/'h1.xlsx'
+            refresh(ROOT,inputs,cases,results,output)
+            book=FormulaBook(output)
+            self.assertEqual(book.get('Сравнение','B3'),'Актуально')
+            for i,c in enumerate(cases,1):
+                book.set('Параметры','B3',i)
+                expected=next(r for r in results if r['scenario']==c['id'] and r['hypothesis']=='H1')
+                self.assertAlmostEqual(book.get('Итоги','E8'),expected['delta_buyers'],places=7,msg=c['id'])
+
     def test_recorded_original_45_checks_were_executed(self):
         result=load_inputs(ROOT/'results/excel_verification.json')
         self.assertEqual(len(result['original_tests']),45)
         self.assertEqual(len(result['scenario_parity']),len(scenarios(load_inputs(ROOT/'data/model_inputs.json'),None)))
         self.assertTrue(result['stale_warning_verified'])
+
+    def test_refresh_matches_all_scenarios_after_cr_gap_edit(self):
+        from refresh_excel import refresh
+        inputs=load_inputs(ROOT/'data/model_inputs.json')
+        inputs['case_cr_gaps']=[0,-.08,-.16,-.08]
+        cases=scenarios(inputs)
+        results=[r for c in cases for r in evaluate(inputs,c)]
+        with tempfile.TemporaryDirectory() as folder:
+            output=Path(folder)/'gaps.xlsx';refresh(ROOT,inputs,cases,results,output)
+            book=FormulaBook(output)
+            for i,c in enumerate(cases,1):
+                book.set('Параметры','B3',i)
+                self.assertEqual(book.get('Параметры','B28'),1,c['id'])
+                for row,x in zip([8,9,10,11,12,14,15,16],evaluate(inputs,c)):
+                    self.assertAlmostEqual(book.get('Итоги','F'+str(row)),x['delta_pp'],places=8,msg=c['id'])
 
     def test_reproducible_refresh_without_raw_data(self):
         with tempfile.TemporaryDirectory() as folder:
