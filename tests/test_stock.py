@@ -35,3 +35,20 @@ class StockTests(unittest.TestCase):
         self.assertGreater(a['threshold'],.5)
         self.assertFalse(a['within_case_bounds'])
         self.assertTrue(b['within_case_bounds'])
+
+    def test_crossover_uses_configured_cr_gaps(self):
+        from cart_stock import joint
+        i=load_inputs(ROOT/'data/model_inputs.json')
+        i['case_cr_gaps']=[0,-.08,-.16,-.08]
+        root=crossover(i,.8)['threshold']
+        self.assertIsNotNone(root)
+        c=next(c for c in scenarios(i) if c['id']=='ozon_stock_base')
+        for p,sign in [(root-1e-5,-1),(root+1e-5,1)]:
+            c.update(shares=joint(p),large_share=p,h1_need=.8)
+            c['whale_cr']=c['global_cr']-sum(s*g for s,g in zip(c['shares'],i['case_cr_gaps']))
+            rows=evaluate(i,c)
+            self.assertGreater(sign*(rows[0]['delta_pp']-rows[3]['delta_pp']),0)
+
+    def test_zero_uplift_does_not_invent_a_crossover(self):
+        i=load_inputs(ROOT/'data/model_inputs.json');i['uplift']=0
+        self.assertIsNone(crossover(i)['threshold'])

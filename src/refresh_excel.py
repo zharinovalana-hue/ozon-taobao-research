@@ -10,6 +10,11 @@ def refresh(root,inputs,cases,results,output):
     if len(cases)!=mapping['scenarioCount'] or [c['id'] for c in cases]!=[r['id'] for r in mapping['caseRows']]:
         raise ValueError('Scenario schema changed; workbook layout must be explicitly upgraded, not silently truncated')
     b=FormulaBook(source)
+    # Controls use the original per-cohort reach; stock scenarios override it
+    # with conditional need. Upgrade existing templates on every refresh.
+    for row in [6,7]:
+        b.set('Воздействие','C'+str(row),f"=IF('Параметры'!$B$3<=3,'Входы H'!C{row},'Сценарии'!$AB$3)*'Сценарии'!$O$3")
+    b.set('Параметры','B28',b.cells['Параметры']['B28'].replace('B26>=0.18',"B26>=MAX(0,-MIN('Исходные'!B17:B19)/100)"))
     for address,label in [('X5','Справочно: вес C S1'),('Y5','Справочно: вес F S1'),('Z5','Справочно: вес оба S1'),('AA5','Справочно: вес вне S1')]:b.set('Сценарии',address,label)
     for k,c in enumerate(cases[:3]):
         letter=chr(67+k)
@@ -74,9 +79,15 @@ def refresh(root,inputs,cases,results,output):
     if b.get('Сравнение','B3')!='Актуально':
         mismatches=[(x['sheet'],x['address'],b.get('Версия срезов','C'+str(x['row'])),b.get('Версия срезов','D'+str(x['row']))) for x in mapping['capture'] if b.get('Версия срезов','E'+str(x['row']))!=1]
         raise ValueError('Snapshot capture did not reconcile: '+str(mismatches[:5]))
-    for h,x in enumerate([r for r in results if r['scenario']=='ozon_stock_base']):
-        row=[8,9,10,11,12,14,15,16][h]
-        if abs(b.get('Итоги','F'+str(row))-x['delta_pp'])>1e-8:raise ValueError('Workbook/Python active results diverge')
+    by_case={c['id']:[r for r in results if r['scenario']==c['id']] for c in cases}
+    for i,c in enumerate(cases,1):
+        b.set('Параметры','B3',i)
+        if b.get('Параметры','B28')!=1 or b.get('Когорты','X10')!=1:
+            raise ValueError('Workbook rejects scenario: '+c['id'])
+        for row,x in zip([8,9,10,11,12,14,15,16],by_case[c['id']]):
+            if abs(b.get('Итоги','F'+str(row))-x['delta_pp'])>1e-8:
+                raise ValueError('Workbook/Python results diverge: '+c['id']+' '+x['hypothesis'])
+    b.set('Параметры','B3',mapping['activeScenario'])
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True)
     fd,temporary=tempfile.mkstemp(prefix='ozon_refresh_',suffix='.xlsx',dir=output.parent);os.close(fd)
     try:
