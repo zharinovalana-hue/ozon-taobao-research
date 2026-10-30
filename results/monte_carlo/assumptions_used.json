@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "status": "Illustrative expert assumptions, not observed data or fitted priors",
+  "seed": 20261030,
+  "draws": 100000,
+  "profiles": [
+    "triangular",
+    "uniform",
+    "low_effect"
+  ],
+  "profiles_note": "Same bounds; triangular uses stated modes, uniform gives equal density, low_effect changes uplift mode from 0.10 to 0.03. All accepted worlds are conditional on feasibility.",
+  "triplet_format": "minimum, mode, maximum",
+  "common": {
+    "large_share": [
+      0.11,
+      0.3,
+      0.49
+    ],
+    "fav_large_share": [
+      0.2,
+      0.4,
+      0.6
+    ],
+    "global_cr": [
+      0.12,
+      0.15,
+      0.18
+    ],
+    "overlap": [
+      0.5,
+      0.8,
+      1.0
+    ],
+    "h1_need": [
+      0.25,
+      0.4,
+      0.9
+    ]
+  },
+  "common_note": "Cart bounds are case-compatible constructed examples; distribution and mode are not estimated. Favorite threshold/independence, global CR, visit overlap and H1 need are assumptions. Stock shape transfers to DAU and visitors. Overall favorite ownership fixed at 70%.",
+  "hypothesis_defaults": {
+    "uplift": [
+      0.0,
+      0.1,
+      0.25
+    ],
+    "reach_multiplier": [
+      0.75,
+      1.0,
+      1.25
+    ],
+    "behavior_penalty": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "product_penalty": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "loss_c": [
+      0.0,
+      0.0005,
+      0.004
+    ],
+    "loss_f": [
+      0.0,
+      0.001,
+      0.008
+    ],
+    "income_delta": [
+      -0.03,
+      0.0,
+      0.01
+    ]
+  },
+  "hypothesis_overrides": {
+    "H1": {
+      "reach_multiplier": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "loss_f": [
+        0,
+        0,
+        0
+      ]
+    },
+    "H3": {
+      "loss_f": [
+        0,
+        0,
+        0
+      ]
+    },
+    "H5": {
+      "loss_c": [
+        0,
+        0,
+        0
+      ]
+    },
+    "H6.1": {
+      "loss_c": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "dependence_note": "Audience is shared across alternatives within each world. Hypothesis-specific parameters are independent with common neutral ranges, not measured effect differences. Rejection induces dependence between feasible audience inputs. H6.1 represents all three identically parameterized H6 variants; no summation.",
+  "guardrail_note": "Same current model proxies: purchases among section visitors, not verified order attribution. Revenue is an index. Metrics require clarification from Ozon.",
+  "interpretation": "Simulation quantiles are not confidence intervals for actual feature effects. Winner shares depend on chosen input laws, ranges, dependence and structural assumptions. Sampling error from finite Monte Carlo runs does not measure business uncertainty."
+}
