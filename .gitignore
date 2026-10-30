@@ -11,3 +11,5 @@ taobao_users.csv
 *.metadata.json
 ~$*
 *.inspect.ndjson
+backups/
+results/monte_carlo/**/draws.npz
